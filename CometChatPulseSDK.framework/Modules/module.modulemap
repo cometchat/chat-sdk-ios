@@ -1,0 +1,11 @@
+framework module CometChatPulseSDK {
+  umbrella header "CometChatPulseSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module CometChatPulseSDK.Swift {
+    header "CometChatPulseSDK-Swift.h"
+    requires objc
+}
