@@ -27,4 +27,4 @@ Install CometChatPulseSDK Framework through CocoaPods.
 pod install
 ```
 
-Now you can see installed SendBird framework by inspecting YOUR_PROJECT.xcworkspace.
+Now you can see installed CometChatPulseSDK framework by inspecting YOUR_PROJECT.xcworkspace.
