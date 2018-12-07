@@ -249,10 +249,10 @@ SWIFT_CLASS("_TtC17CometChatPulseSDK9CometChat")
 + (void)sendMediaMessageWithMessage:(MediaMessage * _Nonnull)message onSuccess:(void (^ _Nonnull)(BaseMessage * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
 + (void)createGroupWithGroup:(Group * _Nonnull)group onSuccess:(void (^ _Nonnull)(Group * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
 + (void)joinGroupWithGuid:(NSString * _Nonnull)guid groupType:(enum groupType)groupType password:(NSString * _Nullable)password onSuccess:(void (^ _Nonnull)(Group * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
-+ (void)getGroupWithGuid:(NSString * _Nonnull)WithGuid onSuccess:(void (^ _Nonnull)(Group * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
++ (void)getGroupWithGuid:(NSString * _Nonnull)WithGuid completionHandler:(void (^ _Nonnull)(Group * _Nullable, CCException * _Nullable))completionHandler;
 + (void)leaveGroupWithGuid:(NSString * _Nonnull)guid onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
 + (void)KickAMemberWithUid:(NSString * _Nonnull)uid guid:(NSString * _Nonnull)guid onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
-+ (void)getUserWithUid:(NSString * _Nonnull)WithUid success:(void (^ _Nonnull)(User * _Nonnull))success onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
++ (void)getUserWithUid:(NSString * _Nonnull)WithUid completionHandler:(void (^ _Nonnull)(User * _Nullable, CCException * _Nullable))completionHandler;
 + (void)getMyDetailsOnSuccess:(void (^ _Nonnull)(User * _Nullable))onSuccess onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
 + (void)getAllMessagesWithLimit:(NSInteger)limit timestamp:(NSInteger)timestamp id:(NSInteger)id affix:(NSString * _Nonnull)affix page:(NSInteger)page onSuccess:(void (^ _Nonnull)(NSArray<BaseMessage *> * _Nonnull))onSuccess;
 + (void)outcastUserForGuid:(NSString * _Nonnull)ForGuid Withuid:(NSString * _Nonnull)Withuid onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
@@ -447,9 +447,9 @@ SWIFT_CLASS("_TtC17CometChatPulseSDK12MediaMessage")
 ///
 /// \param receiverType receiver type
 ///
-- (nonnull instancetype)initWithReceiverUid:(NSString * _Nonnull)receiverUid fileData:(NSData * _Nonnull)fileData messageType:(enum messageType)messageType receiverType:(enum receiverType)receiverType OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithReceiverUid:(NSString * _Nonnull)receiverUid fileurl:(NSURL * _Nonnull)fileurl messageType:(enum messageType)messageType receiverType:(enum receiverType)receiverType OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, copy) NSString * _Nonnull metaData;
-@property (nonatomic, copy) NSString * _Nonnull url;
+@property (nonatomic, copy) NSURL * _Nullable url;
 - (nonnull instancetype)initWithReceiverUid:(NSString * _Nonnull)receiverUid messageType:(enum messageType)messageType receiverType:(enum receiverType)receiverType SWIFT_UNAVAILABLE;
 @end
 
