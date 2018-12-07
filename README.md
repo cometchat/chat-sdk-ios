@@ -3,7 +3,7 @@
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://cocoapods.org/pods/CometChatPulseSDK)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/CometChat-Pulse/ios-chat-sdk)
-[![CocoaPods](https://img.shields.io/badge/pod-v0.0.2-green.svg)](https://cocoapods.org/pods/CometChatPulseSDK)
+[![CocoaPods](https://img.shields.io/badge/pod-v0.0.3-green.svg)](https://cocoapods.org/pods/CometChatPulseSDK)
 
 ## Documentation
 https://www.cometchat.com
