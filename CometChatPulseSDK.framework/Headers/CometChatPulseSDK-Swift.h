@@ -233,7 +233,7 @@ SWIFT_CLASS("_TtC17CometChatPulseSDK11CCException")
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
 
-@protocol CometChatDelegate;
+@protocol CometChatPulseDelegate;
 @class TextMessage;
 @class MediaMessage;
 @class Group;
@@ -241,7 +241,7 @@ enum groupType : NSInteger;
 
 SWIFT_CLASS("_TtC17CometChatPulseSDK9CometChat")
 @interface CometChat : NSObject
-@property (nonatomic, weak) id <CometChatDelegate> _Nullable delegate;
+@property (nonatomic, weak) id <CometChatPulseDelegate> _Nullable delegate;
 - (nonnull instancetype)initWithAppId:(NSString * _Nonnull)appId onError:(void (^ _Nonnull)(CCException * _Nonnull))onError OBJC_DESIGNATED_INITIALIZER;
 + (void)loginWithAuthToken:(NSString * _Nonnull)withAuthToken onSuccess:(void (^ _Nonnull)(User * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
 + (void)loginWithUid:(NSString * _Nonnull)withUid apiKey:(NSString * _Nonnull)apiKey onSuccess:(void (^ _Nonnull)(User * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
@@ -310,8 +310,8 @@ typedef SWIFT_ENUM(NSInteger, groupType, closed) {
 };
 
 
-SWIFT_PROTOCOL("_TtP17CometChatPulseSDK17CometChatDelegate_")
-@protocol CometChatDelegate
+SWIFT_PROTOCOL("_TtP17CometChatPulseSDK22CometChatPulseDelegate_")
+@protocol CometChatPulseDelegate
 - (void)didReceiveMessageWithMessage:(BaseMessage * _Nullable)message error:(CCException * _Nullable)error;
 @end
 
