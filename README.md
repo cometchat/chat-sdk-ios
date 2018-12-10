@@ -3,7 +3,6 @@
 		<img src="https://github.com/CometChat-Pulse/javascript-chat-sdk/blob/master/CometChat%20Pulse%20Logo.png" width="150" height="150" alt="CometChat Pulse">		
 	</div>
 </br>
-</br>
 
 # [CometChatPulseSDK](https://www.cometchat.com) <br> 
 ## CometChat enables you to add voice, video and text chat to your  app in minutes! 
