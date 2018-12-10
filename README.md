@@ -8,16 +8,15 @@
 ## Documentation
 https://www.cometchat.com
 
-## Install CometChatPulseSDK Framework from CocoaPods
+## Install CometChatPulseSDK Framework in  your project
 
 Add below into your Podfile on Xcode.
 
 ```
-platform :ios, '8.0'
-use_frameworks!
+target 'CometChatPulse-swift-sampleApp' do
+  
+	pod 'CometChatPulseSDK'
 
-target YOUR_PROJECT_TARGET do
-  pod 'CometChatPulseSDK'
 end
 ```
 
@@ -26,5 +25,10 @@ Install CometChatPulseSDK Framework through CocoaPods.
 ```
 pod install
 ```
+Once the pod is installed. Update the pods to install latest SDK inside your project using below command. 
 
+```
+pod update
+```
+   
 Now you can see installed CometChatPulseSDK framework by inspecting YOUR_PROJECT.xcworkspace.
