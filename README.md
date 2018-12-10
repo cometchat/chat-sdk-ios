@@ -3,8 +3,8 @@
 		<img src="https://github.com/CometChat-Pulse/javascript-chat-sdk/blob/master/CometChat%20Pulse%20Logo.png" width="150" height="150" alt="CometChat Pulse">		
 	</div>	
 
-# [CometChatPulseSDK](https://www.cometchat.com) <br>   Messaging and Chat SDK for Mobile Apps and Websites
-[CometChatPulseSDK](https://cometchat.com) provides the chat API and SDK for your app enabling real-time communication among your users.
+# [CometChatPulseSDK](https://www.cometchat.com) <br> 
+## Messaging and Chat SDK for Mobile Apps and Websites
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://cocoapods.org/pods/CometChatPulseSDK)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/CometChat-Pulse/ios-chat-sdk)
