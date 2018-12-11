@@ -1,6 +1,14 @@
+<div style="width:100%">
+	<div style="width:50%; display:inline-block">
+		<h1> CometChatPulseSDK</h1> 
+		<img align="left" width="150" height="150" alt="CometChat Pulse" src="https://github.com/CometChat-Pulse/javascript-chat-sdk/blob/master/CometChat%20Pulse%20Logo.png">		
+	</div>	
+</div>
+</br>
+</br>
+<h2> The simplest voice, video and text chat SDK</h2>
+CometChat enables you to add voice, video and text chat to your  app in minutes! 
 
-# [CometChatPulseSDK](https://github.com/CometChat-Pulse/ios-chat-sdk) <br> 
-## CometChat enables you to add voice, video and text chat to your  app in minutes! 
 </div><br>
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://cocoapods.org/pods/CometChatPulseSDK)
