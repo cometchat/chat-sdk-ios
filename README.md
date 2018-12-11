@@ -19,7 +19,7 @@ https://www.cometchat.com
 Add below into your Podfile on Xcode.
 
 ```
-target 'mySampleApp' do
+target 'YOUR_PROJECT' do
   
 	pod 'CometChatPulseSDK'
 
