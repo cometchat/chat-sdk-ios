@@ -9,13 +9,17 @@
 <h2> The simplest voice, video and text chat SDK</h2>
 CometChat enables you to add voice, video and text chat to your  app in minutes! 
 
-</div><br>
+</div>
+<br></br><br>
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://cocoapods.org/pods/CometChatPulseSDK)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/CometChat-Pulse/ios-chat-sdk)
 [![CocoaPods](https://img.shields.io/badge/pod-v0.0.4-green.svg)](https://cocoapods.org/pods/CometChatPulseSDK)
 
 ## Documentation
+
+Refer the below documentation to setup CometChatPulseSDK inside your iOS App.
+
 https://docs.pulse.cometchat.com/docs/quick-start-guide
 
 ## Install CometChatPulseSDK Framework in  your project
