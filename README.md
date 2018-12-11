@@ -4,7 +4,7 @@
 	</div>
 </br>
 
-# [CometChatPulseSDK](https://www.cometchat.com) <br> 
+# [CometChatPulseSDK](https://github.com/CometChat-Pulse/ios-chat-sdk) <br> 
 ## CometChat enables you to add voice, video and text chat to your  app in minutes! 
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://cocoapods.org/pods/CometChatPulseSDK)
@@ -12,7 +12,7 @@
 [![CocoaPods](https://img.shields.io/badge/pod-v0.0.4-green.svg)](https://cocoapods.org/pods/CometChatPulseSDK)
 
 ## Documentation
-https://www.cometchat.com
+https://docs.pulse.cometchat.com/docs/quick-start-guide
 
 ## Install CometChatPulseSDK Framework in  your project
 
