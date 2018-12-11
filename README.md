@@ -13,7 +13,7 @@ CometChat enables you to add voice, video and text chat to your  app in minutes!
 <br></br><br>
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://cocoapods.org/pods/CometChatPulseSDK)
-[![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/CometChat-Pulse/ios-chat-sdk)
+[![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/CometChat-Pulse/ios-swift-chat-app)
 [![CocoaPods](https://img.shields.io/badge/pod-v0.0.4-green.svg)](https://cocoapods.org/pods/CometChatPulseSDK)
 
 ## Documentation
