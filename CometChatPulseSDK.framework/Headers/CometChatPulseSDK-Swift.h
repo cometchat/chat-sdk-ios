@@ -243,6 +243,8 @@ SWIFT_CLASS("_TtC17CometChatPulseSDK9CometChat")
 @interface CometChat : NSObject
 @property (nonatomic, weak) id <CometChatPulseDelegate> _Nullable delegate;
 - (nonnull instancetype)initWithAppId:(NSString * _Nonnull)appId onError:(void (^ _Nonnull)(CCException * _Nonnull))onError OBJC_DESIGNATED_INITIALIZER;
++ (void)startServices;
++ (void)stopServices;
 + (void)loginWithAuthToken:(NSString * _Nonnull)withAuthToken onSuccess:(void (^ _Nonnull)(User * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
 + (void)loginWithUid:(NSString * _Nonnull)withUid apiKey:(NSString * _Nonnull)apiKey onSuccess:(void (^ _Nonnull)(User * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
 + (void)sendTextMessageWithMessage:(TextMessage * _Nonnull)message onSuccess:(void (^ _Nonnull)(BaseMessage * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
@@ -255,9 +257,9 @@ SWIFT_CLASS("_TtC17CometChatPulseSDK9CometChat")
 + (void)getUserWithUid:(NSString * _Nonnull)WithUid completionHandler:(void (^ _Nonnull)(User * _Nullable, CCException * _Nullable))completionHandler;
 + (void)getMyDetailsOnSuccess:(void (^ _Nonnull)(User * _Nullable))onSuccess onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
 + (void)getAllMessagesWithLimit:(NSInteger)limit timestamp:(NSInteger)timestamp id:(NSInteger)id affix:(NSString * _Nonnull)affix page:(NSInteger)page onSuccess:(void (^ _Nonnull)(NSArray<BaseMessage *> * _Nonnull))onSuccess;
-+ (void)outcastUserForGuid:(NSString * _Nonnull)ForGuid Withuid:(NSString * _Nonnull)Withuid onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
-+ (void)getOutcastedUsersListForAgroupWithGuid:(NSString * _Nonnull)guid success:(void (^ _Nonnull)(NSData * _Nullable, NSError * _Nullable))success onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
-+ (void)reinstateUserForGuid:(NSString * _Nonnull)ForGuid WithUid:(NSString * _Nonnull)WithUid success:(void (^ _Nonnull)(NSData * _Nullable, NSError * _Nullable))success onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
++ (void)banUserForGuid:(NSString * _Nonnull)ForGuid Withuid:(NSString * _Nonnull)Withuid onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
++ (void)getBannedUsersListForAgroupWithGuid:(NSString * _Nonnull)guid success:(void (^ _Nonnull)(NSData * _Nullable, NSError * _Nullable))success onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
++ (void)unBanUserForGuid:(NSString * _Nonnull)ForGuid WithUid:(NSString * _Nonnull)WithUid success:(void (^ _Nonnull)(NSData * _Nullable, NSError * _Nullable))success onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
@@ -276,6 +278,7 @@ typedef SWIFT_ENUM(NSInteger, affix, closed) {
 typedef SWIFT_ENUM(NSInteger, MessageCategory, closed) {
   MessageCategoryMessage = 0,
   MessageCategoryAction = 1,
+  MessageCategoryCall = 2,
 };
 
 typedef SWIFT_ENUM(NSInteger, receiverType, closed) {
@@ -306,7 +309,17 @@ typedef SWIFT_ENUM(NSInteger, actionType, closed) {
 typedef SWIFT_ENUM(NSInteger, groupType, closed) {
   groupTypePublic = 0,
   groupTypePrivate = 1,
-  groupTypeProtected = 2,
+  groupTypePassword = 2,
+};
+
+typedef SWIFT_ENUM(NSInteger, callStatus, closed) {
+  callStatusInitiated = 0,
+  callStatusOngoing = 1,
+  callStatusUnanswered = 2,
+  callStatusRejected = 3,
+  callStatusBusy = 4,
+  callStatusCanceled = 5,
+  callStatusEnded = 6,
 };
 
 
