@@ -1,4 +1,7 @@
 # Change Log
+### v0.0.6 (Jan 1, 2019)
+* Added Audio/Video calling Feature.
+
 ### v0.0.5 (Dec 18, 2018)
 * Minor Bug Fixes.
 

@@ -1,6 +1,6 @@
 <div style="width:100%">
 	<div style="width:50%; display:inline-block">
-		<h1> CometChatPulseSDK</h1> 
+		<h1> CometChatSDK</h1> 
 		<img align="left" width="150" height="150" alt="CometChat Pulse" src="https://github.com/CometChat-Pulse/javascript-chat-sdk/blob/master/CometChat%20Pulse%20Logo.png">		
 	</div>	
 </div>
@@ -22,19 +22,19 @@ Refer the below documentation to setup CometChatPulseSDK inside your iOS App.
 
 https://docs.pulse.cometchat.com/docs/quick-start-guide
 
-## Install CometChatPulseSDK Framework in  your project
+## Install CometChatSDK Framework in  your project
 
 Add below into your Podfile on Xcode.
 
 ```
 target 'YOUR_PROJECT' do
   
-	pod 'CometChatPulseSDK'
+	pod 'CometChatSDK'
 
 end
 ```
 
-Install CometChatPulseSDK Framework through CocoaPods.
+Install CometChatSDK Framework through CocoaPods.
 
 ```
 pod install
@@ -45,4 +45,4 @@ Once the pod is installed. Update the pods to install latest SDK inside your pro
 pod update
 ```
    
-Now you can see installed CometChatPulseSDK framework by inspecting YOUR_PROJECT.xcworkspace.
+Now you can see installed CometChatSDK framework by inspecting YOUR_PROJECT.xcworkspace.
