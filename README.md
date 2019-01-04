@@ -20,7 +20,7 @@ CometChat enables you to add voice, video and text chat to your  app in minutes!
 
 Refer the below documentation to setup CometChatPulseSDK inside your iOS App.
 
-https://docs.pulse.cometchat.com/docs/quick-start-guide
+https://docs.pulse.cometchat.com/docs
 
 ## Install CometChatPulseSDK Framework in  your project
 
