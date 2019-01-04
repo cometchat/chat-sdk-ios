@@ -216,28 +216,6 @@ SWIFT_CLASS("_TtC12CometChatSDK9AppEntity")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class BannedMembersRequestBuilder;
-@class GroupMember;
-@class CCException;
-
-SWIFT_CLASS("_TtC12CometChatSDK20BannedMembersRequest")
-@interface BannedMembersRequest : NSObject
-- (nonnull instancetype)initWithBuilder:(BannedMembersRequestBuilder * _Nonnull)builder OBJC_DESIGNATED_INITIALIZER;
-- (void)fetchNextWithCompletionHandler:(void (^ _Nonnull)(NSArray<GroupMember *> * _Nullable, CCException * _Nullable))completionHandler;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtCC12CometChatSDK20BannedMembersRequest27BannedMembersRequestBuilder")
-@interface BannedMembersRequestBuilder : NSObject
-- (nonnull instancetype)initWithGuid:(NSString * _Nonnull)guid OBJC_DESIGNATED_INITIALIZER;
-- (BannedMembersRequestBuilder * _Nonnull)setLimitWithLimit:(NSInteger)limit SWIFT_WARN_UNUSED_RESULT;
-- (BannedMembersRequest * _Nonnull)build SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
-@end
-
 
 
 SWIFT_PROTOCOL("_TtP12CometChatSDK11CustomError_")
@@ -285,13 +263,7 @@ SWIFT_CLASS("_TtC12CometChatSDK9CometChat")
 + (void)getAllMessagesWithLimit:(NSInteger)limit timestamp:(NSInteger)timestamp id:(NSInteger)id affix:(NSString * _Nonnull)affix page:(NSInteger)page onSuccess:(void (^ _Nonnull)(NSArray<BaseMessage *> * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
 + (void)banUserForGuid:(NSString * _Nonnull)ForGuid Withuid:(NSString * _Nonnull)Withuid onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
 + (void)getBannedUsersListForAgroupWithGuid:(NSString * _Nonnull)guid success:(void (^ _Nonnull)(NSData * _Nullable, NSError * _Nullable))success onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
-+ (void)unBanUserForGuid:(NSString * _Nonnull)ForGuid WithUid:(NSString * _Nonnull)WithUid onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
-@end
-
-
-@interface CometChat (SWIFT_EXTENSION(CometChatSDK))
-+ (void)loginWithUid:(NSString * _Nonnull)withUid apiKey:(NSString * _Nonnull)apiKey onSuccess:(void (^ _Nonnull)(User * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
-+ (void)loginWithAuthToken:(NSString * _Nonnull)withAuthToken onSuccess:(void (^ _Nonnull)(User * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
++ (void)unBanUserForGuid:(NSString * _Nonnull)ForGuid WithUid:(NSString * _Nonnull)WithUid success:(void (^ _Nonnull)(NSData * _Nullable, NSError * _Nullable))success onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
 @end
 
 @class TextMessage;
@@ -302,14 +274,10 @@ SWIFT_CLASS("_TtC12CometChatSDK9CometChat")
 + (void)sendMediaMessageWithMessage:(MediaMessage * _Nonnull)message onSuccess:(void (^ _Nonnull)(BaseMessage * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
 @end
 
-@class UIView;
 
 @interface CometChat (SWIFT_EXTENSION(CometChatSDK))
-+ (void)sendCallRequestWithCall:(Call * _Nonnull)call onSuccess:(void (^ _Nonnull)(Call * _Nullable))onSuccess onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
-+ (void)acceptCallWithCall:(Call * _Nonnull)call onSuccess:(void (^ _Nonnull)(Call * _Nullable))onSuccess onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
-+ (void)rejectCallWithCall:(Call * _Nonnull)call status:(enum callStatus)status onSuccess:(void (^ _Nonnull)(Call * _Nullable))onSuccess onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
-+ (void)endCallWithCall:(Call * _Nonnull)call status:(enum callStatus)status onSuccess:(void (^ _Nonnull)(Call * _Nullable))onSuccess onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
-+ (void)startCallWithCall:(Call * _Nonnull)call inView:(UIView * _Nonnull)inView userJoined:(void (^ _Nonnull)(User * _Nullable))userJoined userLeft:(void (^ _Nonnull)(User * _Nullable))userLeft error:(void (^ _Nonnull)(CCException * _Nullable))error callEnded:(void (^ _Nonnull)(Call * _Nullable))callEnded;
++ (void)loginWithUid:(NSString * _Nonnull)withUid apiKey:(NSString * _Nonnull)apiKey onSuccess:(void (^ _Nonnull)(User * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
++ (void)loginWithAuthToken:(NSString * _Nonnull)withAuthToken onSuccess:(void (^ _Nonnull)(User * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
 @end
 
 @class Group;
@@ -320,6 +288,16 @@ enum groupType : NSInteger;
 + (void)joinGroupWithGuid:(NSString * _Nonnull)guid groupType:(enum groupType)groupType password:(NSString * _Nullable)password onSuccess:(void (^ _Nonnull)(Group * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
 + (void)getGroupWithGuid:(NSString * _Nonnull)WithGuid completionHandler:(void (^ _Nonnull)(Group * _Nullable, CCException * _Nullable))completionHandler;
 + (void)leaveGroupWithGuid:(NSString * _Nonnull)guid onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
+@end
+
+@class UIView;
+
+@interface CometChat (SWIFT_EXTENSION(CometChatSDK))
++ (void)sendCallRequestWithCall:(Call * _Nonnull)call onSuccess:(void (^ _Nonnull)(Call * _Nullable))onSuccess onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
++ (void)acceptCallWithCall:(Call * _Nonnull)call onSuccess:(void (^ _Nonnull)(Call * _Nullable))onSuccess onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
++ (void)rejectCallWithCall:(Call * _Nonnull)call status:(enum callStatus)status onSuccess:(void (^ _Nonnull)(Call * _Nullable))onSuccess onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
++ (void)endCallWithCall:(Call * _Nonnull)call status:(enum callStatus)status onSuccess:(void (^ _Nonnull)(Call * _Nullable))onSuccess onFailure:(void (^ _Nonnull)(CCException * _Nullable))onFailure;
++ (void)startCallWithCall:(Call * _Nonnull)call inView:(UIView * _Nonnull)inView userJoined:(void (^ _Nonnull)(User * _Nullable))userJoined userLeft:(void (^ _Nonnull)(User * _Nullable))userLeft error:(void (^ _Nonnull)(CCException * _Nullable))error callEnded:(void (^ _Nonnull)(Call * _Nullable))callEnded;
 @end
 
 
