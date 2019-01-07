@@ -1,3 +1,5 @@
+![](https://github.com/CometChat-Pulse/ios-swift-chat-app/blob/master/Screenshots/pro.png?raw=true)
+
 <div style="width:100%">
 	<div style="width:50%; display:inline-block">
 		<h1> CometChatPulseSDK</h1> 
