@@ -216,6 +216,28 @@ SWIFT_CLASS("_TtC12CometChatSDK9AppEntity")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class BannedGroupMembersRequestBuilder;
+@class GroupMember;
+@class CometChatException;
+
+SWIFT_CLASS("_TtC12CometChatSDK25BannedGroupMembersRequest")
+@interface BannedGroupMembersRequest : NSObject
+- (nonnull instancetype)initWithBuilder:(BannedGroupMembersRequestBuilder * _Nonnull)builder OBJC_DESIGNATED_INITIALIZER;
+- (void)fetchNextOnSuccess:(void (^ _Nonnull)(NSArray<GroupMember *> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtCC12CometChatSDK25BannedGroupMembersRequest32BannedGroupMembersRequestBuilder")
+@interface BannedGroupMembersRequestBuilder : NSObject
+- (nonnull instancetype)initWithGuid:(NSString * _Nonnull)guid OBJC_DESIGNATED_INITIALIZER;
+- (BannedGroupMembersRequestBuilder * _Nonnull)setLimitWithLimit:(NSInteger)limit SWIFT_WARN_UNUSED_RESULT;
+- (BannedGroupMembersRequest * _Nonnull)build SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
 
 enum callStatus : NSInteger;
 
@@ -231,67 +253,63 @@ SWIFT_CLASS("_TtC12CometChatSDK4Call")
 - (nonnull instancetype)initWithReceiverUid:(NSString * _Nonnull)receiverUid messageType:(enum messageType)messageType receiverType:(enum receiverType)receiverType SWIFT_UNAVAILABLE;
 @end
 
-@class CometChatException;
-enum MemberScope : NSInteger;
 
 SWIFT_CLASS("_TtC12CometChatSDK9CometChat")
 @interface CometChat : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
-/// CometChat init
-/// \param appId your_app_id
-///
-/// \param onError handle error if not successfully initialized
-///
-- (nonnull instancetype)initWithAppId:(NSString * _Nonnull)appId onError:(void (^ _Nonnull)(CometChatException * _Nonnull))onError OBJC_DESIGNATED_INITIALIZER;
-+ (void)KickAMemberWithUid:(NSString * _Nonnull)uid guid:(NSString * _Nonnull)guid onFailure:(void (^ _Nonnull)(CometChatException * _Nullable))onFailure;
-+ (void)getUserWithUid:(NSString * _Nonnull)WithUid completionHandler:(void (^ _Nonnull)(User * _Nullable, CometChatException * _Nullable))completionHandler;
-+ (void)getMyDetailsOnSuccess:(void (^ _Nonnull)(User * _Nullable))onSuccess onFailure:(void (^ _Nonnull)(CometChatException * _Nullable))onFailure;
-+ (void)getPreviousMessagesByTimestampWithLimit:(NSInteger)limit timeStamp:(NSInteger)timeStamp onSuccess:(void (^ _Nonnull)(NSArray<BaseMessage *> * _Nullable))onSuccess onFailure:(void (^ _Nonnull)(CometChatException * _Nullable))onFailure;
-+ (void)getPreviousMessagesByIdWithLimit:(NSInteger)limit messageId:(NSInteger)messageId onSuccess:(void (^ _Nonnull)(NSArray<BaseMessage *> * _Nullable))onSuccess onFailure:(void (^ _Nonnull)(CometChatException * _Nullable))onFailure;
-+ (void)getNextMessagesByTimestampWithLimit:(NSInteger)limit timeStamp:(NSInteger)timeStamp onSuccess:(void (^ _Nonnull)(NSArray<BaseMessage *> * _Nullable))onSuccess onFailure:(void (^ _Nonnull)(CometChatException * _Nullable))onFailure;
-+ (void)getNextMessagesByIdWithLimit:(NSInteger)limit messageId:(NSInteger)messageId onSuccess:(void (^ _Nonnull)(NSArray<BaseMessage *> * _Nullable))onSuccess onFailure:(void (^ _Nonnull)(CometChatException * _Nullable))onFailure;
-+ (void)banUserForGuid:(NSString * _Nonnull)ForGuid Withuid:(NSString * _Nonnull)Withuid onFailure:(void (^ _Nonnull)(CometChatException * _Nullable))onFailure;
-+ (void)getBannedUsersListForAgroupWithGuid:(NSString * _Nonnull)guid success:(void (^ _Nonnull)(NSData * _Nullable, NSError * _Nullable))success onFailure:(void (^ _Nonnull)(CometChatException * _Nullable))onFailure;
-+ (void)unBanUserForGuid:(NSString * _Nonnull)ForGuid WithUid:(NSString * _Nonnull)WithUid success:(void (^ _Nonnull)(NSData * _Nullable, NSError * _Nullable))success onFailure:(void (^ _Nonnull)(CometChatException * _Nullable))onFailure;
-+ (void)changeMemberScopeWithGuid:(NSString * _Nonnull)guid uid:(NSString * _Nonnull)uid scope:(enum MemberScope)scope onFailure:(void (^ _Nonnull)(CometChatException * _Nullable))onFailure;
+- (nonnull instancetype)initWithAppId:(NSString * _Nonnull)appId onSuccess:(void (^ _Nonnull)(BOOL))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nonnull))onError OBJC_DESIGNATED_INITIALIZER;
++ (void)getUserWithUID:(NSString * _Nonnull)UID onSuccess:(void (^ _Nonnull)(User * _Nullable))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
++ (void)getPreviousMessagesByTimestampWithLimit:(NSInteger)limit timeStamp:(NSInteger)timeStamp onSuccess:(void (^ _Nonnull)(NSArray<BaseMessage *> * _Nullable))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
++ (void)getPreviousMessagesByIdWithLimit:(NSInteger)limit messageId:(NSInteger)messageId onSuccess:(void (^ _Nonnull)(NSArray<BaseMessage *> * _Nullable))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
++ (void)getNextMessagesByTimestampWithLimit:(NSInteger)limit timeStamp:(NSInteger)timeStamp onSuccess:(void (^ _Nonnull)(NSArray<BaseMessage *> * _Nullable))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
++ (void)getNextMessagesByIdWithLimit:(NSInteger)limit messageId:(NSInteger)messageId onSuccess:(void (^ _Nonnull)(NSArray<BaseMessage *> * _Nullable))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 @end
 
 @class TextMessage;
 @class MediaMessage;
 
 @interface CometChat (SWIFT_EXTENSION(CometChatSDK))
-+ (void)sendTextMessageWithMessage:(TextMessage * _Nonnull)message onSuccess:(void (^ _Nonnull)(BaseMessage * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(CometChatException * _Nullable))onFailure;
-+ (void)sendMediaMessageWithMessage:(MediaMessage * _Nonnull)message onSuccess:(void (^ _Nonnull)(BaseMessage * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(CometChatException * _Nullable))onFailure;
++ (void)sendTextMessageWithMessage:(TextMessage * _Nonnull)message onSuccess:(void (^ _Nonnull)(BaseMessage * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
++ (void)sendMediaMessageWithMessage:(MediaMessage * _Nonnull)message onSuccess:(void (^ _Nonnull)(BaseMessage * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 @end
 
 
 @interface CometChat (SWIFT_EXTENSION(CometChatSDK))
-+ (void)loginWithUid:(NSString * _Nonnull)uid apiKey:(NSString * _Nonnull)apiKey completionHandler:(void (^ _Nonnull)(User * _Nullable, CometChatException * _Nullable))completionHandler;
-+ (void)loginWithAuthToken:(NSString * _Nonnull)authToken completionHandler:(void (^ _Nonnull)(User * _Nullable, CometChatException * _Nullable))completionHandler;
-+ (void)logout;
++ (void)loginWithUID:(NSString * _Nonnull)UID apiKey:(NSString * _Nonnull)apiKey onSuccess:(void (^ _Nonnull)(User * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
++ (void)loginWithAuthToken:(NSString * _Nonnull)authToken onSuccess:(void (^ _Nonnull)(User * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
++ (void)logoutOnSuccess:(void (^ _Nonnull)(User * _Nullable))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
+@end
+
+enum MemberScope : NSInteger;
+
+@interface CometChat (SWIFT_EXTENSION(CometChatSDK))
++ (void)kickGroupMemberWithUID:(NSString * _Nonnull)UID GUID:(NSString * _Nonnull)GUID onSuccess:(void (^ _Nonnull)(NSString * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
++ (void)banGroupMemberWithUID:(NSString * _Nonnull)UID GUID:(NSString * _Nonnull)GUID onSuccess:(void (^ _Nonnull)(NSString * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
++ (void)unbanGroupMemberWithUID:(NSString * _Nonnull)UID GUID:(NSString * _Nonnull)GUID onSuccess:(void (^ _Nonnull)(NSString * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
++ (void)updateGroupMemberScopeWithUID:(NSString * _Nonnull)UID GUID:(NSString * _Nonnull)GUID scope:(enum MemberScope)scope onSuccess:(void (^ _Nonnull)(NSString * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
+@end
+
+@class UIView;
+
+@interface CometChat (SWIFT_EXTENSION(CometChatSDK))
++ (void)initiateCallWithCall:(Call * _Nonnull)call onSuccess:(void (^ _Nonnull)(Call * _Nullable))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
++ (void)acceptCallWithCall:(Call * _Nonnull)call onSuccess:(void (^ _Nonnull)(Call * _Nullable))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
++ (void)rejectCallWithCall:(Call * _Nonnull)call status:(enum callStatus)status onSuccess:(void (^ _Nonnull)(Call * _Nullable))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
++ (void)endCallWithCall:(Call * _Nonnull)call status:(enum callStatus)status onSuccess:(void (^ _Nonnull)(Call * _Nullable))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
++ (void)startCallWithCall:(Call * _Nonnull)call inView:(UIView * _Nonnull)inView userJoined:(void (^ _Nonnull)(User * _Nullable))userJoined userLeft:(void (^ _Nonnull)(User * _Nullable))userLeft onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError callEnded:(void (^ _Nonnull)(Call * _Nullable))callEnded;
 @end
 
 @class Group;
 enum groupType : NSInteger;
 
 @interface CometChat (SWIFT_EXTENSION(CometChatSDK))
-+ (void)updateGroupWithGroup:(Group * _Nonnull)group onSuccess:(void (^ _Nonnull)(Group * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(CometChatException * _Nullable))onFailure;
-+ (void)deleteGroupWithGroup:(Group * _Nonnull)group onSuccess:(void (^ _Nonnull)(Group * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(CometChatException * _Nullable))onFailure;
-+ (void)createGroupWithGroup:(Group * _Nonnull)group onSuccess:(void (^ _Nonnull)(Group * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(CometChatException * _Nullable))onFailure;
-+ (void)joinGroupWithGuid:(NSString * _Nonnull)guid groupType:(enum groupType)groupType password:(NSString * _Nullable)password onSuccess:(void (^ _Nonnull)(Group * _Nonnull))onSuccess onFailure:(void (^ _Nonnull)(CometChatException * _Nullable))onFailure;
-+ (void)getGroupWithGuid:(NSString * _Nonnull)WithGuid completionHandler:(void (^ _Nonnull)(Group * _Nullable, CometChatException * _Nullable))completionHandler;
-+ (void)leaveGroupWithGuid:(NSString * _Nonnull)guid onFailure:(void (^ _Nonnull)(CometChatException * _Nullable))onFailure;
-@end
-
-@class UIView;
-
-@interface CometChat (SWIFT_EXTENSION(CometChatSDK))
-+ (void)sendCallRequestWithCall:(Call * _Nonnull)call onSuccess:(void (^ _Nonnull)(Call * _Nullable))onSuccess onFailure:(void (^ _Nonnull)(CometChatException * _Nullable))onFailure;
-+ (void)acceptCallWithCall:(Call * _Nonnull)call onSuccess:(void (^ _Nonnull)(Call * _Nullable))onSuccess onFailure:(void (^ _Nonnull)(CometChatException * _Nullable))onFailure;
-+ (void)rejectCallWithCall:(Call * _Nonnull)call status:(enum callStatus)status onSuccess:(void (^ _Nonnull)(Call * _Nullable))onSuccess onFailure:(void (^ _Nonnull)(CometChatException * _Nullable))onFailure;
-+ (void)endCallWithCall:(Call * _Nonnull)call status:(enum callStatus)status onSuccess:(void (^ _Nonnull)(Call * _Nullable))onSuccess onFailure:(void (^ _Nonnull)(CometChatException * _Nullable))onFailure;
-+ (void)startCallWithCall:(Call * _Nonnull)call inView:(UIView * _Nonnull)inView userJoined:(void (^ _Nonnull)(User * _Nullable))userJoined userLeft:(void (^ _Nonnull)(User * _Nullable))userLeft error:(void (^ _Nonnull)(CometChatException * _Nullable))error callEnded:(void (^ _Nonnull)(Call * _Nullable))callEnded;
++ (void)updateGroupWithGroup:(Group * _Nonnull)group onSuccess:(void (^ _Nonnull)(Group * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
++ (void)deleteGroupWithGUID:(NSString * _Nonnull)GUID onSuccess:(void (^ _Nonnull)(NSString * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
++ (void)createGroupWithGroup:(Group * _Nonnull)group onSuccess:(void (^ _Nonnull)(Group * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
++ (void)joinGroupWithGUID:(NSString * _Nonnull)GUID groupType:(enum groupType)groupType password:(NSString * _Nullable)password onSuccess:(void (^ _Nonnull)(NSString * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
++ (void)getGroupWithGUID:(NSString * _Nonnull)GUID onSuccess:(void (^ _Nonnull)(Group * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
++ (void)leaveGroupWithGUID:(NSString * _Nonnull)GUID onSuccess:(void (^ _Nonnull)(NSString * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 @end
 
 
@@ -306,8 +324,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Call * _Null
 
 @protocol CometChatMessageDelegate;
 @protocol CometChatCallDelegate;
-@protocol CometChatUserEventDelegate;
-@protocol CometChatGroupEventDelegate;
+@protocol CometChatUserDelegate;
+@protocol CometChatGroupDelegate;
 
 @interface CometChat (SWIFT_EXTENSION(CometChatSDK))
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, weak) id <CometChatMessageDelegate> _Nullable messagedelegate;)
@@ -316,12 +334,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, weak) id <CometChatMessageDele
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, weak) id <CometChatCallDelegate> _Nullable calldelegate;)
 + (id <CometChatCallDelegate> _Nullable)calldelegate SWIFT_WARN_UNUSED_RESULT;
 + (void)setCalldelegate:(id <CometChatCallDelegate> _Nullable)value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, weak) id <CometChatUserEventDelegate> _Nullable userEventdelegate;)
-+ (id <CometChatUserEventDelegate> _Nullable)userEventdelegate SWIFT_WARN_UNUSED_RESULT;
-+ (void)setUserEventdelegate:(id <CometChatUserEventDelegate> _Nullable)value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, weak) id <CometChatGroupEventDelegate> _Nullable groupEventdelegate;)
-+ (id <CometChatGroupEventDelegate> _Nullable)groupEventdelegate SWIFT_WARN_UNUSED_RESULT;
-+ (void)setGroupEventdelegate:(id <CometChatGroupEventDelegate> _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, weak) id <CometChatUserDelegate> _Nullable userdelegate;)
++ (id <CometChatUserDelegate> _Nullable)userdelegate SWIFT_WARN_UNUSED_RESULT;
++ (void)setUserdelegate:(id <CometChatUserDelegate> _Nullable)value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, weak) id <CometChatGroupDelegate> _Nullable groupdelegate;)
++ (id <CometChatGroupDelegate> _Nullable)groupdelegate SWIFT_WARN_UNUSED_RESULT;
++ (void)setGroupdelegate:(id <CometChatGroupDelegate> _Nullable)value;
 @end
 
 
@@ -374,12 +392,6 @@ typedef SWIFT_ENUM(NSInteger, actionType, closed) {
   actionTypeScopeChanged = 6,
 };
 
-typedef SWIFT_ENUM(NSInteger, groupType, closed) {
-  groupTypePublic = 0,
-  groupTypePrivate = 1,
-  groupTypeProtected = 2,
-};
-
 typedef SWIFT_ENUM(NSInteger, callStatus, closed) {
   callStatusInitiated = 0,
   callStatusOngoing = 1,
@@ -413,8 +425,8 @@ SWIFT_CLASS("_TtC12CometChatSDK18CometChatException")
 @end
 
 
-SWIFT_PROTOCOL("_TtP12CometChatSDK27CometChatGroupEventDelegate_")
-@protocol CometChatGroupEventDelegate
+SWIFT_PROTOCOL("_TtP12CometChatSDK22CometChatGroupDelegate_")
+@protocol CometChatGroupDelegate
 - (void)onUserJoinedWithJoinedUser:(User * _Nonnull)joinedUser joinedGroup:(Group * _Nonnull)joinedGroup;
 - (void)onUserLeftWithLeftUser:(User * _Nonnull)leftUser leftGroup:(Group * _Nonnull)leftGroup;
 - (void)onUserKickedWithKickedUser:(User * _Nonnull)kickedUser kickedBy:(User * _Nonnull)kickedBy kickedFrom:(Group * _Nonnull)kickedFrom;
@@ -431,8 +443,8 @@ SWIFT_PROTOCOL("_TtP12CometChatSDK24CometChatMessageDelegate_")
 @end
 
 
-SWIFT_PROTOCOL("_TtP12CometChatSDK26CometChatUserEventDelegate_")
-@protocol CometChatUserEventDelegate
+SWIFT_PROTOCOL("_TtP12CometChatSDK21CometChatUserDelegate_")
+@protocol CometChatUserDelegate
 - (void)onUserOnlineWithUser:(User * _Nonnull)user;
 - (void)onUserOfflineWithUser:(User * _Nonnull)user;
 @end
@@ -473,7 +485,7 @@ SWIFT_CLASS("_TtC12CometChatSDK5Group")
 @property (nonatomic, copy) NSString * _Nullable icon;
 @property (nonatomic, copy) NSString * _Nullable groupDescription;
 @property (nonatomic, copy) NSString * _Nullable owner;
-@property (nonatomic, copy) NSString * _Nullable groupType;
+@property (nonatomic) enum groupType groupType;
 @property (nonatomic, copy) NSString * _Nullable password;
 @property (nonatomic, copy) NSString * _Nullable metadata;
 @property (nonatomic) NSInteger createdAt;
@@ -501,7 +513,7 @@ SWIFT_CLASS("_TtC12CometChatSDK11GroupMember")
 SWIFT_CLASS("_TtC12CometChatSDK19GroupMembersRequest")
 @interface GroupMembersRequest : NSObject
 - (nonnull instancetype)initWithBuilder:(GroupMembersRequestBuilder * _Nonnull)builder OBJC_DESIGNATED_INITIALIZER;
-- (void)fetchNextWithCompletionHandler:(void (^ _Nonnull)(NSArray<GroupMember *> * _Nullable, CometChatException * _Nullable))completionHandler;
+- (void)fetchNextOnSuccess:(void (^ _Nonnull)(NSArray<GroupMember *> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
@@ -516,32 +528,12 @@ SWIFT_CLASS("_TtCC12CometChatSDK19GroupMembersRequest26GroupMembersRequestBuilde
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
 
-@class GroupMessagesRequestBuilder;
-
-SWIFT_CLASS("_TtC12CometChatSDK20GroupMessagesRequest")
-@interface GroupMessagesRequest : NSObject
-- (nonnull instancetype)initWithBuilder:(GroupMessagesRequestBuilder * _Nonnull)builder OBJC_DESIGNATED_INITIALIZER;
-- (void)fetchPreviousWithCompletionHandler:(void (^ _Nonnull)(NSArray<BaseMessage *> * _Nullable, CometChatException * _Nullable))completionHandler;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtCC12CometChatSDK20GroupMessagesRequest27GroupMessagesRequestBuilder")
-@interface GroupMessagesRequestBuilder : NSObject
-- (nonnull instancetype)initWithGuid:(NSString * _Nonnull)guid OBJC_DESIGNATED_INITIALIZER;
-- (GroupMessagesRequestBuilder * _Nonnull)setLimitWithLimit:(NSInteger)limit SWIFT_WARN_UNUSED_RESULT;
-- (GroupMessagesRequest * _Nonnull)build SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
-@end
-
 @class GroupsRequestBuilder;
 
 SWIFT_CLASS("_TtC12CometChatSDK13GroupsRequest")
 @interface GroupsRequest : NSObject
 - (nonnull instancetype)initWithBuilder:(GroupsRequestBuilder * _Nonnull)builder OBJC_DESIGNATED_INITIALIZER;
-- (void)fetchNextWithCompletionHandler:(void (^ _Nonnull)(NSArray<Group *> * _Nullable, CometChatException * _Nullable))completionHandler;
+- (void)fetchNextOnSuccess:(void (^ _Nonnull)(NSArray<Group *> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
@@ -574,6 +566,27 @@ SWIFT_CLASS("_TtC12CometChatSDK12MediaMessage")
 - (nonnull instancetype)initWithReceiverUid:(NSString * _Nonnull)receiverUid messageType:(enum messageType)messageType receiverType:(enum receiverType)receiverType SWIFT_UNAVAILABLE;
 @end
 
+@class MessageRequestBuilder;
+
+SWIFT_CLASS("_TtC12CometChatSDK15MessagesRequest")
+@interface MessagesRequest : NSObject
+- (nonnull instancetype)initWithBuilder:(MessageRequestBuilder * _Nonnull)builder OBJC_DESIGNATED_INITIALIZER;
+- (void)fetchPreviousOnSuccess:(void (^ _Nonnull)(NSArray<BaseMessage *> * _Nullable))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtCC12CometChatSDK15MessagesRequest21MessageRequestBuilder")
+@interface MessageRequestBuilder : NSObject
+- (nonnull instancetype)initWithUID:(NSString * _Nonnull)UID OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithGUID:(NSString * _Nonnull)GUID OBJC_DESIGNATED_INITIALIZER;
+- (MessageRequestBuilder * _Nonnull)setWithLimit:(NSInteger)limit SWIFT_WARN_UNUSED_RESULT;
+- (MessagesRequest * _Nonnull)build SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
 
 SWIFT_CLASS("_TtC12CometChatSDK11TextMessage")
 @interface TextMessage : BaseMessage
@@ -584,32 +597,12 @@ SWIFT_CLASS("_TtC12CometChatSDK11TextMessage")
 @end
 
 
-@class UserMessagesRequestBuilder;
-
-SWIFT_CLASS("_TtC12CometChatSDK19UserMessagesRequest")
-@interface UserMessagesRequest : NSObject
-- (nonnull instancetype)initWithBuilder:(UserMessagesRequestBuilder * _Nonnull)builder OBJC_DESIGNATED_INITIALIZER;
-- (void)fetchPreviousWithCompletionHandler:(void (^ _Nonnull)(NSArray<BaseMessage *> * _Nullable, CometChatException * _Nullable))completionHandler;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtCC12CometChatSDK19UserMessagesRequest26UserMessagesRequestBuilder")
-@interface UserMessagesRequestBuilder : NSObject
-- (nonnull instancetype)initFromUID:(NSString * _Nonnull)fromUID OBJC_DESIGNATED_INITIALIZER;
-- (UserMessagesRequestBuilder * _Nonnull)setLimitWithLimit:(NSInteger)limit SWIFT_WARN_UNUSED_RESULT;
-- (UserMessagesRequest * _Nonnull)build SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
-@end
-
 @class UsersRequestBuilder;
 
 SWIFT_CLASS("_TtC12CometChatSDK12UsersRequest")
 @interface UsersRequest : NSObject
 - (nonnull instancetype)initWithBuilder:(UsersRequestBuilder * _Nonnull)builder OBJC_DESIGNATED_INITIALIZER;
-- (void)fetchNextWithCompletionHandler:(void (^ _Nonnull)(NSArray<User *> * _Nullable, CometChatException * _Nullable))completionHandler;
+- (void)fetchNextOnSuccess:(void (^ _Nonnull)(NSArray<User *> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
@@ -623,6 +616,12 @@ SWIFT_CLASS("_TtCC12CometChatSDK12UsersRequest19UsersRequestBuilder")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
+
+typedef SWIFT_ENUM(NSInteger, groupType, closed) {
+  groupTypePublic = 0,
+  groupTypePrivate = 1,
+  groupTypePassword = 2,
+};
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
