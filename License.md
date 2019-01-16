@@ -1,6 +1,6 @@
 The CometChat License
 
-Copyright (c) 2016 Inscripts
+Copyright (c) 2016 Inscripts 
 License: https://www.cometchat.com/legal/license
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
