@@ -1,5 +1,5 @@
 # Change Log
-### v1.0.0 (Jan 15, 2019)
+### v1.0.0 ( Jan 16, 2019)
 * Minor Bug Fixes.
 
 ### v0.0.5 (Dec 18, 2018)

@@ -6,6 +6,6 @@
 
 ## Documentation
 
-Refer the below documentation to setup CometChatPulseSDK inside your iOS App.
+Refer the below documentation to setup CometChatSDK inside your iOS App.
 
-https://docs.pulse.cometchat.com/docs
+https://prodocs.cometchat.com
