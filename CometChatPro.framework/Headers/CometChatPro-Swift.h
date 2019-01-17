@@ -252,6 +252,8 @@ SWIFT_CLASS("_TtC12CometChatPro4Call")
 @property (nonatomic, copy) NSString * _Nullable action;
 @property (nonatomic, copy) NSString * _Nullable rawData;
 @property (nonatomic) double initiatedAt;
+@property (nonatomic, strong) AppEntity * _Nullable callInitiator;
+@property (nonatomic, strong) AppEntity * _Nullable callReceiver;
 - (nonnull instancetype)initWithReceiverId:(NSString * _Nonnull)receiverId messageType:(enum messageType)messageType receiverType:(enum receiverType)receiverType OBJC_DESIGNATED_INITIALIZER;
 - (NSString * _Nonnull)stringValue SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithReceiverUid:(NSString * _Nonnull)receiverUid messageType:(enum messageType)messageType receiverType:(enum receiverType)receiverType SWIFT_UNAVAILABLE;
