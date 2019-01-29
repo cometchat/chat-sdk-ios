@@ -1,4 +1,6 @@
 # Change Log
+### v1.0.6 ( Jan 16, 2019)
+* Minor Bug Fixes.
 ### v1.0.0 ( Jan 16, 2019)
 * Minor Bug Fixes.
 
