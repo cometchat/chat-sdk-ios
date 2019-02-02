@@ -189,7 +189,7 @@ enum MessageCategory : NSInteger;
 
 SWIFT_CLASS("_TtC12CometChatPro11BaseMessage")
 @interface BaseMessage : NSObject
-@property (nonatomic) NSUInteger id;
+@property (nonatomic) uint64_t id;
 @property (nonatomic, copy) NSString * _Nonnull muid;
 @property (nonatomic, copy) NSString * _Nonnull senderUid;
 @property (nonatomic, copy) NSString * _Nonnull receiverUid;
