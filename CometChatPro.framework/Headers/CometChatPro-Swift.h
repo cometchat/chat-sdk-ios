@@ -536,7 +536,7 @@ SWIFT_CLASS("_TtC12CometChatPro11CurrentUser")
 
 SWIFT_CLASS("_TtC12CometChatPro5Group")
 @interface Group : AppEntity
-@property (nonatomic, copy) NSString * _Nullable guid;
+@property (nonatomic, copy) NSString * _Nonnull guid;
 @property (nonatomic, copy) NSString * _Nullable name;
 @property (nonatomic, copy) NSString * _Nullable icon;
 @property (nonatomic, copy) NSString * _Nullable groupDescription;
@@ -599,7 +599,7 @@ SWIFT_CLASS("_TtC12CometChatPro13GroupsRequest")
 
 SWIFT_CLASS("_TtCC12CometChatPro13GroupsRequest20GroupsRequestBuilder")
 @interface GroupsRequestBuilder : NSObject
-- (nonnull instancetype)initWithLimit:(NSInteger)Limit OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithLimit:(NSInteger)limit OBJC_DESIGNATED_INITIALIZER;
 - (GroupsRequest * _Nonnull)build SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
