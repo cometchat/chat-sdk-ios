@@ -17,3 +17,4 @@ FOUNDATION_EXPORT const unsigned char CometChatSDKVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <CometChatSDK/PublicHeader.h>
 
 #import <CometChatPro/XMPPFramework.h>
+#import <CometChatPro/FMDB.h>
