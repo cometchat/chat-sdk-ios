@@ -247,7 +247,19 @@ SWIFT_CLASS("_TtCC12CometChatPro25BannedGroupMembersRequest32BannedGroupMembersR
 @end
 
 
+enum BaseMessageTypes : NSInteger;
 
+@interface BaseMessage (SWIFT_EXTENSION(CometChatPro))
+@property (nonatomic, readonly) enum BaseMessageTypes messgeTypeFromBaseMessage;
+@end
+
+typedef SWIFT_ENUM(NSInteger, BaseMessageTypes, closed) {
+  BaseMessageTypesTextMessage = 0,
+  BaseMessageTypesMediaMessage = 1,
+  BaseMessageTypesActionMessage = 2,
+  BaseMessageTypesCall = 3,
+  BaseMessageTypesNone = 4,
+};
 
 enum callStatus : NSInteger;
 enum CallType : NSInteger;
