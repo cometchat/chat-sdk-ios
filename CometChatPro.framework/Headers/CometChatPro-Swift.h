@@ -457,6 +457,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isCallOngoing;)
 + (BOOL)isCallOngoing SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Call * _Nullable currentCall;)
 + (Call * _Nullable)currentCall SWIFT_WARN_UNUSED_RESULT;
++ (NSInteger)getLatestDeliveredMessageId SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @protocol CometChatMessageDelegate;
