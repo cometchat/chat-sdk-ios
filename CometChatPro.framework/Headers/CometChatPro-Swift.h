@@ -399,8 +399,8 @@ typedef SWIFT_ENUM(NSInteger, GroupMemberScopeType, closed) {
 @class MediaMessage;
 
 @interface CometChat (SWIFT_EXTENSION(CometChatPro))
-+ (void)sendTextMessageWithMessage:(TextMessage * _Nonnull)message onSuccess:(void (^ _Nonnull)(BaseMessage * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
-+ (void)sendMediaMessageWithMessage:(MediaMessage * _Nonnull)message onSuccess:(void (^ _Nonnull)(BaseMessage * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
++ (void)sendTextMessageWithMessage:(TextMessage * _Nonnull)message onSuccess:(void (^ _Nonnull)(TextMessage * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
++ (void)sendMediaMessageWithMessage:(MediaMessage * _Nonnull)message onSuccess:(void (^ _Nonnull)(MediaMessage * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 @end
 
 
@@ -635,7 +635,7 @@ SWIFT_CLASS("_TtCC12CometChatPro13GroupsRequest20GroupsRequestBuilder")
 SWIFT_CLASS("_TtC12CometChatPro12MediaMessage")
 @interface MediaMessage : BaseMessage
 - (nonnull instancetype)initWithReceiverUid:(NSString * _Nonnull)receiverUid fileurl:(NSURL * _Nonnull)fileurl messageType:(enum messageType)messageType receiverType:(enum receiverType)receiverType OBJC_DESIGNATED_INITIALIZER;
-@property (nonatomic, copy) NSURL * _Nullable url;
+@property (nonatomic, copy) NSString * _Nullable url;
 - (NSString * _Nonnull)stringValue SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithReceiverUid:(NSString * _Nonnull)receiverUid messageType:(enum messageType)messageType receiverType:(enum receiverType)receiverType SWIFT_UNAVAILABLE;
 @end
