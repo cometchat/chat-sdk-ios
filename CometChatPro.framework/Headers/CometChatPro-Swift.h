@@ -384,10 +384,12 @@ typedef SWIFT_ENUM(NSInteger, messageType, closed) {
   messageTypeAudio = 3,
   messageTypeFile = 4,
   messageTypeHandwrite = 5,
-  messageTypeGroupMember = 6,
 };
 
 
+@interface CometChat (SWIFT_EXTENSION(CometChatPro))
++ (void)markMessageAsReadWithMessage:(BaseMessage * _Nonnull)message;
+@end
 
 
 @interface CometChat (SWIFT_EXTENSION(CometChatPro))
@@ -418,7 +420,12 @@ typedef SWIFT_ENUM(NSInteger, XMPPMsgType, closed) {
 + (void)sendMediaMessageWithMessage:(MediaMessage * _Nonnull)message onSuccess:(void (^ _Nonnull)(BaseMessage * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 @end
 
+@class TypingIndicator;
 
+@interface CometChat (SWIFT_EXTENSION(CometChatPro))
++ (void)startTypingWithIndicator:(TypingIndicator * _Nonnull)indicator;
++ (void)endTypingWithIndicator:(TypingIndicator * _Nonnull)indicator;
+@end
 
 
 @interface CometChat (SWIFT_EXTENSION(CometChatPro))
@@ -468,6 +475,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isCallOngoing;)
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Call * _Nullable currentCall;)
 + (Call * _Nullable)currentCall SWIFT_WARN_UNUSED_RESULT;
 + (NSInteger)getLastDeliveredMessageId SWIFT_WARN_UNUSED_RESULT;
++ (User * _Nullable)getLoggedInUser SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @protocol CometChatMessageDelegate;
@@ -526,7 +534,6 @@ SWIFT_PROTOCOL("_TtP12CometChatPro22CometChatGroupDelegate_")
 - (void)onGroupMemberScopeChangedWithUser:(User * _Nonnull)user scopeChangedTo:(NSString * _Nonnull)scopeChangedTo scopeChangedFrom:(NSString * _Nonnull)scopeChangedFrom group:(Group * _Nonnull)group;
 @end
 
-@class TypingIndicator;
 @class MessageReceipt;
 
 SWIFT_PROTOCOL("_TtP12CometChatPro24CometChatMessageDelegate_")
