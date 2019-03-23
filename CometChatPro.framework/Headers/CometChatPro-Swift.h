@@ -324,8 +324,8 @@ typedef SWIFT_ENUM(NSInteger, actionType, closed) {
   actionTypeJoined = 0,
   actionTypeLeft = 1,
   actionTypeKicked = 2,
-  actionTypeOutcasted = 3,
-  actionTypeReinstated = 4,
+  actionTypeBanned = 3,
+  actionTypeUnbanned = 4,
   actionTypeInvited = 5,
   actionTypeScopeChanged = 6,
 };
@@ -739,7 +739,12 @@ SWIFT_CLASS("_TtC12CometChatPro11TextMessage")
 
 SWIFT_CLASS("_TtC12CometChatPro15TypingIndicator")
 @interface TypingIndicator : NSObject
+@property (nonatomic, copy) NSString * _Nonnull receiverID;
+@property (nonatomic) enum ReceiverType receiverType;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable metadata;
+@property (nonatomic, copy) NSString * _Nonnull sender;
 - (nonnull instancetype)initWithReceiverID:(NSString * _Nonnull)receiverID receiverType:(enum ReceiverType)receiverType metadata:(NSDictionary<NSString *, id> * _Nullable)metadata OBJC_DESIGNATED_INITIALIZER;
+- (NSString * _Nonnull)stringValue SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
