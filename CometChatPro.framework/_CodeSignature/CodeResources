@@ -90,7 +90,7 @@
 		</data>
 		<key>Headers/CometChatPro-Swift.h</key>
 		<data>
-		+yIqSfHKfXVMUn8TGUYuFyTHVx4=
+		GrR28d3bDNLut35MDHgxltIPGbk=
 		</data>
 		<key>Headers/CometChatPro.h</key>
 		<data>
@@ -746,7 +746,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		y9QNv2+1U2CF0uUNXJVOXtxocAU=
+		Q0D1NeiU+pKh7XjMD0jCKIspnQQ=
 		</data>
 		<key>LICENSE.txt</key>
 		<data>
@@ -766,7 +766,7 @@
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		svtx+TMPXTLnG20ncTnnsxquKfk=
+		cUsiHwTg+hzyE5Cwcx+jiYbro/s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1078,11 +1078,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+yIqSfHKfXVMUn8TGUYuFyTHVx4=
+			GrR28d3bDNLut35MDHgxltIPGbk=
 			</data>
 			<key>hash2</key>
 			<data>
-			tsn6ZX0qy3NBgVtekk6AGkeXZ4Gg1U4pzKaljZ5lU/0=
+			ViGgIH1eYcC06UrgWATEOYJ3dzu7m4xX4/hjqOFLMc4=
 			</data>
 		</dict>
 		<key>Headers/CometChatPro.h</key>
@@ -2926,11 +2926,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			svtx+TMPXTLnG20ncTnnsxquKfk=
+			cUsiHwTg+hzyE5Cwcx+jiYbro/s=
 			</data>
 			<key>hash2</key>
 			<data>
-			izRb1DSqFDuJpGn+b0Rcs2MLbgR1m1XboDSgtzX5P60=
+			DPv+s/PBHMMx1RXmdtkjwSyeEMDdsFB3tyISRNSMoLk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
