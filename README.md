@@ -30,9 +30,9 @@ end
 
 ## First: Download CometChatPro [Here](https://github.com/CometChat-Pulse/ios-swift-chat-app/archive/master.zip)
 ## Second :
-Drag and drop `CometChatPro.Framework` and (from /Vendors folder) `JitsiMeet.framework`,`WebRTC.framework` to the root level of your project.
+Drag and drop `CometChatPro.Framework` to the root level of your project.
 
-Add `CometChatPro.Framework`, `JitsiMeet.framework`,`WebRTC.framework` to Embedded Binaries as shown below:
+Add `CometChatPro.Framework` to Embedded Binaries as shown below:
 <div style="width:100%">
 	<div style="width:50%; display:inline-block">
 		<p align="center">
