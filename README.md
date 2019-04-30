@@ -16,6 +16,18 @@ Refer the below documentation to setup CometChatSDK inside your iOS App.
 
 https://prodocs.cometchat.com
 
+## Install Using Cocoapods
+
+```
+platform :ios, '10.0'
+use_frameworks!
+
+target 'MyApp' do
+  pod 'CometChatPro', '~> 1.3.0'
+end 
+```
+## Install Manually
+
 ## First: Download CometChatPro [Here](https://github.com/CometChat-Pulse/ios-swift-chat-app/archive/master.zip)
 ## Second :
 Drag and drop `CometChatPro.Framework` and (from /Vendors folder) `JitsiMeet.framework`,`WebRTC.framework` to the root level of your project.
