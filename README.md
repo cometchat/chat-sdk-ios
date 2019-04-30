@@ -36,7 +36,7 @@ Add `CometChatPro.Framework`, `JitsiMeet.framework`,`WebRTC.framework` to Embedd
 <div style="width:100%">
 	<div style="width:50%; display:inline-block">
 		<p align="center">
-		<img align="center" width="100%" height="400" alt="" src="https://files.readme.io/99e4532-Adding_framework_manually.png">	
+		<img align="center" width="100%" height="400" alt="" src="https://files.readme.io/ae8fe0e-Screenshot_2019-04-29_at_4.23.37_PM.png">	
 		</p>	
 	</div>	
 </div>
