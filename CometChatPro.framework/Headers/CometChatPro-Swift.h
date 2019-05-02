@@ -700,6 +700,8 @@ SWIFT_CLASS("_TtC12CometChatPro5Group")
 @property (nonatomic) BOOL hasJoined;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+- (nonnull instancetype)initWithGuid:(NSString * _Nonnull)guid name:(NSString * _Nonnull)name groupType:(enum groupType)groupType password:(NSString * _Nullable)password OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithGuid:(NSString * _Nonnull)guid name:(NSString * _Nonnull)name groupType:(enum groupType)groupType password:(NSString * _Nullable)password icon:(NSString * _Nonnull)icon description:(NSString * _Nonnull)description OBJC_DESIGNATED_INITIALIZER;
 - (NSString * _Nonnull)stringValue SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -1556,6 +1558,8 @@ SWIFT_CLASS("_TtC12CometChatPro5Group")
 @property (nonatomic) BOOL hasJoined;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+- (nonnull instancetype)initWithGuid:(NSString * _Nonnull)guid name:(NSString * _Nonnull)name groupType:(enum groupType)groupType password:(NSString * _Nullable)password OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithGuid:(NSString * _Nonnull)guid name:(NSString * _Nonnull)name groupType:(enum groupType)groupType password:(NSString * _Nullable)password icon:(NSString * _Nonnull)icon description:(NSString * _Nonnull)description OBJC_DESIGNATED_INITIALIZER;
 - (NSString * _Nonnull)stringValue SWIFT_WARN_UNUSED_RESULT;
 @end
 
