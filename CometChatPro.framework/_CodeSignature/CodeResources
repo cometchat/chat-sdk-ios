@@ -12,6 +12,10 @@
 		<data>
 		iaGhi+AH0BjAjrXispJhCxpOjhI=
 		</data>
+		<key>Frameworks/libswiftCallKit.dylib</key>
+		<data>
+		ByBD0WTrvPsf+VzARD/uKUiT+6Y=
+		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
 		yaiDkkku+UH6VDf6XWRDYd2XVZk=
@@ -94,11 +98,11 @@
 		</data>
 		<key>Headers/CometChatPro-Swift.h</key>
 		<data>
-		WpQ5RGH1BHRukjKmrwG053EBTG8=
+		BG+F5O+xy8O8QJuL/GHn2sNP7Og=
 		</data>
 		<key>Headers/CometChatPro.h</key>
 		<data>
-		iLiVorvmXpPRGGmC//7EA/FgmAk=
+		qGqY0Vr1Av/2Es/C/5n9ktM4s0g=
 		</data>
 		<key>Headers/DDASLLogger.h</key>
 		<data>
@@ -164,18 +168,6 @@
 		<data>
 		1dK6R+FlocASRdUTJOVm7x1LXJ4=
 		</data>
-		<key>Headers/ExceptionWrapper.h</key>
-		<data>
-		bt0rrQZmp+RaXTch9bEtTwIBOW0=
-		</data>
-		<key>Headers/FM.h</key>
-		<data>
-		WmLLO2aE5N/F5bzdL5tCzGL60A4=
-		</data>
-		<key>Headers/FM.swift3.h</key>
-		<data>
-		gvBlRUfrXpQ02i07rHvuh+aQND8=
-		</data>
 		<key>Headers/FMDB.h</key>
 		<data>
 		pMX1XJI7wMyxuYqA9+d9cI8p+3w=
@@ -196,49 +188,9 @@
 		<data>
 		z9VmkSmRhTrKVnL4eb1XSOYufSI=
 		</data>
-		<key>Headers/FMIceLink.swift3.h</key>
-		<data>
-		wkR1eePN7qWsZ8twKHc7SSEn5p4=
-		</data>
-		<key>Headers/FMIceLinkCocoa.swift3.h</key>
-		<data>
-		yQFCy7CxkaMIPjFJVfeEBhaFiyU=
-		</data>
-		<key>Headers/FMIceLinkOpus.swift3.h</key>
-		<data>
-		+1KFUOpeR14QlQgfqeNl7NiZBSk=
-		</data>
-		<key>Headers/FMIceLinkVpx.swift3.h</key>
-		<data>
-		OzVbRtb/jz3W6FdSYjhnuo8zjSk=
-		</data>
-		<key>Headers/FMIceLinkWebSync4.swift3.h</key>
-		<data>
-		fURTEQ2MVfMm9ZwJf8TTgQ0q96A=
-		</data>
-		<key>Headers/FMIceLinkYuv.swift3.h</key>
-		<data>
-		p6ck8NfShOPdyuVocyTa8Ut4MAA=
-		</data>
 		<key>Headers/FMResultSet.h</key>
 		<data>
 		wVLzUk7/ckhrtfxvOJgO1vFTgII=
-		</data>
-		<key>Headers/FMWebSync.h</key>
-		<data>
-		MAqnoOIptSOypa6emrO30WetyCw=
-		</data>
-		<key>Headers/FMWebSync.swift3.h</key>
-		<data>
-		9/EToaLMfbHOfNJEqADtYx0xxvI=
-		</data>
-		<key>Headers/FMWebSyncChat.h</key>
-		<data>
-		MJ3U8gHRkrFPxdt2kjET/9VUF/w=
-		</data>
-		<key>Headers/FMWebSyncSubscribers.h</key>
-		<data>
-		IE3q+zKdJeWOXWtX8Jrsg1FQDe4=
 		</data>
 		<key>Headers/GCDAsyncSocket.h</key>
 		<data>
@@ -802,7 +754,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vXRjo2X8372rZimyytr0VsoTssc=
+		xJIgh9YMjvMHp9umKMRjXfsSlAY=
 		</data>
 		<key>LICENSE.txt</key>
 		<data>
@@ -814,7 +766,7 @@
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/arm.swiftmodule</key>
 		<data>
-		uvRwSMg7mh7Lc+/suJvepKqWsnQ=
+		IHAvkZbnNEhfoa6aAeZwBKZESrE=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -822,7 +774,7 @@
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		9F4vK9oNLFGptsvHkN725PvUz4M=
+		r1N/AD2T98Oec2mf3nIOb4DKbZM=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/armv7.swiftdoc</key>
 		<data>
@@ -830,7 +782,7 @@
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		uvRwSMg7mh7Lc+/suJvepKqWsnQ=
+		IHAvkZbnNEhfoa6aAeZwBKZESrE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -927,6 +879,17 @@
 			<key>hash2</key>
 			<data>
 			Rs0ygMTYiAWF+bVobMBaeyLLrmN4z7OgOiL41tvMt9k=
+			</data>
+		</dict>
+		<key>Frameworks/libswiftCallKit.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ByBD0WTrvPsf+VzARD/uKUiT+6Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			/e5jz2cMi901HEy9cvYf++/bjO+Wdi/4hjkKQUMJ4yI=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
@@ -1153,22 +1116,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WpQ5RGH1BHRukjKmrwG053EBTG8=
+			BG+F5O+xy8O8QJuL/GHn2sNP7Og=
 			</data>
 			<key>hash2</key>
 			<data>
-			AlQnGHbGU7w6l4XOv+hiRe8p2E7ZZZSFOAkovnNrBL8=
+			/1ujBuJxHzJnOq+mkwrOpYN9wuMK0fcm2tcD1yqKV8M=
 			</data>
 		</dict>
 		<key>Headers/CometChatPro.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iLiVorvmXpPRGGmC//7EA/FgmAk=
+			qGqY0Vr1Av/2Es/C/5n9ktM4s0g=
 			</data>
 			<key>hash2</key>
 			<data>
-			7lC7GdBhuPh+gQIN2kVbS5wGoJzrZilgrr81BtGKDh0=
+			HzW0Y6kXffMQ6GkR8zgl1dRGP1ARM0NMFU0Nfpp2bEE=
 			</data>
 		</dict>
 		<key>Headers/DDASLLogger.h</key>
@@ -1347,39 +1310,6 @@
 			9VqUNM+p25P3zaiERhDLO09U6VMrMJaaEYvdT4ttU8I=
 			</data>
 		</dict>
-		<key>Headers/ExceptionWrapper.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			bt0rrQZmp+RaXTch9bEtTwIBOW0=
-			</data>
-			<key>hash2</key>
-			<data>
-			o/s6JLyQrpos4lwxtwhj+Rft4xWmb7shR+dtMOX3RR0=
-			</data>
-		</dict>
-		<key>Headers/FM.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			WmLLO2aE5N/F5bzdL5tCzGL60A4=
-			</data>
-			<key>hash2</key>
-			<data>
-			YiQgggzWCOkHdqw8H4kEGObWj7+qAZHCs47g0YFzbbA=
-			</data>
-		</dict>
-		<key>Headers/FM.swift3.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			gvBlRUfrXpQ02i07rHvuh+aQND8=
-			</data>
-			<key>hash2</key>
-			<data>
-			3lUv7T8uomlfefSCTrTlueAFWKP3FX4QD660QvsYvIc=
-			</data>
-		</dict>
 		<key>Headers/FMDB.h</key>
 		<dict>
 			<key>hash</key>
@@ -1435,72 +1365,6 @@
 			sUHAJobiEdcS2YNB8LPtGcEe2XU4JjXq6PYLYYJm1pA=
 			</data>
 		</dict>
-		<key>Headers/FMIceLink.swift3.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			wkR1eePN7qWsZ8twKHc7SSEn5p4=
-			</data>
-			<key>hash2</key>
-			<data>
-			tPrcmnPMZKpXU3ygw5Jv0pRuoy90Ufeztc8n5CdIsJc=
-			</data>
-		</dict>
-		<key>Headers/FMIceLinkCocoa.swift3.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			yQFCy7CxkaMIPjFJVfeEBhaFiyU=
-			</data>
-			<key>hash2</key>
-			<data>
-			h6zKXGBuWeV+NSxymWh6FfByKekU3+ZG05JpOYD8uOM=
-			</data>
-		</dict>
-		<key>Headers/FMIceLinkOpus.swift3.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+1KFUOpeR14QlQgfqeNl7NiZBSk=
-			</data>
-			<key>hash2</key>
-			<data>
-			QRgtf9g67coGyfvna7OlQcFvjxLNGRQ+Y9WoUXU9e0A=
-			</data>
-		</dict>
-		<key>Headers/FMIceLinkVpx.swift3.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OzVbRtb/jz3W6FdSYjhnuo8zjSk=
-			</data>
-			<key>hash2</key>
-			<data>
-			Ryeufq0wGWhWnM8wI+N9aQb7EKBdRqJov8p+ATPrro4=
-			</data>
-		</dict>
-		<key>Headers/FMIceLinkWebSync4.swift3.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			fURTEQ2MVfMm9ZwJf8TTgQ0q96A=
-			</data>
-			<key>hash2</key>
-			<data>
-			vkypHkcwnkmxhVPTwjr3yH61C9M9TWJQiiBm4cJQ5e4=
-			</data>
-		</dict>
-		<key>Headers/FMIceLinkYuv.swift3.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			p6ck8NfShOPdyuVocyTa8Ut4MAA=
-			</data>
-			<key>hash2</key>
-			<data>
-			9aBD4liVGpzyFElOoK/t7MNC0tyxdjQ60sjtFwKxVUQ=
-			</data>
-		</dict>
 		<key>Headers/FMResultSet.h</key>
 		<dict>
 			<key>hash</key>
@@ -1510,50 +1374,6 @@
 			<key>hash2</key>
 			<data>
 			lyiqbd6xzDt2zznT0QxlpXzaOn0UCQXlrJJu4pqpgSY=
-			</data>
-		</dict>
-		<key>Headers/FMWebSync.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MAqnoOIptSOypa6emrO30WetyCw=
-			</data>
-			<key>hash2</key>
-			<data>
-			kfDPuYgBqnEwJv5HktygiJnvIcZCDv/0YjZwknuyIyw=
-			</data>
-		</dict>
-		<key>Headers/FMWebSync.swift3.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9/EToaLMfbHOfNJEqADtYx0xxvI=
-			</data>
-			<key>hash2</key>
-			<data>
-			bc3FEbDtqLjEGkpb4bHRQZz4zwlRrXxFzcvNRIJrRO0=
-			</data>
-		</dict>
-		<key>Headers/FMWebSyncChat.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MJ3U8gHRkrFPxdt2kjET/9VUF/w=
-			</data>
-			<key>hash2</key>
-			<data>
-			a8mkZYjz8LlaF2lEOnZF5/uxKvZdEagOd4KPeAmwSmU=
-			</data>
-		</dict>
-		<key>Headers/FMWebSyncSubscribers.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			IE3q+zKdJeWOXWtX8Jrsg1FQDe4=
-			</data>
-			<key>hash2</key>
-			<data>
-			OchtBssfDU1dMBP0zdWKIjGsoXJlg2kIve/8IJOjuhg=
 			</data>
 		</dict>
 		<key>Headers/GCDAsyncSocket.h</key>
@@ -3122,11 +2942,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uvRwSMg7mh7Lc+/suJvepKqWsnQ=
+			IHAvkZbnNEhfoa6aAeZwBKZESrE=
 			</data>
 			<key>hash2</key>
 			<data>
-			hMVzLoJWDmWDNPr5yG4f1P6Xi9sLRh9fIzijzpI7A4s=
+			Z78fpDmJD24Lgp7nYfXSbNpN4TbvOksN0un/gayUiQg=
 			</data>
 		</dict>
 		<key>Modules/CometChatPro.swiftmodule/arm64.swiftdoc</key>
@@ -3144,11 +2964,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9F4vK9oNLFGptsvHkN725PvUz4M=
+			r1N/AD2T98Oec2mf3nIOb4DKbZM=
 			</data>
 			<key>hash2</key>
 			<data>
-			HbB+nMrMOoBHtAE/80m4UJ56jC+PkSzvILhZzl0tsCg=
+			oJOjJ6Y/lmB2h9oAhrbq8P9h9i2maDbtMVAQFrvQ3v4=
 			</data>
 		</dict>
 		<key>Modules/CometChatPro.swiftmodule/armv7.swiftdoc</key>
@@ -3166,11 +2986,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uvRwSMg7mh7Lc+/suJvepKqWsnQ=
+			IHAvkZbnNEhfoa6aAeZwBKZESrE=
 			</data>
 			<key>hash2</key>
 			<data>
-			hMVzLoJWDmWDNPr5yG4f1P6Xi9sLRh9fIzijzpI7A4s=
+			Z78fpDmJD24Lgp7nYfXSbNpN4TbvOksN0un/gayUiQg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

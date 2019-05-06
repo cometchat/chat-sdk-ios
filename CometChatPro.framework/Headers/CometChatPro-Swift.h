@@ -493,7 +493,6 @@ typedef SWIFT_ENUM(NSInteger, XMPPMsgType, closed) {
 + (void)startCallWithSessionID:(NSString * _Nonnull)sessionID inView:(UIView * _Nonnull)inView userJoined:(void (^ _Nonnull)(User * _Nullable))userJoined userLeft:(void (^ _Nonnull)(User * _Nullable))userLeft onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError callEnded:(void (^ _Nonnull)(Call * _Nullable))callEnded;
 @end
 
-@protocol CometChatExtension;
 
 @interface CometChat (SWIFT_EXTENSION(CometChatPro))
 + (void)startServices;
@@ -504,11 +503,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Call * _Null
 + (Call * _Nullable)currentCall SWIFT_WARN_UNUSED_RESULT;
 + (NSInteger)getLastDeliveredMessageId SWIFT_WARN_UNUSED_RESULT;
 + (User * _Nullable)getLoggedInUser SWIFT_WARN_UNUSED_RESULT;
-+ (void)toggleCamera;
-+ (void)muteAudio:(BOOL)muteAudio;
-+ (void)switchSpeakers:(BOOL)switchSpeaker;
-+ (void)pauseVideo:(BOOL)pauseVideo;
-+ (void)addWithExtension:(id <CometChatExtension> _Nonnull)extension;
 + (BOOL)isExtensionEnabledWithExtensionId:(NSString * _Nonnull)extensionId SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -1351,7 +1345,6 @@ typedef SWIFT_ENUM(NSInteger, XMPPMsgType, closed) {
 + (void)startCallWithSessionID:(NSString * _Nonnull)sessionID inView:(UIView * _Nonnull)inView userJoined:(void (^ _Nonnull)(User * _Nullable))userJoined userLeft:(void (^ _Nonnull)(User * _Nullable))userLeft onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError callEnded:(void (^ _Nonnull)(Call * _Nullable))callEnded;
 @end
 
-@protocol CometChatExtension;
 
 @interface CometChat (SWIFT_EXTENSION(CometChatPro))
 + (void)startServices;
@@ -1362,11 +1355,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Call * _Null
 + (Call * _Nullable)currentCall SWIFT_WARN_UNUSED_RESULT;
 + (NSInteger)getLastDeliveredMessageId SWIFT_WARN_UNUSED_RESULT;
 + (User * _Nullable)getLoggedInUser SWIFT_WARN_UNUSED_RESULT;
-+ (void)toggleCamera;
-+ (void)muteAudio:(BOOL)muteAudio;
-+ (void)switchSpeakers:(BOOL)switchSpeaker;
-+ (void)pauseVideo:(BOOL)pauseVideo;
-+ (void)addWithExtension:(id <CometChatExtension> _Nonnull)extension;
 + (BOOL)isExtensionEnabledWithExtensionId:(NSString * _Nonnull)extensionId SWIFT_WARN_UNUSED_RESULT;
 @end
 
