@@ -31,10 +31,12 @@
  * is an already active conference it will be automatically left prior to
  * joining the new one.
  */
-- (void)join:(JitsiMeetConferenceOptions *)options;
+- (void)join:(JitsiMeetConferenceOptions *_Nullable)options;
 /**
  * Leaves the currently active conference.
  */
 - (void)leave;
+
++ (BOOL)setPropsInViews:(NSDictionary *_Nonnull)newProps;
 
 @end
