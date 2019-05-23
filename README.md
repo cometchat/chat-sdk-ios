@@ -8,7 +8,7 @@
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://cocoapods.org/pods/CometChatPulseSDK)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/CometChat-Pulse/ios-swift-chat-app)
-[![CocoaPods](https://img.shields.io/badge/pod-v1.5.0-green.svg)](https://cocoapods.org/pods/CometChatPulseSDK)
+[![CocoaPods](https://img.shields.io/badge/pod-v1.5.1-green.svg)](https://cocoapods.org/pods/CometChatPulseSDK)
 
 ## Documentation
 
@@ -23,7 +23,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 target 'MyApp' do
-  pod 'CometChatPro', '~> 1.5.0'
+  pod 'CometChatPro', '~> 1.5.1'
 end 
 ```
 ## Install Manually
