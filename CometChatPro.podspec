@@ -16,5 +16,5 @@ Pod::Spec.new do |spec|
   spec.framework        = 'CometChatPro'
   spec.exclude_files    = "Classes/Exclude"
   spec.platform         = :ios, "10.0"
-  sepc.dependency "JitsiMeetSDK",  '2.1.0'
+  spec.dependency 'JitsiMeetSDK', '2.1.0'
 end
