@@ -36,7 +36,7 @@ Add `CometChatPro.Framework` to Embedded Binaries as shown below:
 <div style="width:100%">
 	<div style="width:50%; display:inline-block">
 		<p align="center">
-		<img align="center" width="100%" height="400" alt="" src="https://files.readme.io/6e172a4-embeddedBinaries.png">	
+		<img align="center" alt="" src="https://files.readme.io/6e172a4-embeddedBinaries.png">	
 		</p>	
 	</div>	
 </div>
