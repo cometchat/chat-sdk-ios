@@ -6,9 +6,9 @@
 	</div>	
 </div>
 
-[![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://cocoapods.org/pods/CometChatPulseSDK)
+[![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://cocoapods.org/pods/CometChatPro)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/CometChat-Pulse/ios-swift-chat-app)
-[![CocoaPods](https://img.shields.io/badge/pod-v1.5.1-green.svg)](https://cocoapods.org/pods/CometChatPulseSDK)
+[![CocoaPods](https://img.shields.io/badge/pod-v1.5.2-green.svg)](https://cocoapods.org/pods/CometChatPro)
 
 ## Documentation
 
