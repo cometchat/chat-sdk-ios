@@ -69,5 +69,5 @@
 
 + (instancetype _Nonnull)fromBuilder:(void (^_Nonnull)(JitsiMeetConferenceOptionsBuilder *_Nonnull))initBlock;
 - (instancetype _Nonnull)init NS_UNAVAILABLE;
-- (NSMutableDictionary *_Nonnull)asProps;
+
 @end

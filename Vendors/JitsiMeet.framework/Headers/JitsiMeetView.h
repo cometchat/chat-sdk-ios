@@ -37,6 +37,4 @@
  */
 - (void)leave;
 
-+ (BOOL)setPropsInViews:(NSDictionary *_Nonnull)newProps;
-
 @end
