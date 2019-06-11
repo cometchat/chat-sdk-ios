@@ -10,11 +10,10 @@ Pod::Spec.new do |spec|
   spec.source_files     = 'CometChatPro.framework/Headers/*.{h,m,swift}'
   spec.library          = 'z', 'sqlite3', 'xml2.2'
   spec.xcconfig         = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
-  spec.vendored_frameworks = 'CometChatPro.framework'
+  spec.vendored_frameworks = 'CometChatPro.framework','Vendors/JitsiMeet.framework','Vendors/WebRTC.framework'
   spec.documentation_url = 'https://prodocs.cometchat.com/docs/ios-quick-start'
 
   spec.framework        = 'CometChatPro'
   spec.exclude_files    = "Classes/Exclude"
   spec.platform         = :ios, "10.0"
-  spec.dependency 'JitsiMeetSDK', '2.1.0'
 end
