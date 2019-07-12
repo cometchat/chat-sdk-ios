@@ -90,11 +90,11 @@
 		</data>
 		<key>Headers/CometChatPro-Swift.h</key>
 		<data>
-		IrVuwDE7LLKLS5H01+7w1vSxMAs=
+		bCGdKmXcw+xAapx9+/SeIkcVPqw=
 		</data>
 		<key>Headers/CometChatPro.h</key>
 		<data>
-		qGqY0Vr1Av/2Es/C/5n9ktM4s0g=
+		Ryw2YkvJ2w9MtseWKtQtX5lcuKc=
 		</data>
 		<key>Headers/DDASLLogger.h</key>
 		<data>
@@ -746,7 +746,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		j1mkq8SRmvz4LlO5RW+WxBjIBLQ=
+		ClmDmWcvbWzkUIokDWjxPzfQb6I=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/arm.swiftdoc</key>
 		<data>
@@ -754,7 +754,7 @@
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/arm.swiftmodule</key>
 		<data>
-		YqKtSheQuFygFxcQLUR6xNGZf/w=
+		+214sUD+/0CvHA5W0bQ7kJAkZr0=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -762,7 +762,7 @@
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		mrmFz7OkhrDDRhXAhZcRAp9FxO4=
+		nilv+Kc2/+ORGXajpOUHj2oTDK8=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/armv7.swiftdoc</key>
 		<data>
@@ -770,7 +770,7 @@
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		YqKtSheQuFygFxcQLUR6xNGZf/w=
+		+214sUD+/0CvHA5W0bQ7kJAkZr0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1078,22 +1078,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IrVuwDE7LLKLS5H01+7w1vSxMAs=
+			bCGdKmXcw+xAapx9+/SeIkcVPqw=
 			</data>
 			<key>hash2</key>
 			<data>
-			pa0/z8hqK3jyhDOXWVZdaClIa6EfGUf8VC8NrP5Iouw=
+			hiaXR6/agnWwkzuNg7d/eQPDzssgIS4jWa4GPWDbL7k=
 			</data>
 		</dict>
 		<key>Headers/CometChatPro.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qGqY0Vr1Av/2Es/C/5n9ktM4s0g=
+			Ryw2YkvJ2w9MtseWKtQtX5lcuKc=
 			</data>
 			<key>hash2</key>
 			<data>
-			HzW0Y6kXffMQ6GkR8zgl1dRGP1ARM0NMFU0Nfpp2bEE=
+			9VFKxIsNpUB+p5fs+clt84ipKXZzo7EGgrt+wIySk7M=
 			</data>
 		</dict>
 		<key>Headers/DDASLLogger.h</key>
@@ -2893,11 +2893,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YqKtSheQuFygFxcQLUR6xNGZf/w=
+			+214sUD+/0CvHA5W0bQ7kJAkZr0=
 			</data>
 			<key>hash2</key>
 			<data>
-			D2AcfqWq43ajwDt+f8R/QEOfHLkjeJ3+niLN8xmF2KE=
+			5j492ditVFYoJn7SOKC0gAt/lYzIPx9CEV9s7kkIwf0=
 			</data>
 		</dict>
 		<key>Modules/CometChatPro.swiftmodule/arm64.swiftdoc</key>
@@ -2915,11 +2915,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mrmFz7OkhrDDRhXAhZcRAp9FxO4=
+			nilv+Kc2/+ORGXajpOUHj2oTDK8=
 			</data>
 			<key>hash2</key>
 			<data>
-			NCH/ZaSug48MKCMve0DYvoQyPN1J++pTBEQ7Tln1P+4=
+			4cSSZ/N3NRmLNBhrHKg7xC3z/70kfr0agVaIofM1KxI=
 			</data>
 		</dict>
 		<key>Modules/CometChatPro.swiftmodule/armv7.swiftdoc</key>
@@ -2937,11 +2937,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YqKtSheQuFygFxcQLUR6xNGZf/w=
+			+214sUD+/0CvHA5W0bQ7kJAkZr0=
 			</data>
 			<key>hash2</key>
 			<data>
-			D2AcfqWq43ajwDt+f8R/QEOfHLkjeJ3+niLN8xmF2KE=
+			5j492ditVFYoJn7SOKC0gAt/lYzIPx9CEV9s7kkIwf0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
