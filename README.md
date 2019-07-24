@@ -28,7 +28,7 @@ end
 ```
 ## Install Manually
 
-## First: Download CometChatPro [Here](https://github.com/cometchat-pro/ios-chat-sdk/archive/1.9.0-beta.zip)
+## First: Download CometChatPro [Here](https://github.com/cometchat-pro/ios-chat-sdk/archive/1.9.0.zip)
 ## Second :
 Drag and drop `CometChatPro.Framework` to the root level of your project.
 
