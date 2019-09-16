@@ -505,8 +505,8 @@ typedef SWIFT_ENUM(NSInteger, actionType, closed) {
 
 
 @interface CometChat (SWIFT_EXTENSION(CometChatPro))
-+ (void)markMessageAsReadWithMessage:(BaseMessage * _Nonnull)message;
-+ (void)markMessageAsDeliveredWithMessage:(BaseMessage * _Nonnull)message;
++ (void)markAsReadWithMessageId:(NSInteger)messageId receiverId:(NSString * _Nonnull)receiverId receiverType:(enum ReceiverType)receiverType;
++ (void)markAsDeliveredWithMessageId:(NSInteger)messageId receiverId:(NSString * _Nonnull)receiverId receiverType:(enum ReceiverType)receiverType;
 @end
 
 
@@ -617,7 +617,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Call * _Null
 + (void)getUnreadMessageCountWithHideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 + (void)getUnreadMessageCountForAllUsersWithHideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 + (void)getUnreadMessageCountForAllGroupsWithHideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
-+ (void)getUnrdeliveredMessageCountForAllUsersWithHideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
++ (void)getUndeliveredMessageCountForAllUsersWithHideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 + (void)getUndeliveredMessageCountForAllGroupsWithHideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 + (void)getUndeliveredMessageCountForUser:(NSString * _Nonnull)uid hideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 + (void)getUndeliveredMessageCountForGroup:(NSString * _Nonnull)guid hideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
@@ -720,7 +720,7 @@ SWIFT_PROTOCOL("_TtP12CometChatPro22CometChatGroupDelegate_")
 - (void)onGroupMemberUnbannedWithAction:(ActionMessage * _Nonnull)action unbannedUser:(User * _Nonnull)unbannedUser unbannedBy:(User * _Nonnull)unbannedBy unbannedFrom:(Group * _Nonnull)unbannedFrom;
 - (void)onGroupMemberScopeChangedWithAction:(ActionMessage * _Nonnull)action user:(User * _Nonnull)user scopeChangedTo:(NSString * _Nonnull)scopeChangedTo scopeChangedFrom:(NSString * _Nonnull)scopeChangedFrom group:(Group * _Nonnull)group SWIFT_AVAILABILITY(ios,unavailable,message="This delegate method is deprecated now. Please use new delegate function `onGroupMemberScopeChanged(action: ActionMessage, scopeChangeduser:User, scopeChangedBy : User, scopeChangedTo :String, scopeChangedFrom: String, group: Group)`");
 - (void)onGroupMemberScopeChangedWithAction:(ActionMessage * _Nonnull)action scopeChangeduser:(User * _Nonnull)scopeChangeduser scopeChangedBy:(User * _Nonnull)scopeChangedBy scopeChangedTo:(NSString * _Nonnull)scopeChangedTo scopeChangedFrom:(NSString * _Nonnull)scopeChangedFrom group:(Group * _Nonnull)group;
-- (void)onAddedToGroupWithAction:(ActionMessage * _Nonnull)action addedBy:(User * _Nonnull)addedBy addedTo:(Group * _Nonnull)addedTo;
+- (void)onAddedToGroupWithAction:(ActionMessage * _Nonnull)action addedBy:(User * _Nonnull)addedBy addedTo:(Group * _Nonnull)addedTo SWIFT_AVAILABILITY(ios,unavailable,message="This delegate method is unavailable now. Please use the delegate function `onMemberAddedToGroup(action: ActionMessage, addedBy : User, addedUser:User ,addedTo:Group)`");
 - (void)onMemberAddedToGroupWithAction:(ActionMessage * _Nonnull)action addedBy:(User * _Nonnull)addedBy addedUser:(User * _Nonnull)addedUser addedTo:(Group * _Nonnull)addedTo;
 @end
 
@@ -736,10 +736,14 @@ SWIFT_PROTOCOL("_TtP12CometChatPro24CometChatMessageDelegate_")
 - (void)onCustomMessageReceivedWithCustomMessage:(CustomMessage * _Nonnull)customMessage;
 - (void)onTypingStarted:(TypingIndicator * _Nonnull)typingDetails;
 - (void)onTypingEnded:(TypingIndicator * _Nonnull)typingDetails;
-- (void)onMessageDeliveredWithReceipt:(MessageReceipt * _Nonnull)receipt;
-- (void)onMessageReadWithReceipt:(MessageReceipt * _Nonnull)receipt;
+- (void)onMessageDeliveredWithReceipt:(MessageReceipt * _Nonnull)receipt SWIFT_AVAILABILITY(ios,unavailable,message="This delegate method is unavailable now. Please use new delegate function `onMessagesDelivered(receipt : MessageReceipt)`");
+- (void)onMessageReadWithReceipt:(MessageReceipt * _Nonnull)receipt SWIFT_AVAILABILITY(ios,unavailable,message="This delegate method is unavailable now. Please use new delegate function `onMessagesRead(receipt : MessageReceipt)`");
 - (void)onMessageEditedWithMessage:(BaseMessage * _Nonnull)message;
 - (void)onMessageDeletedWithMessage:(BaseMessage * _Nonnull)message;
+- (void)onMessagesReadWithReceipt:(MessageReceipt * _Nonnull)receipt;
+- (void)onMessagesDeliveredWithReceipt:(MessageReceipt * _Nonnull)receipt;
+- (void)onMessageReadByAllWithMessageId:(NSString * _Nonnull)messageId receiverId:(NSString * _Nonnull)receiverId receiverType:(enum ReceiverType)receiverType;
+- (void)onMessageDeliveredToAllWithMessageId:(NSString * _Nonnull)messageId receiverId:(NSString * _Nonnull)receiverId receiverType:(enum ReceiverType)receiverType;
 @end
 
 
@@ -1489,8 +1493,8 @@ typedef SWIFT_ENUM(NSInteger, actionType, closed) {
 
 
 @interface CometChat (SWIFT_EXTENSION(CometChatPro))
-+ (void)markMessageAsReadWithMessage:(BaseMessage * _Nonnull)message;
-+ (void)markMessageAsDeliveredWithMessage:(BaseMessage * _Nonnull)message;
++ (void)markAsReadWithMessageId:(NSInteger)messageId receiverId:(NSString * _Nonnull)receiverId receiverType:(enum ReceiverType)receiverType;
++ (void)markAsDeliveredWithMessageId:(NSInteger)messageId receiverId:(NSString * _Nonnull)receiverId receiverType:(enum ReceiverType)receiverType;
 @end
 
 
@@ -1601,7 +1605,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Call * _Null
 + (void)getUnreadMessageCountWithHideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 + (void)getUnreadMessageCountForAllUsersWithHideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 + (void)getUnreadMessageCountForAllGroupsWithHideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
-+ (void)getUnrdeliveredMessageCountForAllUsersWithHideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
++ (void)getUndeliveredMessageCountForAllUsersWithHideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 + (void)getUndeliveredMessageCountForAllGroupsWithHideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 + (void)getUndeliveredMessageCountForUser:(NSString * _Nonnull)uid hideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 + (void)getUndeliveredMessageCountForGroup:(NSString * _Nonnull)guid hideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
@@ -1704,7 +1708,7 @@ SWIFT_PROTOCOL("_TtP12CometChatPro22CometChatGroupDelegate_")
 - (void)onGroupMemberUnbannedWithAction:(ActionMessage * _Nonnull)action unbannedUser:(User * _Nonnull)unbannedUser unbannedBy:(User * _Nonnull)unbannedBy unbannedFrom:(Group * _Nonnull)unbannedFrom;
 - (void)onGroupMemberScopeChangedWithAction:(ActionMessage * _Nonnull)action user:(User * _Nonnull)user scopeChangedTo:(NSString * _Nonnull)scopeChangedTo scopeChangedFrom:(NSString * _Nonnull)scopeChangedFrom group:(Group * _Nonnull)group SWIFT_AVAILABILITY(ios,unavailable,message="This delegate method is deprecated now. Please use new delegate function `onGroupMemberScopeChanged(action: ActionMessage, scopeChangeduser:User, scopeChangedBy : User, scopeChangedTo :String, scopeChangedFrom: String, group: Group)`");
 - (void)onGroupMemberScopeChangedWithAction:(ActionMessage * _Nonnull)action scopeChangeduser:(User * _Nonnull)scopeChangeduser scopeChangedBy:(User * _Nonnull)scopeChangedBy scopeChangedTo:(NSString * _Nonnull)scopeChangedTo scopeChangedFrom:(NSString * _Nonnull)scopeChangedFrom group:(Group * _Nonnull)group;
-- (void)onAddedToGroupWithAction:(ActionMessage * _Nonnull)action addedBy:(User * _Nonnull)addedBy addedTo:(Group * _Nonnull)addedTo;
+- (void)onAddedToGroupWithAction:(ActionMessage * _Nonnull)action addedBy:(User * _Nonnull)addedBy addedTo:(Group * _Nonnull)addedTo SWIFT_AVAILABILITY(ios,unavailable,message="This delegate method is unavailable now. Please use the delegate function `onMemberAddedToGroup(action: ActionMessage, addedBy : User, addedUser:User ,addedTo:Group)`");
 - (void)onMemberAddedToGroupWithAction:(ActionMessage * _Nonnull)action addedBy:(User * _Nonnull)addedBy addedUser:(User * _Nonnull)addedUser addedTo:(Group * _Nonnull)addedTo;
 @end
 
@@ -1720,10 +1724,14 @@ SWIFT_PROTOCOL("_TtP12CometChatPro24CometChatMessageDelegate_")
 - (void)onCustomMessageReceivedWithCustomMessage:(CustomMessage * _Nonnull)customMessage;
 - (void)onTypingStarted:(TypingIndicator * _Nonnull)typingDetails;
 - (void)onTypingEnded:(TypingIndicator * _Nonnull)typingDetails;
-- (void)onMessageDeliveredWithReceipt:(MessageReceipt * _Nonnull)receipt;
-- (void)onMessageReadWithReceipt:(MessageReceipt * _Nonnull)receipt;
+- (void)onMessageDeliveredWithReceipt:(MessageReceipt * _Nonnull)receipt SWIFT_AVAILABILITY(ios,unavailable,message="This delegate method is unavailable now. Please use new delegate function `onMessagesDelivered(receipt : MessageReceipt)`");
+- (void)onMessageReadWithReceipt:(MessageReceipt * _Nonnull)receipt SWIFT_AVAILABILITY(ios,unavailable,message="This delegate method is unavailable now. Please use new delegate function `onMessagesRead(receipt : MessageReceipt)`");
 - (void)onMessageEditedWithMessage:(BaseMessage * _Nonnull)message;
 - (void)onMessageDeletedWithMessage:(BaseMessage * _Nonnull)message;
+- (void)onMessagesReadWithReceipt:(MessageReceipt * _Nonnull)receipt;
+- (void)onMessagesDeliveredWithReceipt:(MessageReceipt * _Nonnull)receipt;
+- (void)onMessageReadByAllWithMessageId:(NSString * _Nonnull)messageId receiverId:(NSString * _Nonnull)receiverId receiverType:(enum ReceiverType)receiverType;
+- (void)onMessageDeliveredToAllWithMessageId:(NSString * _Nonnull)messageId receiverId:(NSString * _Nonnull)receiverId receiverType:(enum ReceiverType)receiverType;
 @end
 
 
