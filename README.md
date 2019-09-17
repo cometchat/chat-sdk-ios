@@ -23,7 +23,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 target 'MyApp' do
-  pod 'CometChatPro', '~> 2.0.0-beta'
+  pod 'CometChatPro', '~> 2.0.0-beta1'
 end 
 ```
 ## Install Manually
