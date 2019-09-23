@@ -257,7 +257,6 @@ SWIFT_CLASS("_TtCC12CometChatPro11AppSettings18AppSettingsBuilder")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (AppSettingsBuilder * _Nonnull)subscribePresenceForAllUsers SWIFT_WARN_UNUSED_RESULT;
 - (AppSettingsBuilder * _Nonnull)subscribePresenceForFriends SWIFT_WARN_UNUSED_RESULT;
-- (AppSettingsBuilder * _Nonnull)setRegionWithRegion:(NSString * _Nonnull)region SWIFT_WARN_UNUSED_RESULT;
 - (AppSettingsBuilder * _Nonnull)subcribePresenceForRolesWithRoles:(NSArray<NSString *> * _Nonnull)roles SWIFT_WARN_UNUSED_RESULT;
 - (AppSettings * _Nonnull)build SWIFT_WARN_UNUSED_RESULT;
 @end
@@ -361,51 +360,27 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isInitialised;)
 + (BOOL)isInitialised SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
-- (nonnull instancetype)initWithAppId:(NSString * _Nonnull)appId onSuccess:(void (^ _Nonnull)(BOOL))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nonnull))onError OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,unavailable,message="This method is deprecated now. Please use new method `init(appId:String, appSettings : AppSettings,onSuccess:@escaping(_ isSuccess:Bool)-> Void, onError:@escaping (_ error:CometChatException) -> Void )`");
-- (nonnull instancetype)initWithAppId:(NSString * _Nonnull)appId appSettings:(AppSettings * _Nonnull)appSettings onSuccess:(void (^ _Nonnull)(BOOL))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nonnull))onError OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAppId:(NSString * _Nonnull)appId onSuccess:(void (^ _Nonnull)(BOOL))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nonnull))onError OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 @interface CometChat (SWIFT_EXTENSION(CometChatPro))
 @end
 
-typedef SWIFT_ENUM(NSInteger, MessageCategory, closed) {
-  MessageCategoryMessage = 0,
-  MessageCategoryAction = 1,
-  MessageCategoryCall = 2,
-  MessageCategoryCustom = 3,
+typedef SWIFT_ENUM(NSInteger, groupType, closed) {
+  groupTypePublic = 0,
+  groupTypePrivate = 1,
+  groupTypePassword = 2,
 };
 
 
 @interface CometChat (SWIFT_EXTENSION(CometChatPro))
 @end
 
-typedef SWIFT_ENUM(NSInteger, SubscriptionType, closed) {
-  SubscriptionTypeAllUsers = 0,
-  SubscriptionTypeOnlyFriends = 1,
-  SubscriptionTypeRole = 2,
-  SubscriptionTypeNone = 3,
-};
-
-
-
-
-@interface CometChat (SWIFT_EXTENSION(CometChatPro))
-@end
-
-typedef SWIFT_ENUM(NSInteger, GroupMemberScopeType, closed) {
-  GroupMemberScopeTypeAdmin = 0,
-  GroupMemberScopeTypeModerator = 1,
-  GroupMemberScopeTypeParticipant = 2,
-};
-
-
-@interface CometChat (SWIFT_EXTENSION(CometChatPro))
-@end
-
-typedef SWIFT_ENUM(NSInteger, CallType, closed) {
-  CallTypeAudio = 0,
-  CallTypeVideo = 1,
+typedef SWIFT_ENUM(NSInteger, Blocked, closed) {
+  BlockedByMe = 0,
+  BlockedMe = 1,
+  BlockedBoth = 2,
 };
 
 
@@ -431,30 +406,21 @@ typedef SWIFT_ENUM(NSInteger, MessageType, closed) {
 @interface CometChat (SWIFT_EXTENSION(CometChatPro))
 @end
 
-typedef SWIFT_ENUM(NSInteger, MemberScope, closed) {
-  MemberScopeAdmin = 0,
-  MemberScopeModerator = 1,
-  MemberScopeParticipant = 2,
+typedef SWIFT_ENUM(NSInteger, MessageCategory, closed) {
+  MessageCategoryMessage = 0,
+  MessageCategoryAction = 1,
+  MessageCategoryCall = 2,
+  MessageCategoryCustom = 3,
 };
 
 
 @interface CometChat (SWIFT_EXTENSION(CometChatPro))
 @end
 
-typedef SWIFT_ENUM(NSInteger, Blocked, closed) {
-  BlockedByMe = 0,
-  BlockedMe = 1,
-  BlockedBoth = 2,
-};
-
-
-@interface CometChat (SWIFT_EXTENSION(CometChatPro))
-@end
-
-typedef SWIFT_ENUM(NSInteger, groupType, closed) {
-  groupTypePublic = 0,
-  groupTypePrivate = 1,
-  groupTypePassword = 2,
+typedef SWIFT_ENUM(NSInteger, GroupMemberScopeType, closed) {
+  GroupMemberScopeTypeAdmin = 0,
+  GroupMemberScopeTypeModerator = 1,
+  GroupMemberScopeTypeParticipant = 2,
 };
 
 
@@ -470,6 +436,25 @@ typedef SWIFT_ENUM(NSInteger, UserStatus, closed) {
 @interface CometChat (SWIFT_EXTENSION(CometChatPro))
 @end
 
+typedef SWIFT_ENUM(NSInteger, CallType, closed) {
+  CallTypeAudio = 0,
+  CallTypeVideo = 1,
+};
+
+
+@interface CometChat (SWIFT_EXTENSION(CometChatPro))
+@end
+
+typedef SWIFT_ENUM(NSInteger, MemberScope, closed) {
+  MemberScopeAdmin = 0,
+  MemberScopeModerator = 1,
+  MemberScopeParticipant = 2,
+};
+
+
+@interface CometChat (SWIFT_EXTENSION(CometChatPro))
+@end
+
 typedef SWIFT_ENUM(NSInteger, callStatus, closed) {
   callStatusInitiated = 0,
   callStatusOngoing = 1,
@@ -478,6 +463,19 @@ typedef SWIFT_ENUM(NSInteger, callStatus, closed) {
   callStatusBusy = 4,
   callStatusCancelled = 5,
   callStatusEnded = 6,
+};
+
+
+
+
+@interface CometChat (SWIFT_EXTENSION(CometChatPro))
+@end
+
+typedef SWIFT_ENUM(NSInteger, SubscriptionType, closed) {
+  SubscriptionTypeAllUsers = 0,
+  SubscriptionTypeOnlyFriends = 1,
+  SubscriptionTypeRole = 2,
+  SubscriptionTypeNone = 3,
 };
 
 
@@ -505,8 +503,8 @@ typedef SWIFT_ENUM(NSInteger, actionType, closed) {
 
 
 @interface CometChat (SWIFT_EXTENSION(CometChatPro))
-+ (void)markAsReadWithMessageId:(NSInteger)messageId receiverId:(NSString * _Nonnull)receiverId receiverType:(enum ReceiverType)receiverType;
-+ (void)markAsDeliveredWithMessageId:(NSInteger)messageId receiverId:(NSString * _Nonnull)receiverId receiverType:(enum ReceiverType)receiverType;
++ (void)markMessageAsReadWithMessage:(BaseMessage * _Nonnull)message;
++ (void)markMessageAsDeliveredWithMessage:(BaseMessage * _Nonnull)message;
 @end
 
 
@@ -617,7 +615,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Call * _Null
 + (void)getUnreadMessageCountWithHideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 + (void)getUnreadMessageCountForAllUsersWithHideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 + (void)getUnreadMessageCountForAllGroupsWithHideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
-+ (void)getUndeliveredMessageCountForAllUsersWithHideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
++ (void)getUnrdeliveredMessageCountForAllUsersWithHideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 + (void)getUndeliveredMessageCountForAllGroupsWithHideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 + (void)getUndeliveredMessageCountForUser:(NSString * _Nonnull)uid hideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 + (void)getUndeliveredMessageCountForGroup:(NSString * _Nonnull)guid hideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
@@ -720,14 +718,8 @@ SWIFT_PROTOCOL("_TtP12CometChatPro22CometChatGroupDelegate_")
 - (void)onGroupMemberUnbannedWithAction:(ActionMessage * _Nonnull)action unbannedUser:(User * _Nonnull)unbannedUser unbannedBy:(User * _Nonnull)unbannedBy unbannedFrom:(Group * _Nonnull)unbannedFrom;
 - (void)onGroupMemberScopeChangedWithAction:(ActionMessage * _Nonnull)action user:(User * _Nonnull)user scopeChangedTo:(NSString * _Nonnull)scopeChangedTo scopeChangedFrom:(NSString * _Nonnull)scopeChangedFrom group:(Group * _Nonnull)group SWIFT_AVAILABILITY(ios,unavailable,message="This delegate method is deprecated now. Please use new delegate function `onGroupMemberScopeChanged(action: ActionMessage, scopeChangeduser:User, scopeChangedBy : User, scopeChangedTo :String, scopeChangedFrom: String, group: Group)`");
 - (void)onGroupMemberScopeChangedWithAction:(ActionMessage * _Nonnull)action scopeChangeduser:(User * _Nonnull)scopeChangeduser scopeChangedBy:(User * _Nonnull)scopeChangedBy scopeChangedTo:(NSString * _Nonnull)scopeChangedTo scopeChangedFrom:(NSString * _Nonnull)scopeChangedFrom group:(Group * _Nonnull)group;
-- (void)onAddedToGroupWithAction:(ActionMessage * _Nonnull)action addedBy:(User * _Nonnull)addedBy addedTo:(Group * _Nonnull)addedTo SWIFT_AVAILABILITY(ios,unavailable,message="This delegate method is unavailable now. Please use the delegate function `onMemberAddedToGroup(action: ActionMessage, addedBy : User, addedUser:User ,addedTo:Group)`");
+- (void)onAddedToGroupWithAction:(ActionMessage * _Nonnull)action addedBy:(User * _Nonnull)addedBy addedTo:(Group * _Nonnull)addedTo;
 - (void)onMemberAddedToGroupWithAction:(ActionMessage * _Nonnull)action addedBy:(User * _Nonnull)addedBy addedUser:(User * _Nonnull)addedUser addedTo:(Group * _Nonnull)addedTo;
-@end
-
-
-SWIFT_CLASS("_TtC12CometChatPro15CometChatHelper")
-@interface CometChatHelper : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -742,14 +734,10 @@ SWIFT_PROTOCOL("_TtP12CometChatPro24CometChatMessageDelegate_")
 - (void)onCustomMessageReceivedWithCustomMessage:(CustomMessage * _Nonnull)customMessage;
 - (void)onTypingStarted:(TypingIndicator * _Nonnull)typingDetails;
 - (void)onTypingEnded:(TypingIndicator * _Nonnull)typingDetails;
-- (void)onMessageDeliveredWithReceipt:(MessageReceipt * _Nonnull)receipt SWIFT_AVAILABILITY(ios,unavailable,message="This delegate method is unavailable now. Please use new delegate function `onMessagesDelivered(receipt : MessageReceipt)`");
-- (void)onMessageReadWithReceipt:(MessageReceipt * _Nonnull)receipt SWIFT_AVAILABILITY(ios,unavailable,message="This delegate method is unavailable now. Please use new delegate function `onMessagesRead(receipt : MessageReceipt)`");
+- (void)onMessageDeliveredWithReceipt:(MessageReceipt * _Nonnull)receipt;
+- (void)onMessageReadWithReceipt:(MessageReceipt * _Nonnull)receipt;
 - (void)onMessageEditedWithMessage:(BaseMessage * _Nonnull)message;
 - (void)onMessageDeletedWithMessage:(BaseMessage * _Nonnull)message;
-- (void)onMessagesReadWithReceipt:(MessageReceipt * _Nonnull)receipt;
-- (void)onMessagesDeliveredWithReceipt:(MessageReceipt * _Nonnull)receipt;
-- (void)onMessageReadByAllWithMessageId:(NSString * _Nonnull)messageId receiverId:(NSString * _Nonnull)receiverId receiverType:(enum ReceiverType)receiverType;
-- (void)onMessageDeliveredToAllWithMessageId:(NSString * _Nonnull)messageId receiverId:(NSString * _Nonnull)receiverId receiverType:(enum ReceiverType)receiverType;
 @end
 
 
@@ -871,7 +859,6 @@ SWIFT_CLASS("_TtCC12CometChatPro13GroupsRequest20GroupsRequestBuilder")
 - (nonnull instancetype)initWithLimit:(NSInteger)limit OBJC_DESIGNATED_INITIALIZER;
 - (GroupsRequestBuilder * _Nonnull)setWithLimit:(NSInteger)limit SWIFT_WARN_UNUSED_RESULT;
 - (GroupsRequestBuilder * _Nonnull)setWithSearchKeyword:(NSString * _Nonnull)searchKeyword SWIFT_WARN_UNUSED_RESULT;
-- (GroupsRequestBuilder * _Nonnull)setWithJoinedOnly:(BOOL)joinedOnly SWIFT_WARN_UNUSED_RESULT;
 - (GroupsRequest * _Nonnull)build SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
@@ -935,8 +922,6 @@ SWIFT_CLASS("_TtCC12CometChatPro15MessagesRequest21MessageRequestBuilder")
 - (MessageRequestBuilder * _Nonnull)setWithUndelivered:(BOOL)undelivered SWIFT_WARN_UNUSED_RESULT;
 - (MessageRequestBuilder * _Nonnull)hideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers SWIFT_WARN_UNUSED_RESULT;
 - (MessageRequestBuilder * _Nonnull)setWithSearchKeyword:(NSString * _Nonnull)searchKeyword SWIFT_WARN_UNUSED_RESULT;
-- (MessageRequestBuilder * _Nonnull)setUpdatedAfterTimeStamp:(NSInteger)timeStamp SWIFT_WARN_UNUSED_RESULT;
-- (MessageRequestBuilder * _Nonnull)updatesOnlyWithOnlyUpdates:(BOOL)onlyUpdates SWIFT_WARN_UNUSED_RESULT;
 - (MessagesRequest * _Nonnull)build SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -944,7 +929,7 @@ SWIFT_CLASS("_TtCC12CometChatPro15MessagesRequest21MessageRequestBuilder")
 SWIFT_CLASS("_TtC12CometChatPro11TextMessage")
 @interface TextMessage : BaseMessage
 @property (nonatomic, copy) NSString * _Nonnull text;
-- (nonnull instancetype)initWithReceiverUid:(NSString * _Nonnull)receiverUid text:(NSString * _Nonnull)text receiverType:(enum ReceiverType)receiverType OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithReceiverUid:(NSString * _Nonnull)receiverUid text:(NSString * _Nonnull)text messageType:(enum MessageType)messageType receiverType:(enum ReceiverType)receiverType OBJC_DESIGNATED_INITIALIZER;
 - (NSString * _Nonnull)stringValue SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithReceiverUid:(NSString * _Nonnull)receiverUid messageType:(enum MessageType)messageType receiverType:(enum ReceiverType)receiverType SWIFT_UNAVAILABLE;
 @end
@@ -983,7 +968,6 @@ SWIFT_CLASS("_TtCC12CometChatPro12UsersRequest19UsersRequestBuilder")
 - (UsersRequestBuilder * _Nonnull)setWithLimit:(NSInteger)limit SWIFT_WARN_UNUSED_RESULT;
 - (UsersRequestBuilder * _Nonnull)setWithStatus:(enum UserStatus)status SWIFT_WARN_UNUSED_RESULT;
 - (UsersRequestBuilder * _Nonnull)setWithSearchKeyword:(NSString * _Nonnull)searchKeyword SWIFT_WARN_UNUSED_RESULT;
-- (UsersRequestBuilder * _Nonnull)setWithRole:(NSString * _Nonnull)role SWIFT_WARN_UNUSED_RESULT;
 - (UsersRequestBuilder * _Nonnull)hideBlockedUsers:(BOOL)hide SWIFT_WARN_UNUSED_RESULT;
 - (UsersRequest * _Nonnull)build SWIFT_WARN_UNUSED_RESULT;
 @end
@@ -1251,7 +1235,6 @@ SWIFT_CLASS("_TtCC12CometChatPro11AppSettings18AppSettingsBuilder")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (AppSettingsBuilder * _Nonnull)subscribePresenceForAllUsers SWIFT_WARN_UNUSED_RESULT;
 - (AppSettingsBuilder * _Nonnull)subscribePresenceForFriends SWIFT_WARN_UNUSED_RESULT;
-- (AppSettingsBuilder * _Nonnull)setRegionWithRegion:(NSString * _Nonnull)region SWIFT_WARN_UNUSED_RESULT;
 - (AppSettingsBuilder * _Nonnull)subcribePresenceForRolesWithRoles:(NSArray<NSString *> * _Nonnull)roles SWIFT_WARN_UNUSED_RESULT;
 - (AppSettings * _Nonnull)build SWIFT_WARN_UNUSED_RESULT;
 @end
@@ -1355,51 +1338,27 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isInitialised;)
 + (BOOL)isInitialised SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
-- (nonnull instancetype)initWithAppId:(NSString * _Nonnull)appId onSuccess:(void (^ _Nonnull)(BOOL))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nonnull))onError OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,unavailable,message="This method is deprecated now. Please use new method `init(appId:String, appSettings : AppSettings,onSuccess:@escaping(_ isSuccess:Bool)-> Void, onError:@escaping (_ error:CometChatException) -> Void )`");
-- (nonnull instancetype)initWithAppId:(NSString * _Nonnull)appId appSettings:(AppSettings * _Nonnull)appSettings onSuccess:(void (^ _Nonnull)(BOOL))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nonnull))onError OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAppId:(NSString * _Nonnull)appId onSuccess:(void (^ _Nonnull)(BOOL))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nonnull))onError OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 @interface CometChat (SWIFT_EXTENSION(CometChatPro))
 @end
 
-typedef SWIFT_ENUM(NSInteger, MessageCategory, closed) {
-  MessageCategoryMessage = 0,
-  MessageCategoryAction = 1,
-  MessageCategoryCall = 2,
-  MessageCategoryCustom = 3,
+typedef SWIFT_ENUM(NSInteger, groupType, closed) {
+  groupTypePublic = 0,
+  groupTypePrivate = 1,
+  groupTypePassword = 2,
 };
 
 
 @interface CometChat (SWIFT_EXTENSION(CometChatPro))
 @end
 
-typedef SWIFT_ENUM(NSInteger, SubscriptionType, closed) {
-  SubscriptionTypeAllUsers = 0,
-  SubscriptionTypeOnlyFriends = 1,
-  SubscriptionTypeRole = 2,
-  SubscriptionTypeNone = 3,
-};
-
-
-
-
-@interface CometChat (SWIFT_EXTENSION(CometChatPro))
-@end
-
-typedef SWIFT_ENUM(NSInteger, GroupMemberScopeType, closed) {
-  GroupMemberScopeTypeAdmin = 0,
-  GroupMemberScopeTypeModerator = 1,
-  GroupMemberScopeTypeParticipant = 2,
-};
-
-
-@interface CometChat (SWIFT_EXTENSION(CometChatPro))
-@end
-
-typedef SWIFT_ENUM(NSInteger, CallType, closed) {
-  CallTypeAudio = 0,
-  CallTypeVideo = 1,
+typedef SWIFT_ENUM(NSInteger, Blocked, closed) {
+  BlockedByMe = 0,
+  BlockedMe = 1,
+  BlockedBoth = 2,
 };
 
 
@@ -1425,30 +1384,21 @@ typedef SWIFT_ENUM(NSInteger, MessageType, closed) {
 @interface CometChat (SWIFT_EXTENSION(CometChatPro))
 @end
 
-typedef SWIFT_ENUM(NSInteger, MemberScope, closed) {
-  MemberScopeAdmin = 0,
-  MemberScopeModerator = 1,
-  MemberScopeParticipant = 2,
+typedef SWIFT_ENUM(NSInteger, MessageCategory, closed) {
+  MessageCategoryMessage = 0,
+  MessageCategoryAction = 1,
+  MessageCategoryCall = 2,
+  MessageCategoryCustom = 3,
 };
 
 
 @interface CometChat (SWIFT_EXTENSION(CometChatPro))
 @end
 
-typedef SWIFT_ENUM(NSInteger, Blocked, closed) {
-  BlockedByMe = 0,
-  BlockedMe = 1,
-  BlockedBoth = 2,
-};
-
-
-@interface CometChat (SWIFT_EXTENSION(CometChatPro))
-@end
-
-typedef SWIFT_ENUM(NSInteger, groupType, closed) {
-  groupTypePublic = 0,
-  groupTypePrivate = 1,
-  groupTypePassword = 2,
+typedef SWIFT_ENUM(NSInteger, GroupMemberScopeType, closed) {
+  GroupMemberScopeTypeAdmin = 0,
+  GroupMemberScopeTypeModerator = 1,
+  GroupMemberScopeTypeParticipant = 2,
 };
 
 
@@ -1464,6 +1414,25 @@ typedef SWIFT_ENUM(NSInteger, UserStatus, closed) {
 @interface CometChat (SWIFT_EXTENSION(CometChatPro))
 @end
 
+typedef SWIFT_ENUM(NSInteger, CallType, closed) {
+  CallTypeAudio = 0,
+  CallTypeVideo = 1,
+};
+
+
+@interface CometChat (SWIFT_EXTENSION(CometChatPro))
+@end
+
+typedef SWIFT_ENUM(NSInteger, MemberScope, closed) {
+  MemberScopeAdmin = 0,
+  MemberScopeModerator = 1,
+  MemberScopeParticipant = 2,
+};
+
+
+@interface CometChat (SWIFT_EXTENSION(CometChatPro))
+@end
+
 typedef SWIFT_ENUM(NSInteger, callStatus, closed) {
   callStatusInitiated = 0,
   callStatusOngoing = 1,
@@ -1472,6 +1441,19 @@ typedef SWIFT_ENUM(NSInteger, callStatus, closed) {
   callStatusBusy = 4,
   callStatusCancelled = 5,
   callStatusEnded = 6,
+};
+
+
+
+
+@interface CometChat (SWIFT_EXTENSION(CometChatPro))
+@end
+
+typedef SWIFT_ENUM(NSInteger, SubscriptionType, closed) {
+  SubscriptionTypeAllUsers = 0,
+  SubscriptionTypeOnlyFriends = 1,
+  SubscriptionTypeRole = 2,
+  SubscriptionTypeNone = 3,
 };
 
 
@@ -1499,8 +1481,8 @@ typedef SWIFT_ENUM(NSInteger, actionType, closed) {
 
 
 @interface CometChat (SWIFT_EXTENSION(CometChatPro))
-+ (void)markAsReadWithMessageId:(NSInteger)messageId receiverId:(NSString * _Nonnull)receiverId receiverType:(enum ReceiverType)receiverType;
-+ (void)markAsDeliveredWithMessageId:(NSInteger)messageId receiverId:(NSString * _Nonnull)receiverId receiverType:(enum ReceiverType)receiverType;
++ (void)markMessageAsReadWithMessage:(BaseMessage * _Nonnull)message;
++ (void)markMessageAsDeliveredWithMessage:(BaseMessage * _Nonnull)message;
 @end
 
 
@@ -1611,7 +1593,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Call * _Null
 + (void)getUnreadMessageCountWithHideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 + (void)getUnreadMessageCountForAllUsersWithHideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 + (void)getUnreadMessageCountForAllGroupsWithHideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
-+ (void)getUndeliveredMessageCountForAllUsersWithHideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
++ (void)getUnrdeliveredMessageCountForAllUsersWithHideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 + (void)getUndeliveredMessageCountForAllGroupsWithHideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 + (void)getUndeliveredMessageCountForUser:(NSString * _Nonnull)uid hideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 + (void)getUndeliveredMessageCountForGroup:(NSString * _Nonnull)guid hideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers onSuccess:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
@@ -1714,14 +1696,8 @@ SWIFT_PROTOCOL("_TtP12CometChatPro22CometChatGroupDelegate_")
 - (void)onGroupMemberUnbannedWithAction:(ActionMessage * _Nonnull)action unbannedUser:(User * _Nonnull)unbannedUser unbannedBy:(User * _Nonnull)unbannedBy unbannedFrom:(Group * _Nonnull)unbannedFrom;
 - (void)onGroupMemberScopeChangedWithAction:(ActionMessage * _Nonnull)action user:(User * _Nonnull)user scopeChangedTo:(NSString * _Nonnull)scopeChangedTo scopeChangedFrom:(NSString * _Nonnull)scopeChangedFrom group:(Group * _Nonnull)group SWIFT_AVAILABILITY(ios,unavailable,message="This delegate method is deprecated now. Please use new delegate function `onGroupMemberScopeChanged(action: ActionMessage, scopeChangeduser:User, scopeChangedBy : User, scopeChangedTo :String, scopeChangedFrom: String, group: Group)`");
 - (void)onGroupMemberScopeChangedWithAction:(ActionMessage * _Nonnull)action scopeChangeduser:(User * _Nonnull)scopeChangeduser scopeChangedBy:(User * _Nonnull)scopeChangedBy scopeChangedTo:(NSString * _Nonnull)scopeChangedTo scopeChangedFrom:(NSString * _Nonnull)scopeChangedFrom group:(Group * _Nonnull)group;
-- (void)onAddedToGroupWithAction:(ActionMessage * _Nonnull)action addedBy:(User * _Nonnull)addedBy addedTo:(Group * _Nonnull)addedTo SWIFT_AVAILABILITY(ios,unavailable,message="This delegate method is unavailable now. Please use the delegate function `onMemberAddedToGroup(action: ActionMessage, addedBy : User, addedUser:User ,addedTo:Group)`");
+- (void)onAddedToGroupWithAction:(ActionMessage * _Nonnull)action addedBy:(User * _Nonnull)addedBy addedTo:(Group * _Nonnull)addedTo;
 - (void)onMemberAddedToGroupWithAction:(ActionMessage * _Nonnull)action addedBy:(User * _Nonnull)addedBy addedUser:(User * _Nonnull)addedUser addedTo:(Group * _Nonnull)addedTo;
-@end
-
-
-SWIFT_CLASS("_TtC12CometChatPro15CometChatHelper")
-@interface CometChatHelper : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -1736,14 +1712,10 @@ SWIFT_PROTOCOL("_TtP12CometChatPro24CometChatMessageDelegate_")
 - (void)onCustomMessageReceivedWithCustomMessage:(CustomMessage * _Nonnull)customMessage;
 - (void)onTypingStarted:(TypingIndicator * _Nonnull)typingDetails;
 - (void)onTypingEnded:(TypingIndicator * _Nonnull)typingDetails;
-- (void)onMessageDeliveredWithReceipt:(MessageReceipt * _Nonnull)receipt SWIFT_AVAILABILITY(ios,unavailable,message="This delegate method is unavailable now. Please use new delegate function `onMessagesDelivered(receipt : MessageReceipt)`");
-- (void)onMessageReadWithReceipt:(MessageReceipt * _Nonnull)receipt SWIFT_AVAILABILITY(ios,unavailable,message="This delegate method is unavailable now. Please use new delegate function `onMessagesRead(receipt : MessageReceipt)`");
+- (void)onMessageDeliveredWithReceipt:(MessageReceipt * _Nonnull)receipt;
+- (void)onMessageReadWithReceipt:(MessageReceipt * _Nonnull)receipt;
 - (void)onMessageEditedWithMessage:(BaseMessage * _Nonnull)message;
 - (void)onMessageDeletedWithMessage:(BaseMessage * _Nonnull)message;
-- (void)onMessagesReadWithReceipt:(MessageReceipt * _Nonnull)receipt;
-- (void)onMessagesDeliveredWithReceipt:(MessageReceipt * _Nonnull)receipt;
-- (void)onMessageReadByAllWithMessageId:(NSString * _Nonnull)messageId receiverId:(NSString * _Nonnull)receiverId receiverType:(enum ReceiverType)receiverType;
-- (void)onMessageDeliveredToAllWithMessageId:(NSString * _Nonnull)messageId receiverId:(NSString * _Nonnull)receiverId receiverType:(enum ReceiverType)receiverType;
 @end
 
 
@@ -1865,7 +1837,6 @@ SWIFT_CLASS("_TtCC12CometChatPro13GroupsRequest20GroupsRequestBuilder")
 - (nonnull instancetype)initWithLimit:(NSInteger)limit OBJC_DESIGNATED_INITIALIZER;
 - (GroupsRequestBuilder * _Nonnull)setWithLimit:(NSInteger)limit SWIFT_WARN_UNUSED_RESULT;
 - (GroupsRequestBuilder * _Nonnull)setWithSearchKeyword:(NSString * _Nonnull)searchKeyword SWIFT_WARN_UNUSED_RESULT;
-- (GroupsRequestBuilder * _Nonnull)setWithJoinedOnly:(BOOL)joinedOnly SWIFT_WARN_UNUSED_RESULT;
 - (GroupsRequest * _Nonnull)build SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
@@ -1929,8 +1900,6 @@ SWIFT_CLASS("_TtCC12CometChatPro15MessagesRequest21MessageRequestBuilder")
 - (MessageRequestBuilder * _Nonnull)setWithUndelivered:(BOOL)undelivered SWIFT_WARN_UNUSED_RESULT;
 - (MessageRequestBuilder * _Nonnull)hideMessagesFromBlockedUsers:(BOOL)hideMessagesFromBlockedUsers SWIFT_WARN_UNUSED_RESULT;
 - (MessageRequestBuilder * _Nonnull)setWithSearchKeyword:(NSString * _Nonnull)searchKeyword SWIFT_WARN_UNUSED_RESULT;
-- (MessageRequestBuilder * _Nonnull)setUpdatedAfterTimeStamp:(NSInteger)timeStamp SWIFT_WARN_UNUSED_RESULT;
-- (MessageRequestBuilder * _Nonnull)updatesOnlyWithOnlyUpdates:(BOOL)onlyUpdates SWIFT_WARN_UNUSED_RESULT;
 - (MessagesRequest * _Nonnull)build SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -1938,7 +1907,7 @@ SWIFT_CLASS("_TtCC12CometChatPro15MessagesRequest21MessageRequestBuilder")
 SWIFT_CLASS("_TtC12CometChatPro11TextMessage")
 @interface TextMessage : BaseMessage
 @property (nonatomic, copy) NSString * _Nonnull text;
-- (nonnull instancetype)initWithReceiverUid:(NSString * _Nonnull)receiverUid text:(NSString * _Nonnull)text receiverType:(enum ReceiverType)receiverType OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithReceiverUid:(NSString * _Nonnull)receiverUid text:(NSString * _Nonnull)text messageType:(enum MessageType)messageType receiverType:(enum ReceiverType)receiverType OBJC_DESIGNATED_INITIALIZER;
 - (NSString * _Nonnull)stringValue SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithReceiverUid:(NSString * _Nonnull)receiverUid messageType:(enum MessageType)messageType receiverType:(enum ReceiverType)receiverType SWIFT_UNAVAILABLE;
 @end
@@ -1977,7 +1946,6 @@ SWIFT_CLASS("_TtCC12CometChatPro12UsersRequest19UsersRequestBuilder")
 - (UsersRequestBuilder * _Nonnull)setWithLimit:(NSInteger)limit SWIFT_WARN_UNUSED_RESULT;
 - (UsersRequestBuilder * _Nonnull)setWithStatus:(enum UserStatus)status SWIFT_WARN_UNUSED_RESULT;
 - (UsersRequestBuilder * _Nonnull)setWithSearchKeyword:(NSString * _Nonnull)searchKeyword SWIFT_WARN_UNUSED_RESULT;
-- (UsersRequestBuilder * _Nonnull)setWithRole:(NSString * _Nonnull)role SWIFT_WARN_UNUSED_RESULT;
 - (UsersRequestBuilder * _Nonnull)hideBlockedUsers:(BOOL)hide SWIFT_WARN_UNUSED_RESULT;
 - (UsersRequest * _Nonnull)build SWIFT_WARN_UNUSED_RESULT;
 @end

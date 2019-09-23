@@ -90,11 +90,11 @@
 		</data>
 		<key>Headers/CometChatPro-Swift.h</key>
 		<data>
-		MDPpnO0bthTQn1+jsfEu5YCSttk=
+		ZMXW1pM2399scRrACaSQPQtPBdw=
 		</data>
 		<key>Headers/CometChatPro.h</key>
 		<data>
-		qGqY0Vr1Av/2Es/C/5n9ktM4s0g=
+		Ryw2YkvJ2w9MtseWKtQtX5lcuKc=
 		</data>
 		<key>Headers/DDASLLogger.h</key>
 		<data>
@@ -338,7 +338,7 @@
 		</data>
 		<key>Headers/XMPPFramework.h</key>
 		<data>
-		vOHqXEheO4mqN8V7Lsl16H+dM8o=
+		g7pTEt6nPLVosZ7Tg8i+JC3V7NI=
 		</data>
 		<key>Headers/XMPPGoogleSharedStatus.h</key>
 		<data>
@@ -746,7 +746,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fHcR5FH8LoJLZLotgnZzNVPIyrY=
+		5qTaTzubz2uuGcd5l9fBZiq8PWA=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/arm.swiftdoc</key>
 		<data>
@@ -754,7 +754,7 @@
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/arm.swiftmodule</key>
 		<data>
-		G4pd4Fc4cZqtqKK8N5V0dm5pEjI=
+		60QkbuYo3kZVec1ZkNhz5bhPl4g=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -762,7 +762,7 @@
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		TL9aV0GQCj9PHITodyI/ZPJpkjI=
+		KnUlutWjpX++BSHmdKZX1uE8ClU=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/armv7.swiftdoc</key>
 		<data>
@@ -770,7 +770,7 @@
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		G4pd4Fc4cZqtqKK8N5V0dm5pEjI=
+		60QkbuYo3kZVec1ZkNhz5bhPl4g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1078,22 +1078,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MDPpnO0bthTQn1+jsfEu5YCSttk=
+			ZMXW1pM2399scRrACaSQPQtPBdw=
 			</data>
 			<key>hash2</key>
 			<data>
-			64Fw+0xXRiuUCOtxunXscOyI/awTTrXH785g1+TUzWA=
+			0xzE3G0rtsCEvkQBNRP7vHk8CI8VehxH+eJV8S5eI7c=
 			</data>
 		</dict>
 		<key>Headers/CometChatPro.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qGqY0Vr1Av/2Es/C/5n9ktM4s0g=
+			Ryw2YkvJ2w9MtseWKtQtX5lcuKc=
 			</data>
 			<key>hash2</key>
 			<data>
-			HzW0Y6kXffMQ6GkR8zgl1dRGP1ARM0NMFU0Nfpp2bEE=
+			9VFKxIsNpUB+p5fs+clt84ipKXZzo7EGgrt+wIySk7M=
 			</data>
 		</dict>
 		<key>Headers/DDASLLogger.h</key>
@@ -1760,11 +1760,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vOHqXEheO4mqN8V7Lsl16H+dM8o=
+			g7pTEt6nPLVosZ7Tg8i+JC3V7NI=
 			</data>
 			<key>hash2</key>
 			<data>
-			kXuzvRp6MOaDDPKP6NlmOgHytBSNTrKYrAOjwxCTTBU=
+			bcziBDazZSLhuzPpGUJJoZDj24UYuYRduGzhcmTKCPU=
 			</data>
 		</dict>
 		<key>Headers/XMPPGoogleSharedStatus.h</key>
@@ -2893,11 +2893,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G4pd4Fc4cZqtqKK8N5V0dm5pEjI=
+			60QkbuYo3kZVec1ZkNhz5bhPl4g=
 			</data>
 			<key>hash2</key>
 			<data>
-			uVCTZBGb0fffL56KwhW/WY5EUEkb4+7G7GF8TGIpDmo=
+			Q+wtl4Tm7xwoFV3fmWupz1roDzr3xmQ+57zJw0ok+a8=
 			</data>
 		</dict>
 		<key>Modules/CometChatPro.swiftmodule/arm64.swiftdoc</key>
@@ -2915,11 +2915,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TL9aV0GQCj9PHITodyI/ZPJpkjI=
+			KnUlutWjpX++BSHmdKZX1uE8ClU=
 			</data>
 			<key>hash2</key>
 			<data>
-			jaj5F4k/OtyhWDcpl3odYIKLPO1Wcnu/Q5IPqAjpjjI=
+			syP+BWdRFqLKtxxxmGnud5+WC9p8rZHAJnckfk8wvwo=
 			</data>
 		</dict>
 		<key>Modules/CometChatPro.swiftmodule/armv7.swiftdoc</key>
@@ -2937,11 +2937,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G4pd4Fc4cZqtqKK8N5V0dm5pEjI=
+			60QkbuYo3kZVec1ZkNhz5bhPl4g=
 			</data>
 			<key>hash2</key>
 			<data>
-			uVCTZBGb0fffL56KwhW/WY5EUEkb4+7G7GF8TGIpDmo=
+			Q+wtl4Tm7xwoFV3fmWupz1roDzr3xmQ+57zJw0ok+a8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
