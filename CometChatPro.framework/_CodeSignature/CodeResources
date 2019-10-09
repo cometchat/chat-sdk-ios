@@ -10,39 +10,39 @@
 		</data>
 		<key>Frameworks/libswiftCallKit.dylib</key>
 		<data>
-		RKPxcnRI9bvRaFT1bIrB4n3K7Ss=
+		LvxJjp0YdcKihrqWH772mlWvp38=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
-		wYvC8g10sUcuODiC7dwA9i2kc1Y=
+		Z+n6pdCnsw6lMkrQ7gGY9qnajGk=
 		</data>
 		<key>Frameworks/libswiftCoreFoundation.dylib</key>
 		<data>
-		X8jaUWb8ZUpevoPRaG/o+tCt1H4=
+		wsSwi8Nk9IU3sJUvjLFkmqoid40=
 		</data>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<data>
-		pwjWU52CIi2ls7oUFLoNK9HZRIU=
+		kw5fmmG9WJfO/S6NTYLiYfJkTFo=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
-		nuhUdumfMqdj92bzPZvP50rpIhs=
+		xHEEdn4Ck0Qn5fRaV3mH3Fd3iO8=
 		</data>
 		<key>Frameworks/libswiftDispatch.dylib</key>
 		<data>
-		+YV2NfmThmi8UF2zKqoj37UVJrw=
+		ddTQoI4TkMNPjdwaWKpWbHQEpkk=
 		</data>
 		<key>Frameworks/libswiftFoundation.dylib</key>
 		<data>
-		KXm/FlN57xFmhfx47xEcyr3ZSU4=
+		94UPUutbmbHbk41RItR56PChd4A=
 		</data>
 		<key>Frameworks/libswiftObjectiveC.dylib</key>
 		<data>
-		Ft+Qsw+qpUgjMEXpM0mDsePsOZ0=
+		LseotGKl9JG7HrD5+drk7pYk5kM=
 		</data>
 		<key>Headers/CometChatPro-Swift.h</key>
 		<data>
-		p3VY5IEYKRsduB0mutQ7YPWLE8s=
+		m1tKBqNwX1gDKrNa4BppC1P4520=
 		</data>
 		<key>Headers/CometChatPro.h</key>
 		<data>
@@ -702,43 +702,43 @@
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/arm.swiftdoc</key>
 		<data>
-		84N4qFXH6QuKmv4PQK0jVt1uwao=
+		2u1ZjT8T/o+ZC1wRqn/nd/Sz2ps=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/arm.swiftmodule</key>
 		<data>
-		1CvLqLvlOl46J67fewAWj8WAxn4=
+		yHbbSktrna8Oj0bC+T8X5wGCzLw=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		Rp+xmW+hNBJdw3fUyJxb8A1oQGk=
+		38bzaAa7Aulzmbd8z7rURSbedoE=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		m9mfIfHaikDqRZrBPd88pT44DHg=
+		BJwUJFaOalUvdAhrcY0m+h2Yhjw=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		Rp+xmW+hNBJdw3fUyJxb8A1oQGk=
+		38bzaAa7Aulzmbd8z7rURSbedoE=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		m9mfIfHaikDqRZrBPd88pT44DHg=
+		BJwUJFaOalUvdAhrcY0m+h2Yhjw=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<data>
-		84N4qFXH6QuKmv4PQK0jVt1uwao=
+		2u1ZjT8T/o+ZC1wRqn/nd/Sz2ps=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<data>
-		1CvLqLvlOl46J67fewAWj8WAxn4=
+		yHbbSktrna8Oj0bC+T8X5wGCzLw=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/armv7.swiftdoc</key>
 		<data>
-		84N4qFXH6QuKmv4PQK0jVt1uwao=
+		2u1ZjT8T/o+ZC1wRqn/nd/Sz2ps=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/armv7.swiftmodule</key>
 		<data>
-		1CvLqLvlOl46J67fewAWj8WAxn4=
+		yHbbSktrna8Oj0bC+T8X5wGCzLw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -822,99 +822,99 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RKPxcnRI9bvRaFT1bIrB4n3K7Ss=
+			LvxJjp0YdcKihrqWH772mlWvp38=
 			</data>
 			<key>hash2</key>
 			<data>
-			AWlBiPmkLbgRYDNjjw2KV/STZDoCJZ1K+oUumWvxnTg=
+			GehYJa5wVzwbLkt7JUn6V0RcSjZfNQqP64/DmgL5hHI=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wYvC8g10sUcuODiC7dwA9i2kc1Y=
+			Z+n6pdCnsw6lMkrQ7gGY9qnajGk=
 			</data>
 			<key>hash2</key>
 			<data>
-			5y+f1KkJUhWqS1fkliqfzOoA0juIgloPIGPaF7+Yn50=
+			cPJ/7cr8BkgYloEB+jzU7RzWZbCUl/mwhaDy3V1ABYo=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCoreFoundation.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			X8jaUWb8ZUpevoPRaG/o+tCt1H4=
+			wsSwi8Nk9IU3sJUvjLFkmqoid40=
 			</data>
 			<key>hash2</key>
 			<data>
-			vu2R0Psx5wGldv/fV9X7CEqRfh5f3liHEQYE/KgTUrU=
+			/F01nIdB6qAlImv6xjeaSneGjQvJ5NQnyCostfL3FYg=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pwjWU52CIi2ls7oUFLoNK9HZRIU=
+			kw5fmmG9WJfO/S6NTYLiYfJkTFo=
 			</data>
 			<key>hash2</key>
 			<data>
-			u2zaWcbz3kx1+EpWqlGbzM6fifjnH0hk/NFKCEQHA9g=
+			SV9p6a0EYiwx1B82Q2tYkBsMW/LGnrJG3smADbNrYqM=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nuhUdumfMqdj92bzPZvP50rpIhs=
+			xHEEdn4Ck0Qn5fRaV3mH3Fd3iO8=
 			</data>
 			<key>hash2</key>
 			<data>
-			vitvTybbNGCAjcMlOdbw0EwBU3Idv30A3kN4CJb13qM=
+			WjiGWKgs5GF9nSKvarg2Pz8sd2ka49/SzmYzpdo5Vxo=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftDispatch.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+YV2NfmThmi8UF2zKqoj37UVJrw=
+			ddTQoI4TkMNPjdwaWKpWbHQEpkk=
 			</data>
 			<key>hash2</key>
 			<data>
-			MhzQvoAR1mnDM2jYlNJtDCBPJ3mX3m0CSEHakPrmM3U=
+			CUXsdUDzulq0Oxl7GNWQFIIay/yazSNfldgAFtYgkZU=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftFoundation.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KXm/FlN57xFmhfx47xEcyr3ZSU4=
+			94UPUutbmbHbk41RItR56PChd4A=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZZ30pwR1XgHXeRzEgBC4qpDQSjXk9rRiPltB7RplGeo=
+			WOy+VD16eEmWhjgR7sGFPaTqX0liVT6kSgkK6UAFo58=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftObjectiveC.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ft+Qsw+qpUgjMEXpM0mDsePsOZ0=
+			LseotGKl9JG7HrD5+drk7pYk5kM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Fl0rx2U9AcxqlFqqJQes11ITZot/x1f2U17hMcXH8Hs=
+			N2Vf+7bfqIEKWbyMSPF9+AnHb4e0zUaDvvETON+hsF4=
 			</data>
 		</dict>
 		<key>Headers/CometChatPro-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			p3VY5IEYKRsduB0mutQ7YPWLE8s=
+			m1tKBqNwX1gDKrNa4BppC1P4520=
 			</data>
 			<key>hash2</key>
 			<data>
-			P0ei0acu4fDN+kvAGTzYvTk3iXi6TvJVk1i8k2uMb1Q=
+			sZctNKa4uE+3ZLem0cka7JRNqZs6UWLS83p6viRZvFo=
 			</data>
 		</dict>
 		<key>Headers/CometChatPro.h</key>
@@ -2714,110 +2714,110 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			84N4qFXH6QuKmv4PQK0jVt1uwao=
+			2u1ZjT8T/o+ZC1wRqn/nd/Sz2ps=
 			</data>
 			<key>hash2</key>
 			<data>
-			AkGOu9znol/Wu9UmAA4Ec/nzSqDvaM0azJcGw1GfrdI=
+			tQfPzqYnU23FIGGduorHdGe4+n9225JkgEOvy/RhY9Q=
 			</data>
 		</dict>
 		<key>Modules/CometChatPro.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1CvLqLvlOl46J67fewAWj8WAxn4=
+			yHbbSktrna8Oj0bC+T8X5wGCzLw=
 			</data>
 			<key>hash2</key>
 			<data>
-			ev7F8GuefJXq34iOYCAtc/Le/jBiSwjFXjx8x7+Bulk=
+			4ktdgJxOwSmXOfYP/gEksdyS/kohy7zgYlK+hE+lMDA=
 			</data>
 		</dict>
 		<key>Modules/CometChatPro.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Rp+xmW+hNBJdw3fUyJxb8A1oQGk=
+			38bzaAa7Aulzmbd8z7rURSbedoE=
 			</data>
 			<key>hash2</key>
 			<data>
-			z0boBysI3UE5wphh0VwZWq7+Gx/skf1Q+vgY7lgqGGc=
+			9S4lo4JBECeBA1bgYT+A2j9VO5NWUF0gAvze6WaUUeA=
 			</data>
 		</dict>
 		<key>Modules/CometChatPro.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			m9mfIfHaikDqRZrBPd88pT44DHg=
+			BJwUJFaOalUvdAhrcY0m+h2Yhjw=
 			</data>
 			<key>hash2</key>
 			<data>
-			nN7NNkYFnpw4YKKuqS/6ivP4YuR1cENIZNrqPANp+Fc=
+			xGEIz69xTmrPNVoTpPtu+AkL6UQb5HFJna5HWPxw4ys=
 			</data>
 		</dict>
 		<key>Modules/CometChatPro.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Rp+xmW+hNBJdw3fUyJxb8A1oQGk=
+			38bzaAa7Aulzmbd8z7rURSbedoE=
 			</data>
 			<key>hash2</key>
 			<data>
-			z0boBysI3UE5wphh0VwZWq7+Gx/skf1Q+vgY7lgqGGc=
+			9S4lo4JBECeBA1bgYT+A2j9VO5NWUF0gAvze6WaUUeA=
 			</data>
 		</dict>
 		<key>Modules/CometChatPro.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			m9mfIfHaikDqRZrBPd88pT44DHg=
+			BJwUJFaOalUvdAhrcY0m+h2Yhjw=
 			</data>
 			<key>hash2</key>
 			<data>
-			nN7NNkYFnpw4YKKuqS/6ivP4YuR1cENIZNrqPANp+Fc=
+			xGEIz69xTmrPNVoTpPtu+AkL6UQb5HFJna5HWPxw4ys=
 			</data>
 		</dict>
 		<key>Modules/CometChatPro.swiftmodule/armv7-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			84N4qFXH6QuKmv4PQK0jVt1uwao=
+			2u1ZjT8T/o+ZC1wRqn/nd/Sz2ps=
 			</data>
 			<key>hash2</key>
 			<data>
-			AkGOu9znol/Wu9UmAA4Ec/nzSqDvaM0azJcGw1GfrdI=
+			tQfPzqYnU23FIGGduorHdGe4+n9225JkgEOvy/RhY9Q=
 			</data>
 		</dict>
 		<key>Modules/CometChatPro.swiftmodule/armv7-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1CvLqLvlOl46J67fewAWj8WAxn4=
+			yHbbSktrna8Oj0bC+T8X5wGCzLw=
 			</data>
 			<key>hash2</key>
 			<data>
-			ev7F8GuefJXq34iOYCAtc/Le/jBiSwjFXjx8x7+Bulk=
+			4ktdgJxOwSmXOfYP/gEksdyS/kohy7zgYlK+hE+lMDA=
 			</data>
 		</dict>
 		<key>Modules/CometChatPro.swiftmodule/armv7.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			84N4qFXH6QuKmv4PQK0jVt1uwao=
+			2u1ZjT8T/o+ZC1wRqn/nd/Sz2ps=
 			</data>
 			<key>hash2</key>
 			<data>
-			AkGOu9znol/Wu9UmAA4Ec/nzSqDvaM0azJcGw1GfrdI=
+			tQfPzqYnU23FIGGduorHdGe4+n9225JkgEOvy/RhY9Q=
 			</data>
 		</dict>
 		<key>Modules/CometChatPro.swiftmodule/armv7.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1CvLqLvlOl46J67fewAWj8WAxn4=
+			yHbbSktrna8Oj0bC+T8X5wGCzLw=
 			</data>
 			<key>hash2</key>
 			<data>
-			ev7F8GuefJXq34iOYCAtc/Le/jBiSwjFXjx8x7+Bulk=
+			4ktdgJxOwSmXOfYP/gEksdyS/kohy7zgYlK+hE+lMDA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
