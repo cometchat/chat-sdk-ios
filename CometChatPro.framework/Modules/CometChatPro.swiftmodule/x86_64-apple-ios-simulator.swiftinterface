@@ -101,7 +101,7 @@ extension CometChat {
   }
   @objc public init(UID: Swift.String, groupMemberScope: CometChatPro.CometChat.GroupMemberScopeType)
   @objc override public func stringValue() -> Swift.String
-  @objc override public init(uid: Swift.String, name: Swift.String, email: Swift.String, avatar: Swift.String, link: Swift.String, role: Swift.String, metadata: [Swift.String : Swift.String], credits: Swift.Int, status: CometChatPro.CometChat.UserStatus, statusMessage: Swift.String, lastActiveAt: Swift.Double)
+  @objc override public init(uid: Swift.String, name: Swift.String, avatar: Swift.String, link: Swift.String, role: Swift.String, metadata: [Swift.String : Swift.String], credits: Swift.Int, status: CometChatPro.CometChat.UserStatus, statusMessage: Swift.String, lastActiveAt: Swift.Double)
   @objc deinit
 }
 extension CometChat {
@@ -118,6 +118,18 @@ extension CometChat {
   @objc optional func onMessageReceived(_ message: CometChatPro.BaseMessage) -> CometChatPro.BaseMessage
   @objc optional func onMessageListFetched(_ messages: [CometChatPro.BaseMessage]) -> [CometChatPro.BaseMessage]
   @objc optional func onLogout()
+}
+extension CometChat {
+  @objc public enum ConversationType : Swift.Int {
+    case CONVERSATION_TYPE_USER
+    case CONVERSATION_TYPE_GROUP
+    case none
+    public typealias RawValue = Swift.Int
+    public init?(rawValue: Swift.Int)
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
 }
 extension CometChat {
   @objc public enum MemberScope : Swift.Int {
@@ -143,6 +155,7 @@ extension CometChat {
     @objc public func set(searchKeyword: Swift.String) -> CometChatPro.UsersRequest.UsersRequestBuilder
     @objc public func set(role: Swift.String) -> CometChatPro.UsersRequest.UsersRequestBuilder
     @objc public func hideBlockedUsers(_ hide: Swift.Bool) -> CometChatPro.UsersRequest.UsersRequestBuilder
+    @objc public func friendsOnly(_ friendsOnly: Swift.Bool) -> CometChatPro.UsersRequest.UsersRequestBuilder
     @objc public func build() -> CometChatPro.UsersRequest
     @objc deinit
   }
@@ -194,6 +207,7 @@ extension CometChat {
 }
 extension CometChat {
   public static func processMessage(_ message: [Swift.String : Any]) -> (CometChatPro.BaseMessage?, CometChatPro.CometChatException?)
+  public static func getConversationFromMessage(_ baseMessage: CometChatPro.BaseMessage) -> CometChatPro.Conversation?
 }
 @objc public class TextMessage : CometChatPro.BaseMessage {
   @objc public var text: Swift.String {
@@ -256,15 +270,15 @@ extension CometChat {
   @objc deinit
 }
 @objc public class MediaMessage : CometChatPro.BaseMessage {
-  @objc public var url: Swift.String? {
-    @objc get
-    @objc set(newValue)
-  }
   @objc public var caption: Swift.String? {
     @objc get
     @objc set(newValue)
   }
   @objc public var attachment: CometChatPro.Attachment? {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc public var filePath: Swift.String {
     @objc get
     @objc set(newValue)
   }
@@ -456,6 +470,10 @@ extension CometChat {
     @objc get
     @objc set(newValue)
   }
+  @objc public var receiver: CometChatPro.AppEntity? {
+    @objc get
+    @objc set(newValue)
+  }
   @objc public var metaData: [Swift.String : Any]? {
     @objc get
     @objc set(newValue)
@@ -473,6 +491,10 @@ extension CometChat {
     @objc set(newValue)
   }
   @objc public var deletedBy: Swift.String {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc public var conversationId: Swift.String {
     @objc get
     @objc set(newValue)
   }
@@ -531,10 +553,6 @@ extension CometChat {
     @objc get
     @objc set(newValue)
   }
-  @objc public var email: Swift.String? {
-    @objc get
-    @objc set(newValue)
-  }
   @objc public var avatar: Swift.String? {
     @objc get
     @objc set(newValue)
@@ -575,7 +593,7 @@ extension CometChat {
     @objc get
     @objc set(newValue)
   }
-  @objc public init(uid: Swift.String, name: Swift.String, email: Swift.String, avatar: Swift.String, link: Swift.String, role: Swift.String, metadata: [Swift.String : Swift.String], credits: Swift.Int, status: CometChatPro.CometChat.UserStatus, statusMessage: Swift.String, lastActiveAt: Swift.Double)
+  @objc public init(uid: Swift.String, name: Swift.String, avatar: Swift.String, link: Swift.String, role: Swift.String, metadata: [Swift.String : Swift.String], credits: Swift.Int, status: CometChatPro.CometChat.UserStatus, statusMessage: Swift.String, lastActiveAt: Swift.Double)
   @objc public func stringValue() -> Swift.String
   @objc deinit
 }
@@ -589,6 +607,21 @@ extension CometChat {
       get
     }
   }
+}
+@objc final public class ConversationRequest : ObjectiveC.NSObject {
+  public typealias Response = ([CometChatPro.Conversation]?, CometChatPro.CometChatException?) -> Swift.Void
+  @objc public init(builder: CometChatPro.ConversationRequest.ConversationRequestBuilder)
+  @objc final public func fetchNext(onSuccess: @escaping ([CometChatPro.Conversation]) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
+  @objc public class ConversationRequestBuilder : ObjectiveC.NSObject {
+    @objc public init(limit: Swift.Int)
+    @objc public func set(limit: Swift.Int) -> CometChatPro.ConversationRequest.ConversationRequestBuilder
+    @objc public func setConversationType(conversationType: CometChatPro.CometChat.ConversationType) -> CometChatPro.ConversationRequest.ConversationRequestBuilder
+    @objc public func build() -> CometChatPro.ConversationRequest
+    @objc override dynamic public init()
+    @objc deinit
+  }
+  @objc override dynamic public init()
+  @objc deinit
 }
 @objc public class AppSettings : ObjectiveC.NSObject {
   @objc public init(builder: CometChatPro.AppSettings.AppSettingsBuilder)
@@ -685,11 +718,6 @@ extension CometChat {
     }
   }
 }
-extension Sequence where Self.Element : Swift.Equatable {
-  public var uniqueElements: [Self.Element] {
-    get
-  }
-}
 extension CometChat {
   @objc public enum ActionEntityType : Swift.Int {
     case user
@@ -720,7 +748,7 @@ extension CometChat {
   }
 }
 @objc public class CurrentUser : CometChatPro.User {
-  @objc override public init(uid: Swift.String, name: Swift.String, email: Swift.String, avatar: Swift.String, link: Swift.String, role: Swift.String, metadata: [Swift.String : Swift.String], credits: Swift.Int, status: CometChatPro.CometChat.UserStatus, statusMessage: Swift.String, lastActiveAt: Swift.Double)
+  @objc override public init(uid: Swift.String, name: Swift.String, avatar: Swift.String, link: Swift.String, role: Swift.String, metadata: [Swift.String : Swift.String], credits: Swift.Int, status: CometChatPro.CometChat.UserStatus, statusMessage: Swift.String, lastActiveAt: Swift.Double)
   @objc deinit
 }
 extension CometChat {
@@ -753,6 +781,34 @@ extension CometChat {
   @objc public static func sendTextMessage(message: CometChatPro.TextMessage, onSuccess: @escaping (CometChatPro.TextMessage) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
   @objc public static func sendMediaMessage(message: CometChatPro.MediaMessage, onSuccess: @escaping (CometChatPro.MediaMessage) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
   @objc public static func sendCustomMessage(message: CometChatPro.CustomMessage, onSuccess: @escaping (CometChatPro.CustomMessage) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
+}
+@objc public class Conversation : CometChatPro.AppEntity {
+  @objc public var conversationId: Swift.String? {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc public var conversationType: Swift.String? {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc public var lastMessage: CometChatPro.BaseMessage {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc public var conversationWith: CometChatPro.AppEntity {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc public var unreadMessageCount: Swift.Int {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc public var updatedAt: Swift.Double {
+    @objc get
+    @objc set(newValue)
+  }
+  @objc public func stringValue() -> Swift.String
+  @objc deinit
 }
 extension CometChat {
   @objc public enum MessageType : Swift.Int {
