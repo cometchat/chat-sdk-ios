@@ -418,8 +418,8 @@ typedef SWIFT_ENUM(NSInteger, SubscriptionType, open) {
 @end
 
 typedef SWIFT_ENUM(NSInteger, ConversationType, open) {
-  ConversationTypeCONVERSATION_TYPE_USER = 0,
-  ConversationTypeCONVERSATION_TYPE_GROUP = 1,
+  ConversationTypeUser = 0,
+  ConversationTypeGroup = 1,
   ConversationTypeNone = 2,
 };
 
@@ -795,9 +795,9 @@ SWIFT_PROTOCOL("_TtP12CometChatPro21CometChatUserDelegate_")
 SWIFT_CLASS("_TtC12CometChatPro12Conversation")
 @interface Conversation : AppEntity
 @property (nonatomic, copy) NSString * _Nullable conversationId;
-@property (nonatomic, copy) NSString * _Nullable conversationType;
-@property (nonatomic, strong) BaseMessage * _Nonnull lastMessage;
-@property (nonatomic, strong) AppEntity * _Nonnull conversationWith;
+@property (nonatomic) enum ConversationType conversationType;
+@property (nonatomic, strong) BaseMessage * _Nullable lastMessage;
+@property (nonatomic, strong) AppEntity * _Nullable conversationWith;
 @property (nonatomic) NSInteger unreadMessageCount;
 @property (nonatomic) double updatedAt;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1481,8 +1481,8 @@ typedef SWIFT_ENUM(NSInteger, SubscriptionType, open) {
 @end
 
 typedef SWIFT_ENUM(NSInteger, ConversationType, open) {
-  ConversationTypeCONVERSATION_TYPE_USER = 0,
-  ConversationTypeCONVERSATION_TYPE_GROUP = 1,
+  ConversationTypeUser = 0,
+  ConversationTypeGroup = 1,
   ConversationTypeNone = 2,
 };
 
@@ -1858,9 +1858,9 @@ SWIFT_PROTOCOL("_TtP12CometChatPro21CometChatUserDelegate_")
 SWIFT_CLASS("_TtC12CometChatPro12Conversation")
 @interface Conversation : AppEntity
 @property (nonatomic, copy) NSString * _Nullable conversationId;
-@property (nonatomic, copy) NSString * _Nullable conversationType;
-@property (nonatomic, strong) BaseMessage * _Nonnull lastMessage;
-@property (nonatomic, strong) AppEntity * _Nonnull conversationWith;
+@property (nonatomic) enum ConversationType conversationType;
+@property (nonatomic, strong) BaseMessage * _Nullable lastMessage;
+@property (nonatomic, strong) AppEntity * _Nullable conversationWith;
 @property (nonatomic) NSInteger unreadMessageCount;
 @property (nonatomic) double updatedAt;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

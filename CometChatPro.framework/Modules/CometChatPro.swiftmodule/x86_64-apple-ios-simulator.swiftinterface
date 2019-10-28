@@ -121,8 +121,8 @@ extension CometChat {
 }
 extension CometChat {
   @objc public enum ConversationType : Swift.Int {
-    case CONVERSATION_TYPE_USER
-    case CONVERSATION_TYPE_GROUP
+    case user
+    case group
     case none
     public typealias RawValue = Swift.Int
     public init?(rawValue: Swift.Int)
@@ -787,15 +787,15 @@ extension CometChat {
     @objc get
     @objc set(newValue)
   }
-  @objc public var conversationType: Swift.String? {
+  @objc public var conversationType: CometChatPro.CometChat.ConversationType {
     @objc get
     @objc set(newValue)
   }
-  @objc public var lastMessage: CometChatPro.BaseMessage {
+  @objc public var lastMessage: CometChatPro.BaseMessage? {
     @objc get
     @objc set(newValue)
   }
-  @objc public var conversationWith: CometChatPro.AppEntity {
+  @objc public var conversationWith: CometChatPro.AppEntity? {
     @objc get
     @objc set(newValue)
   }
