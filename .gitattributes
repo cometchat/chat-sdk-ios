@@ -4,3 +4,4 @@ Vendors/JitsiMeet.framework/JitsiMeet filter=lfs diff=lfs merge=lfs -text
 /Users/JEET/Desktop/newSDKRELEASEREPO/ios-chat-sdk/Vendors/JitsiMeet.xcframework/ios-armv7_arm64/jitsiMeet.framework/JitsiMeet filter=lfs diff=lfs merge=lfs -text
 Vendors/JitsiMeet.xcframework/ios-armv7_arm64/jitsiMeet.framework/JitsiMeet filter=lfs diff=lfs merge=lfs -text
 Vendors/JitsiMeet.xcframework/ios-i386_x86_64-simulator/jitsiMeet.framework/JitsiMeet filter=lfs diff=lfs merge=lfs -text
+ 
