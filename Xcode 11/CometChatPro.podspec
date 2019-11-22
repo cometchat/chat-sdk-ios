@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |spec|
   spec.name             = 'CometChatPro'
-  spec.version          = '1.8.11-Xcode11'
+  spec.version          = '1.8.12-Xcode11'
   spec.license          =  {:type => 'MIT', :file => 'License.md'}
   spec.homepage         = 'https://www.cometchat.com/pro'
   spec.authors          = {  'Jeet Kapadia' => 'jeet.kapadia@inscripts.in', 'pushpsen' => 'pushpsen.airekar@inscripts.com'}
