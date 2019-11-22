@@ -38,7 +38,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 target 'MyApp' do
-  pod 'CometChatPro', '~> 2.0.0'
+  pod 'CometChatPro', '~> 2.0.1'
 end 
 ```
 
@@ -49,7 +49,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 target 'MyApp' do
-pod 'CometChatPro', '~> 2.0.0-Xcode11'
+  pod 'CometChatPro', '~> 2.0.1-Xcode11'
 end 
 ```
 
