@@ -31,14 +31,25 @@ Before you begin, we strongly recommend you read the <a href="https://prodocs.co
 
 ### Installation:
 
-- For Xcode 11.2.1 (Latest):
+- For Xcode 11.3 (Latest):
 
 ```
 platform :ios, '10.0'
 use_frameworks!
 
 target 'MyApp' do
-  pod 'CometChatPro', '~> 2.0.6'
+  pod 'CometChatPro', '2.0.6-Xcode11.3'
+end 
+```
+
+- For Xcode 11.2.1 :
+
+```
+platform :ios, '10.0'
+use_frameworks!
+
+target 'MyApp' do
+  pod 'CometChatPro', '2.0.6-Xcode11.2.1'
 end 
 ```
 
