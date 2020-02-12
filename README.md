@@ -9,7 +9,7 @@
 CometChat Pro enables you to add voice, video & text chat for your website & app.
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://cocoapods.org/pods/CometChatPro)
-[![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/cometchat-pro/ios-chat-sdk)[![CocoaPods](https://img.shields.io/badge/pod-v2.0.6-green.svg)](https://cocoapods.org/pods/CometChatPro)
+[![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/cometchat-pro/ios-chat-sdk)[![CocoaPods](https://img.shields.io/badge/pod-v2.0.7-green.svg)](https://cocoapods.org/pods/CometChatPro)
 
 
 # User Guide
@@ -31,36 +31,14 @@ Before you begin, we strongly recommend you read the <a href="https://prodocs.co
 
 ### Installation:
 
-- For Xcode 11.3 (Latest):
+- For Xcode 11.2.1 (Higher):
 
 ```
 platform :ios, '10.0'
 use_frameworks!
 
 target 'MyApp' do
-  pod 'CometChatPro', '2.0.6-Xcode11.3'
-end 
-```
-
-- For Xcode 11.2.1 :
-
-```
-platform :ios, '10.0'
-use_frameworks!
-
-target 'MyApp' do
-  pod 'CometChatPro', '2.0.6-Xcode11.2.1'
-end 
-```
-
-- For Xcode 11 (Older):
-
-```
-platform :ios, '10.0'
-use_frameworks!
-
-target 'MyApp' do
-  pod 'CometChatPro', '~> 2.0.6-Xcode11'
+  pod 'CometChatPro', '2.0.7'
 end 
 ```
 
