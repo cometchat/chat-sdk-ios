@@ -31,36 +31,16 @@ Before you begin, we strongly recommend you read the <a href="https://prodocs.co
 
 ### Installation:
 
+We Have migrated to xcframework and we provide support from Xcode 11.4 and above
+
 - For Xcode 12:
 
 ```
-platform :ios, '10.0'
+platform :ios, '11.0'
 use_frameworks!
 
 target 'MyApp' do
-  pod 'CometChatPro', '2.0.13-Xcode12'
-end 
-```
-
-- For Xcode 11.6:
-
-```
-platform :ios, '10.0'
-use_frameworks!
-
-target 'MyApp' do
-  pod 'CometChatPro', '2.0.13-Xcode11.6'
-end 
-```
-
-- For Xcode 11.4:
-
-```
-platform :ios, '10.0'
-use_frameworks!
-
-target 'MyApp' do
-  pod 'CometChatPro', '2.0.13-Xcode11.4'
+  pod 'CometChatPro', '2.1.0'
 end 
 ```
 
