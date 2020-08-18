@@ -51,4 +51,4 @@ To use our SDK with v1 Apps, you can checkout to branch v1 and install the SDK a
 
 ### Note: 
 
-CometChatPro SDK supports installation through Cocoapods only and it will support upto three latest releases of Xcode. Currently we are supporting Xcode 11.4, Xcode 11.6 and Xcode 12.
+CometChatPro SDK supports installation through Cocoapods only and as have migrated to xcframeworks we support versions Xcode 11.4 and greater.
