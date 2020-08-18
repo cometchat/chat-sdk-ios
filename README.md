@@ -33,7 +33,7 @@ Before you begin, we strongly recommend you read the <a href="https://prodocs.co
 
 We Have migrated to xcframework and we provide support from Xcode 11.4 and above
 
-- For Xcode 12:
+- For Xcode 11.4 and above:
 
 ```
 platform :ios, '11.0'
