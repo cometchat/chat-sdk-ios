@@ -9,7 +9,7 @@
 CometChat Pro enables you to add voice, video & text chat for your website & app.
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://cocoapods.org/pods/CometChatPro)
-[![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/cometchat-pro/ios-chat-sdk)[![CocoaPods](https://img.shields.io/badge/pod-v2.0.13-green.svg)](https://cocoapods.org/pods/CometChatPro)
+[![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/cometchat-pro/ios-chat-sdk)[![CocoaPods](https://img.shields.io/badge/pod-v2.1.1-green.svg)](https://cocoapods.org/pods/CometChatPro)
 
 
 # User Guide
@@ -40,7 +40,7 @@ platform :ios, '11.0'
 use_frameworks!
 
 target 'MyApp' do
-  pod 'CometChatPro', '2.1.0'
+  pod 'CometChatPro', '2.1.1'
 end 
 ```
 
