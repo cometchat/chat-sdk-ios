@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
   spec.homepage         = 'https://www.cometchat.com/pro'
   spec.authors          = {  'Jeet Kapadia' => 'jeet.kapadia@inscripts.in', 'pushpsen' => 'pushpsen.airekar@inscripts.com','Nishant Tiwari' => 'nishant.tiwari@inscripts.in'}
   spec.summary          = 'CometChatPro is a platform for integrating voice, video & text messaging experiences into your websites, web apps and mobile apps'
-  spec.source          = { :http => 'https://library.cometchat.io/ios-chat-widget/v2.0/xc/CometChatPro_v_2.1.2.zip'}
+  spec.source          = { :http => 'https://library.cometchat.io/v2.0/xcode11.2.1/CometChatPro_v_2.1.2.zip'}
   spec.library          = 'z', 'sqlite3', 'xml2.2'
   spec.xcconfig         = {'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2'}
   spec.vendored_frameworks = 'Vendors/CometChatPro.xcframework','Vendors/CometChatProCalls.xcframework','Vendors/WebRTC.framework'
