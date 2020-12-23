@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |spec|
   spec.name             = 'CometChatPro'
-  spec.version          = '2.1.2'
+  spec.version          = '2.1.5'
   spec.license          =  {:type => 'MIT', :file => 'License.md'}
   spec.homepage         = 'https://www.cometchat.com/pro'
   spec.authors          = {  'Jeet Kapadia' => 'jeet.kapadia@inscripts.in', 'pushpsen' => 'pushpsen.airekar@inscripts.com','Nishant Tiwari' => 'nishant.tiwari@inscripts.in'}
@@ -12,5 +12,7 @@ Pod::Spec.new do |spec|
   spec.vendored_frameworks = 'Vendors/CometChatPro.xcframework','Vendors/CometChatProCalls.xcframework','Vendors/WebRTC.framework'
   spec.documentation_url = 'https://prodocs.cometchat.com/v2.0/docs/ios-quick-start'
   spec.exclude_files    = "Classes/Exclude"
+  spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.platform         = :ios, "11.0"
 end
