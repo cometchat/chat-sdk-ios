@@ -195,9 +195,10 @@ Visit our [Objective-C sample app](https://github.com/cometchat-pro-samples/ios-
 Thanks to the following people who have contributed to this project:
 
 [@pushpsenairekar2911 👨‍💻](https://github.com/pushpsenairekar2911) <br>
-[@ghanshyammansata 👨‍💻]](https://github.com/ghanshyammansata) <br>
+[@ghanshyammansata 👨‍💻](https://github.com/ghanshyammansata) <br>
 [@jeetkapadia 👨‍💻](https://github.com/jeetkapadia) <br>
-[@NishantTiwarins 👨‍💻]](https://github.com/NishantTiwarins) <br>
+[@NishantTiwarins 👨‍💻](https://github.com/NishantTiwarins) <br>
+
 ---
 
 # Contact
