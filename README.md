@@ -123,8 +123,7 @@ ___
 
 ### ii.Create User
 
-Once initialisation is successful, you will need to create a user.
-To create users on the fly, you can use the createUser() method. This method takes an User object and the API Key as input parameters and returns the created User object if the request is successful.
+Once initialisation is successful, you will need to create a user. To create users on the fly, you can use the `createUser()` method. This method takes an `User` object and the `Auth Key` as input parameters and returns the created User object if the request is successful.
 
 ```swift
 
@@ -183,7 +182,7 @@ Visit our [Objective-C sample app](https://github.com/cometchat-pro-samples/ios-
 
 # Troubleshooting
 
-- To read the full dcoumentation on CometChatPro integration visit our [Documentation](https://prodocs.cometchat.com/docs/ios-quick-start).
+- To read the full dcoumentation on CometChat integration visit our [Documentation](https://prodocs.cometchat.com/docs/ios-quick-start).
 
 - Facing any issues while integrating or installing the UI Kit please <a href="https://app.cometchat.io/"> connect with us via real time support present in CometChat Dashboard.</a>.
 
