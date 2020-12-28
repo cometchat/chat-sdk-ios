@@ -9,7 +9,7 @@
 
 </br>
 
-# iOS Chat SDK
+# CometChat iOS Chat SDK
 
 <a href="https://cocoapods.org/pods/CometChatPro"><img src="https://img.shields.io/badge/platform-iOS-orange.svg" /></a>
 <a href=""><img src="https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg" /></a>
@@ -20,26 +20,26 @@
 </p>
 </br></br>
 
-CometChat Pro enables you to add voice, video & text chat for your website & app.
+CometChat enables you to add voice, video & text chat for your website & app.
 ___
 
-## Prerequisites
+## Prerequisites :star:
 
 Before you begin, ensure you have met the following requirements:
 
-- You have installed the latest version of Xcode. (Above Xcode 12 Recommended)
+✅ &nbsp; You have installed the latest version of Xcode. (Above Xcode 12 Recommended)
 
-- iOS Chat SDK works for the iOS devices from iOS 11 and above.
+✅ &nbsp; iOS Chat SDK works for the iOS devices from iOS 11 and above.
 
 ___
 
 ## Installing iOS Chat SDK 
 
-## 1. Setup
+## 1. Setup  :wrench:
 
 To install iOS Chat SDK, you  need to first register on CometChat Dashboard. [Click here to sign up](https://app.cometchat.com/login).
 
-### i. Get your Application Keys
+### i. Get your Application Keys :key:
 
 * Create a new app
 * Head over to the Quick Start or API & Auth Keys section and note the `App ID`, `Auth Key`,  and  `Region`.
@@ -89,7 +89,7 @@ ___
 
 ## 2. Configure CometChat inside your app
 
-### i. Initialize CometChat
+### i. Initialize CometChat :star2:
 
 The `init()` method initializes the settings required for CometChat. We suggest calling the `init()` method on app startup, preferably in the `didFinishLaunchingWithOptions()` method of the Application class.
 
@@ -121,7 +121,7 @@ Make sure you replace the APP_ID with your CometChat `appId` and `region` with y
 
 ___
 
-### ii.Create User
+### ii.Create User :bust_in_silhouette:
 
 Once initialisation is successful, you will need to create a user. To create users on the fly, you can use the `createUser()` method. This method takes an `User` object and the `Auth Key` as input parameters and returns the created User object if the request is successful.
 
@@ -138,7 +138,7 @@ CometChat.createUser(user: newUser, apiKey: authKey, onSuccess: { (User) in
 ```
 ___
 
-### iii.Log in your User
+### iii.Log in your User :bust_in_silhouette:
 
 The `login()` method returns the User object containing all the information of the logged-in user.
 
@@ -200,15 +200,13 @@ Thanks to the following people who have contributed to this project:
 
 ---
 
-# Contact
+# Contact :mailbox:
 
 Contact us via real time support present in [CometChat Dashboard.](https://app.cometchat.io/)
 
 ---
 
 # License
-
----
 
 This project uses the following [license](https://github.com/cometchat-pro/ios-swift-chat-ui-kit/blob/master/License.md).
 
