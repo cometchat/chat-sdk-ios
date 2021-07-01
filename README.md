@@ -72,6 +72,23 @@ end
 ________________________________________________________________
 
 ```
+v2.4+ onwards, Voice & Video Calling functionality has been moved to a separate framework. Please add the following pod to your app Podfile in case you plan on using the Voice and Video Calling feature.   
+
+```bash
+________________________________________________________________
+
+For Xcode 12 and above:
+
+platform :ios, '11.0'
+use_frameworks!
+
+target 'YourApp' do
+     pod 'CometChatPro', '2.4.0'
+     pod 'CometChatCalls', '2.1.0'
+end
+________________________________________________________________
+
+```
 And then install the `CometChatPro` framework through CocoaPods.
 
 ```bash
