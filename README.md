@@ -14,7 +14,7 @@
 <a href="https://cocoapods.org/pods/CometChatPro"><img src="https://img.shields.io/badge/platform-iOS-orange.svg" /></a>
 <a href=""><img src="https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg" /></a>
 <a href=""> <img src="https://img.shields.io/badge/Contributors-4-yellowgreen" /></a>
-<a href=" "> <img src="https://img.shields.io/badge/Version-3.0.0-red" /></a>
+<a href=" "> <img src="https://img.shields.io/badge/Version-3.0.1-red" /></a>
 <a href=""> <img src="https://img.shields.io/github/stars/cometchat-pro/ios-chat-sdk?style=social" /></a>
 
 </p>
@@ -67,9 +67,28 @@ platform :ios, '11.0'
 use_frameworks!
 
 target 'YourApp' do
-     pod 'CometChatPro', '3.0.0'
+     pod 'CometChatPro', '3.0.1'
 end
 ________________________________________________________________
+
+
+```
+v3.0.1+ onwards, Voice & Video Calling functionality has been moved to a separate framework. Please add the following pod to your app Podfile in case you plan on using the Voice and Video Calling feature.   
+
+```bash
+________________________________________________________________
+
+For Xcode 12 and above:
+
+platform :ios, '11.0'
+use_frameworks!
+
+target 'YourApp' do
+     pod 'CometChatPro', '3.0.1'
+     pod 'CometChatCalls', '2.1.0'
+end
+________________________________________________________________
+
 
 ```
 And then install the `CometChatPro` framework through CocoaPods.
