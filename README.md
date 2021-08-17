@@ -14,7 +14,7 @@
 <a href="https://cocoapods.org/pods/CometChatPro"><img src="https://img.shields.io/badge/platform-iOS-orange.svg" /></a>
 <a href=""><img src="https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg" /></a>
 <a href=""> <img src="https://img.shields.io/badge/Contributors-4-yellowgreen" /></a>
-<a href=" "> <img src="https://img.shields.io/badge/Version-2.3.7-red" /></a>
+<a href=" "> <img src="https://img.shields.io/badge/Version-2.4.1-red" /></a>
 <a href=""> <img src="https://img.shields.io/github/stars/cometchat-pro/ios-chat-sdk?style=social" /></a>
 
 </p>
@@ -67,12 +67,12 @@ platform :ios, '11.0'
 use_frameworks!
 
 target 'YourApp' do
-     pod 'CometChatPro', '2.3.7'
+     pod 'CometChatPro', '2.4.1'
 end
 ________________________________________________________________
 
 ```
-v2.4+ onwards, Voice & Video Calling functionality has been moved to a separate framework. Please add the following pod to your app Podfile in case you plan on using the Voice and Video Calling feature.   
+v2.4.1+ onwards, Voice & Video Calling functionality has been moved to a separate framework. Please add the following pod to your app Podfile in case you plan on using the Voice and Video Calling feature.   
 
 ```bash
 ________________________________________________________________
@@ -83,7 +83,7 @@ platform :ios, '11.0'
 use_frameworks!
 
 target 'YourApp' do
-     pod 'CometChatPro', '2.4.0'
+     pod 'CometChatPro', '2.4.1'
      pod 'CometChatCalls', '2.1.0'
 end
 ________________________________________________________________
