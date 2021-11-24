@@ -67,7 +67,7 @@ platform :ios, '11.0'
 use_frameworks!
 
 target 'YourApp' do
-     pod 'CometChatPro', '3.0.3'
+     pod 'CometChatPro', '3.0.5'
 end
 ________________________________________________________________
 
@@ -84,7 +84,7 @@ platform :ios, '11.0'
 use_frameworks!
 
 target 'YourApp' do
-     pod 'CometChatPro', '3.0.3'
+     pod 'CometChatPro', '3.0.5'
      pod 'CometChatCalls', '2.1.1'
 end
 ________________________________________________________________
