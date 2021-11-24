@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CometChatPro
+// swift-compiler-version: Apple Swift version 5.5.1 effective-4.2 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -module-name CometChatPro
 import AVKit
 @_exported import CometChatPro
 import Foundation
@@ -9,6 +9,7 @@ import Starscream
 import Swift
 import SystemConfiguration
 import UIKit
+import _Concurrency
 @objc public class MessageReceipt : ObjectiveC.NSObject {
   @objc public enum ReceiptType : Swift.Int {
     case delivered
@@ -29,7 +30,6 @@ import UIKit
   @objc public var readAt: Swift.Double
   @objc public init(messageId: Swift.String, sender: CometChatPro.User, receiverId: Swift.String, receiverType: CometChatPro.CometChat.ReceiverType, receiptType: CometChatPro.MessageReceipt.ReceiptType, timeStamp: Swift.Int)
   @objc public func stringValue() -> Swift.String
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers public class Attachment : ObjectiveC.NSObject {
@@ -48,14 +48,13 @@ import UIKit
   @objc public var fileUrl: Swift.String {
     @objc get
   }
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class AppEntity : ObjectiveC.NSObject {
   @objc override dynamic public init()
   @objc deinit
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public enum AudioMode : Swift.Int {
     case SPEAKER
     case EARPIECE
@@ -73,8 +72,8 @@ extension CometChat {
 }
 @objc final public class BlockedUserRequest : ObjectiveC.NSObject {
   @objc public init(builder: CometChatPro.BlockedUserRequest.BlockedUserRequestBuilder)
-  @objc final public func fetchPrevious(onSuccess: @escaping ([CometChatPro.User]?) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
-  @objc final public func fetchNext(onSuccess: @escaping ([CometChatPro.User]?) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
+  @objc final public func fetchPrevious(onSuccess: @escaping (_ users: [CometChatPro.User]?) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
+  @objc final public func fetchNext(onSuccess: @escaping (_ users: [CometChatPro.User]?) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
   @_inheritsConvenienceInitializers @objc public class BlockedUserRequestBuilder : ObjectiveC.NSObject {
     @objc public init(limit: Swift.Int)
     @objc override dynamic public init()
@@ -83,7 +82,6 @@ extension CometChat {
     @objc public func build() -> CometChatPro.BlockedUserRequest
     @objc deinit
   }
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public class TransientMessage : ObjectiveC.NSObject {
@@ -93,13 +91,16 @@ extension CometChat {
   @objc public var sender: CometChatPro.User?
   @objc public init(receiverID: Swift.String, receiverType: CometChatPro.CometChat.ReceiverType, data: [Swift.String : Any])
   @objc public func stringValue() -> Swift.String
-  @objc override dynamic public init()
   @objc deinit
 }
-extension CometChat {
+extension CometChatPro.CometChat {
+  @objc public static func markAsRead(baseMessage: CometChatPro.BaseMessage, onSuccess: @escaping () -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> ())
   @objc public static func markAsRead(baseMessage: CometChatPro.BaseMessage)
+  @objc public static func markAsRead(messageId: Swift.Int, receiverId: Swift.String, receiverType: CometChatPro.CometChat.ReceiverType, messageSender: Swift.String, onSuccess: @escaping () -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> ())
   @objc public static func markAsRead(messageId: Swift.Int, receiverId: Swift.String, receiverType: CometChatPro.CometChat.ReceiverType, messageSender: Swift.String)
+  @objc public static func markAsDelivered(baseMessage: CometChatPro.BaseMessage, onSuccess: @escaping () -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> ())
   @objc public static func markAsDelivered(baseMessage: CometChatPro.BaseMessage)
+  @objc public static func markAsDelivered(messageId: Swift.Int, receiverId: Swift.String, receiverType: CometChatPro.CometChat.ReceiverType, messageSender: Swift.String, onSuccess: @escaping () -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> ())
   @objc public static func markAsDelivered(messageId: Swift.Int, receiverId: Swift.String, receiverType: CometChatPro.CometChat.ReceiverType, messageSender: Swift.String)
 }
 public enum HTTPMethod : Swift.String {
@@ -114,7 +115,7 @@ public enum HTTPMethod : Swift.String {
     get
   }
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public enum callStatus : Swift.Int {
     case initiated
     case ongoing
@@ -141,18 +142,17 @@ extension CometChat {
   }
   @objc public init(UID: Swift.String, groupMemberScope: CometChatPro.CometChat.GroupMemberScopeType)
   @objc override public func stringValue() -> Swift.String
-  @objc override public init(uid: Swift.String, name: Swift.String)
   @objc deinit
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public static func login(UID: Swift.String, apiKey: Swift.String, onSuccess: @escaping (CometChatPro.User) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException) -> Swift.Void)
   @objc public static func login(UID: Swift.String, authKey: Swift.String, onSuccess: @escaping (CometChatPro.User) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException) -> Swift.Void)
   @objc public static func login(authToken: Swift.String, onSuccess: @escaping (CometChatPro.User) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException) -> Swift.Void)
-  @objc public static func logout(onSuccess: @escaping (Swift.String) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException) -> Swift.Void)
+  @objc public static func logout(onSuccess: @escaping (_ Response: Swift.String) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException) -> Swift.Void)
 }
-extension CometChat {
-  @objc public static func getConversation(conversationWith: Swift.String, conversationType: CometChatPro.CometChat.ConversationType, onSuccess: @escaping (CometChatPro.Conversation?) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
-  @objc public static func deleteConversation(conversationWith: Swift.String, conversationType: CometChatPro.CometChat.ConversationType, onSuccess: @escaping (Swift.String) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
+extension CometChatPro.CometChat {
+  @objc public static func getConversation(conversationWith: Swift.String, conversationType: CometChatPro.CometChat.ConversationType, onSuccess: @escaping (_ user: CometChatPro.Conversation?) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
+  @objc public static func deleteConversation(conversationWith: Swift.String, conversationType: CometChatPro.CometChat.ConversationType, onSuccess: @escaping (_ message: Swift.String) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
 }
 @objc public protocol CometChatExtension {
   @objc func getExtensionID() -> Swift.String
@@ -164,7 +164,7 @@ extension CometChat {
   @objc optional func onMessageListFetched(_ messages: [CometChatPro.BaseMessage]) -> [CometChatPro.BaseMessage]
   @objc optional func onLogout()
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public enum ConversationType : Swift.Int {
     case user
     case group
@@ -176,7 +176,7 @@ extension CometChat {
     }
   }
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public enum MemberScope : Swift.Int {
     case admin
     case moderator
@@ -189,9 +189,9 @@ extension CometChat {
   }
 }
 @objc public class UsersRequest : ObjectiveC.NSObject {
-  public typealias Response = ([CometChatPro.User]?, CometChatPro.CometChatException?) -> Swift.Void
+  public typealias Response = (_ users: [CometChatPro.User]?, _ error: CometChatPro.CometChatException?) -> Swift.Void
   @objc public init(builder: CometChatPro.UsersRequest.UsersRequestBuilder)
-  @objc public func fetchNext(onSuccess: @escaping ([CometChatPro.User]) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
+  @objc public func fetchNext(onSuccess: @escaping (_ users: [CometChatPro.User]) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
   @_inheritsConvenienceInitializers @objc public class UsersRequestBuilder : ObjectiveC.NSObject {
     @objc public init(limit: Swift.Int)
     @objc override dynamic public init()
@@ -209,7 +209,6 @@ extension CometChat {
     @objc public func build() -> CometChatPro.UsersRequest
     @objc deinit
   }
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers public class Call : CometChatPro.BaseMessage {
@@ -252,12 +251,11 @@ extension CometChat {
   @objc public init(receiverId: Swift.String, callType: CometChatPro.CometChat.CallType, receiverType: CometChatPro.CometChat.ReceiverType)
   public static func callMessage(fromJSON message: [Swift.String : Any]?) -> (CometChatPro.BaseMessage?, CometChatPro.CometChatException?)
   @objc public func stringValue() -> Swift.String
-  @objc override public init(receiverUid: Swift.String, messageType: CometChatPro.CometChat.MessageType, receiverType: CometChatPro.CometChat.ReceiverType)
   @objc deinit
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   public static func processMessage(_ message: [Swift.String : Any]) -> (CometChatPro.BaseMessage?, CometChatPro.CometChatException?)
-  @objc public static func processMessage(_ message: [Swift.String : Any], onSuccess: @escaping (CometChatPro.BaseMessage) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException) -> Swift.Void)
+  @objc public static func processMessage(_ message: [Swift.String : Any], onSuccess: @escaping (_ baseMessage: CometChatPro.BaseMessage) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException) -> Swift.Void)
   public static func getConversationFromMessage(_ baseMessage: CometChatPro.BaseMessage) -> CometChatPro.Conversation?
 }
 @objc @_hasMissingDesignatedInitializers public class TextMessage : CometChatPro.BaseMessage {
@@ -268,7 +266,6 @@ extension CometChat {
   @objc public init(receiverUid: Swift.String, text: Swift.String, receiverType: CometChatPro.CometChat.ReceiverType)
   public static func textMessage(fromJSON message: [Swift.String : Any]?) -> (CometChatPro.BaseMessage?, CometChatPro.CometChatException?)
   @objc public func stringValue() -> Swift.String
-  @objc override public init(receiverUid: Swift.String, messageType: CometChatPro.CometChat.MessageType, receiverType: CometChatPro.CometChat.ReceiverType)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ActionMessage : CometChatPro.BaseMessage {
@@ -308,7 +305,7 @@ extension CometChat {
   @objc public func stringValue() -> Swift.String
   @objc deinit
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public enum CallFlowMode : Swift.Int {
     case DEFAULT
     case DIRECT
@@ -330,13 +327,13 @@ extension CometChat {
   }
   @objc deinit
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   public static func getExtensionDetails(extensionId: Swift.String, onSuccess: @escaping (CometChatPro.CCExtension) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
 }
 @objc public class GroupsRequest : ObjectiveC.NSObject {
-  public typealias Response = ([CometChatPro.Group]?, CometChatPro.CometChatException?) -> Swift.Void
+  public typealias Response = (_ groups: [CometChatPro.Group]?, _ error: CometChatPro.CometChatException?) -> Swift.Void
   @objc public init(builder: CometChatPro.GroupsRequest.GroupsRequestBuilder)
-  @objc public func fetchNext(onSuccess: @escaping ([CometChatPro.Group]) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
+  @objc public func fetchNext(onSuccess: @escaping (_ users: [CometChatPro.Group]) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
   @objc public class GroupsRequestBuilder : ObjectiveC.NSObject {
     @objc public init(limit: Swift.Int)
     @objc public func set(limit: Swift.Int) -> CometChatPro.GroupsRequest.GroupsRequestBuilder
@@ -345,10 +342,8 @@ extension CometChat {
     @objc public func withTags(_ withTags: Swift.Bool) -> CometChatPro.GroupsRequest.GroupsRequestBuilder
     @objc public func set(tags: [Swift.String]) -> CometChatPro.GroupsRequest.GroupsRequestBuilder
     @objc public func build() -> CometChatPro.GroupsRequest
-    @objc override dynamic public init()
     @objc deinit
   }
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers public class MediaMessage : CometChatPro.BaseMessage {
@@ -367,10 +362,9 @@ extension CometChat {
   @objc public init(receiverUid: Swift.String, fileurl: Swift.String, messageType: CometChatPro.CometChat.MessageType, receiverType: CometChatPro.CometChat.ReceiverType)
   public static func mediaMessage(fromJSON message: [Swift.String : Any]?) -> (CometChatPro.BaseMessage?, CometChatPro.CometChatException?)
   @objc public func stringValue() -> Swift.String
-  @objc override public init(receiverUid: Swift.String, messageType: CometChatPro.CometChat.MessageType, receiverType: CometChatPro.CometChat.ReceiverType)
   @objc deinit
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public enum CallType : Swift.Int {
     case audio
     case video
@@ -449,12 +443,15 @@ extension CometChat {
   }
   @discardableResult
   @available(iOS, unavailable, message: "This method is deprecated now. Please use new method `init(appId:String, appSettings : AppSettings,onSuccess:@escaping(_ isSuccess:Bool)-> Void, onError:@escaping (_ error:CometChatException) -> Void )`")
-  @objc public init(appId: Swift.String, onSuccess: @escaping (Swift.Bool) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException) -> Swift.Void)
+  @objc public init(appId: Swift.String, onSuccess: @escaping (_ isSuccess: Swift.Bool) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException) -> Swift.Void)
   @discardableResult
-  @objc public init(appId: Swift.String, appSettings: CometChatPro.AppSettings, onSuccess: @escaping (Swift.Bool) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException) -> Swift.Void)
+  @objc public init(appId: Swift.String, appSettings: CometChatPro.AppSettings, onSuccess: @escaping (_ isSuccess: Swift.Bool) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException) -> Swift.Void)
   @objc deinit
 }
-extension CometChat {
+extension CometChatPro.CometChat {
+  @objc public static func configureServices(_ forState: CometChatPro.CometChat.applicationState)
+  @objc public static func backgroundTaskEnabled() -> Swift.Bool
+  @objc public static func startServices()
   @objc public static var isCallOngoing: Swift.Bool {
     @objc get
   }
@@ -463,8 +460,8 @@ extension CometChat {
   }
   @objc public static func getLastDeliveredMessageId() -> Swift.Int
   @objc public static func getLoggedInUser() -> CometChatPro.User?
-  @objc public static func blockUsers(_ users: [Swift.String], onSuccess: @escaping ([Swift.String : Any]) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
-  @objc public static func unblockUsers(_ users: [Swift.String], onSuccess: @escaping ([Swift.String : Any]) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
+  @objc public static func blockUsers(_ users: [Swift.String], onSuccess: @escaping ([Swift.String : Any]) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
+  @objc public static func unblockUsers(_ users: [Swift.String], onSuccess: @escaping ([Swift.String : Any]) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
   @objc public static func isExtensionEnabled(extensionId: Swift.String, onSuccess: @escaping (Swift.Bool) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
   @objc public static func getMessageReceipts(_ messageId: Swift.Int, onSuccess: @escaping ([CometChatPro.MessageReceipt]) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
   @objc public static func getUnreadMessageCountForUser(_ uid: Swift.String, hideMessagesFromBlockedUsers: Swift.Bool = false, onSuccess: @escaping ([Swift.String : Any]) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
@@ -474,11 +471,11 @@ extension CometChat {
   @objc public static func getUnreadMessageCountForAllGroups(hideMessagesFromBlockedUsers: Swift.Bool = false, onSuccess: @escaping ([Swift.String : Any]) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
   @objc public static func edit(message: CometChatPro.BaseMessage, onSuccess: @escaping (CometChatPro.BaseMessage) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException) -> Swift.Void)
   @objc public static func delete(messageId: Swift.Int, onSuccess: @escaping (CometChatPro.BaseMessage) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException) -> Swift.Void)
-  @objc public static func addMembersToGroup(guid: Swift.String, groupMembers: [CometChatPro.GroupMember], bannedUIDs: [Swift.String]? = nil, onSuccess: @escaping ([Swift.String : Any]) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
-  @objc public static func registerTokenForPushNotification(token: Swift.String, onSuccess: @escaping (Swift.String) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
-  @objc public static func registerTokenForPushNotification(token: Swift.String, settings: [Swift.String : Any], onSuccess: @escaping (Swift.String) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
+  @objc public static func addMembersToGroup(guid: Swift.String, groupMembers: [CometChatPro.GroupMember], bannedUIDs: [Swift.String]? = nil, onSuccess: @escaping (_ members: [Swift.String : Any]) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
+  @objc public static func registerTokenForPushNotification(token: Swift.String, onSuccess: @escaping (_ message: Swift.String) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
+  @objc public static func registerTokenForPushNotification(token: Swift.String, settings: [Swift.String : Any], onSuccess: @escaping (_ message: Swift.String) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc weak public static var messagedelegate: CometChatPro.CometChatMessageDelegate?
   @objc weak public static var calldelegate: CometChatPro.CometChatCallDelegate?
   @objc weak public static var userdelegate: CometChatPro.CometChatUserDelegate?
@@ -487,22 +484,20 @@ extension CometChat {
   @objc weak public static var logindelegate: CometChatPro.CometChatLoginDelegate?
 }
 @objc public class GroupMembersRequest : ObjectiveC.NSObject {
-  public typealias Response = ([CometChatPro.GroupMember]?, CometChatPro.CometChatException?) -> Swift.Void
+  public typealias Response = (_ memebrs: [CometChatPro.GroupMember]?, _ error: CometChatPro.CometChatException?) -> Swift.Void
   @objc public init(builder: CometChatPro.GroupMembersRequest.GroupMembersRequestBuilder)
-  @objc public func fetchNext(onSuccess: @escaping ([CometChatPro.GroupMember]) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
+  @objc public func fetchNext(onSuccess: @escaping (_ users: [CometChatPro.GroupMember]) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
   @objc public class GroupMembersRequestBuilder : ObjectiveC.NSObject {
     @objc public init(guid: Swift.String)
     @objc public func set(searchKeyword: Swift.String) -> CometChatPro.GroupMembersRequest.GroupMembersRequestBuilder
     @objc public func set(limit: Swift.Int) -> CometChatPro.GroupMembersRequest.GroupMembersRequestBuilder
     @objc public func set(scopes: [Swift.String]) -> CometChatPro.GroupMembersRequest.GroupMembersRequestBuilder
     @objc public func build() -> CometChatPro.GroupMembersRequest
-    @objc override dynamic public init()
     @objc deinit
   }
-  @objc override dynamic public init()
   @objc deinit
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public enum FeatureType : Swift.Int {
     case core_call_enabled
     case core_chat_enabled
@@ -691,7 +686,7 @@ extension CometChat {
   @objc public init(receiverUid: Swift.String, messageType: CometChatPro.CometChat.MessageType, receiverType: CometChatPro.CometChat.ReceiverType)
   @objc deinit
 }
-extension BaseMessage {
+extension CometChatPro.BaseMessage {
   @objc dynamic public var messgeTypeFromBaseMessage: CometChatPro.BaseMessage.BaseMessageTypes {
     @objc get
   }
@@ -709,7 +704,7 @@ extension BaseMessage {
     }
   }
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public static func sendTransientMessage(message: CometChatPro.TransientMessage)
 }
 @objc public class TypingIndicator : ObjectiveC.NSObject {
@@ -719,28 +714,27 @@ extension CometChat {
   @objc public var sender: CometChatPro.User?
   @objc public init(receiverID: Swift.String, receiverType: CometChatPro.CometChat.ReceiverType)
   @objc public func stringValue() -> Swift.String
-  @objc override dynamic public init()
   @objc deinit
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public static func initiateCall(call: CometChatPro.Call, onSuccess: @escaping (CometChatPro.Call?) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
   @objc public static func acceptCall(sessionID: Swift.String, onSuccess: @escaping (CometChatPro.Call?) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
   @objc public static func rejectCall(sessionID: Swift.String, status: CometChatPro.CometChat.callStatus, onSuccess: @escaping (CometChatPro.Call?) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
   @objc public static func endCall(sessionID: Swift.String, onSuccess: @escaping (CometChatPro.Call?) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
-  @objc public static func startCall(sessionID: Swift.String, inView: UIKit.UIView, onUserJoined: @escaping (CometChatPro.User?) -> Swift.Void, onUserLeft: @escaping (CometChatPro.User?) -> Swift.Void, onUserListUpdated: @escaping ([CometChatPro.User]?) -> Swift.Void, onAudioModesUpdated: @escaping ([CometChatPro.AudioDevice]?) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void, onCallEnded: @escaping (CometChatPro.Call?) -> Swift.Void)
-  @objc public static func startCall(callSettings: CometChatPro.CallSettings, onUserJoined: @escaping (CometChatPro.User?) -> Swift.Void, onUserLeft: @escaping (CometChatPro.User?) -> Swift.Void, onUserListUpdated: @escaping ([CometChatPro.User]?) -> Swift.Void, onAudioModesUpdated: @escaping ([CometChatPro.AudioDevice]?) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void, onCallEnded: @escaping (CometChatPro.Call?) -> Swift.Void)
+  @objc public static func startCall(sessionID: Swift.String, inView: UIKit.UIView, onUserJoined: @escaping (_ onUserJoined: CometChatPro.User?) -> Swift.Void, onUserLeft: @escaping (_ onUserLeft: CometChatPro.User?) -> Swift.Void, onUserListUpdated: @escaping (_ onUserListUpdated: [CometChatPro.User]?) -> Swift.Void, onAudioModesUpdated: @escaping (_ onaudioModesUpdated: [CometChatPro.AudioDevice]?) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void, onCallEnded: @escaping (_ onCallEnded: CometChatPro.Call?) -> Swift.Void)
+  @objc public static func startCall(callSettings: CometChatPro.CallSettings, onUserJoined: @escaping (CometChatPro.User?) -> Swift.Void, onUserLeft: @escaping (_ onUserLeft: CometChatPro.User?) -> Swift.Void, onUserListUpdated: @escaping ([CometChatPro.User]?) -> Swift.Void, onAudioModesUpdated: @escaping (_ onAudioModesUpdated: [CometChatPro.AudioDevice]?) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void, onCallEnded: @escaping (CometChatPro.Call?) -> Swift.Void)
   @objc public static func getActiveCall() -> CometChatPro.Call?
-  public static func getAudioOutputModes(onSuccess: @escaping ([CometChatPro.CometChat.AudioMode]) -> Swift.Void)
+  public static func getAudioOutputModes(onSuccess: @escaping (_ modeList: [CometChatPro.CometChat.AudioMode]) -> Swift.Void)
   @objc public static func getCallParticipantCount(sessionId: Swift.String, type: CometChatPro.CometChat.CallFlowMode, onSuccess: @escaping (Swift.Int) -> (), onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public static func updateGroup(group: CometChatPro.Group, onSuccess: @escaping (CometChatPro.Group) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
-  @objc public static func deleteGroup(GUID: Swift.String, onSuccess: @escaping (Swift.String) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
-  @objc public static func createGroup(group: CometChatPro.Group, onSuccess: @escaping (CometChatPro.Group) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
-  @objc public static func joinGroup(GUID: Swift.String, groupType: CometChatPro.CometChat.groupType, password: Swift.String?, onSuccess: @escaping (CometChatPro.Group) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
-  @objc public static func getGroup(GUID: Swift.String, onSuccess: @escaping (CometChatPro.Group) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
-  @objc public static func leaveGroup(GUID: Swift.String, onSuccess: @escaping (Swift.String) -> (), onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
-  @objc public static func getJoinedGroups(onSuccess: @escaping ([Swift.String]) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
+  @objc public static func deleteGroup(GUID: Swift.String, onSuccess: @escaping (_ deleteSuccess: Swift.String) -> (), onError: @escaping (_ error: CometChatPro.CometChatException?) -> ())
+  @objc public static func createGroup(group: CometChatPro.Group, onSuccess: @escaping (_ Group: CometChatPro.Group) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
+  @objc public static func joinGroup(GUID: Swift.String, groupType: CometChatPro.CometChat.groupType, password: Swift.String?, onSuccess: @escaping (_ joinSuccess: CometChatPro.Group) -> (), onError: @escaping (_ error: CometChatPro.CometChatException?) -> ())
+  @objc public static func getGroup(GUID: Swift.String, onSuccess: @escaping (_ Group: CometChatPro.Group) -> (), onError: @escaping (_ error: CometChatPro.CometChatException?) -> ())
+  @objc public static func leaveGroup(GUID: Swift.String, onSuccess: @escaping (_ leaveSuccess: Swift.String) -> (), onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
+  @objc public static func getJoinedGroups(onSuccess: @escaping (_ groupUIDs: [Swift.String]) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
   @objc public static func transferGroupOwnership(UID: Swift.String, GUID: Swift.String, onSuccess: @escaping (Swift.String) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
   public static func getOnlineUserCount(onSuccess: @escaping (Swift.Int) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
   public static func getOnlineGroupMemberCount(_ guids: [Swift.String], onSuccess: @escaping ([Swift.String : Any]) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
@@ -798,7 +792,7 @@ extension CometChat {
   @objc public func stringValue() -> Swift.String
   @objc deinit
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public enum UserStatus : Swift.Int {
     case online
     case offline
@@ -812,19 +806,17 @@ extension CometChat {
   }
 }
 @objc final public class ConversationRequest : ObjectiveC.NSObject {
-  public typealias Response = ([CometChatPro.Conversation]?, CometChatPro.CometChatException?) -> Swift.Void
+  public typealias Response = (_ groups: [CometChatPro.Conversation]?, _ error: CometChatPro.CometChatException?) -> Swift.Void
   @objc public init(builder: CometChatPro.ConversationRequest.ConversationRequestBuilder)
-  @objc final public func fetchNext(onSuccess: @escaping ([CometChatPro.Conversation]) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
+  @objc final public func fetchNext(onSuccess: @escaping (_ users: [CometChatPro.Conversation]) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
   @objc public class ConversationRequestBuilder : ObjectiveC.NSObject {
     @objc public init(limit: Swift.Int)
     @objc public func set(limit: Swift.Int) -> CometChatPro.ConversationRequest.ConversationRequestBuilder
     @objc public func setConversationType(conversationType: CometChatPro.CometChat.ConversationType) -> CometChatPro.ConversationRequest.ConversationRequestBuilder
     @objc public func withUserAndGroupTags(_ withUserAndGroupTags: Swift.Bool) -> CometChatPro.ConversationRequest.ConversationRequestBuilder
     @objc public func build() -> CometChatPro.ConversationRequest
-    @objc override dynamic public init()
     @objc deinit
   }
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public class AppSettings : ObjectiveC.NSObject {
@@ -839,7 +831,6 @@ extension CometChat {
     @objc public func build() -> CometChatPro.AppSettings
     @objc deinit
   }
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Group : CometChatPro.AppEntity {
@@ -908,7 +899,7 @@ extension CometChat {
   @objc public func stringValue() -> Swift.String
   @objc deinit
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public static func isFeatureEnabled(feature: Swift.String, onSuccess: @escaping (Swift.Bool) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
 }
 @objc public protocol CustomError {
@@ -919,10 +910,9 @@ extension CometChat {
   @objc public var errorDescription: Swift.String
   @objc public var errorCode: Swift.String
   public init(errorCode: Swift.String, errorDescription: Swift.String)
-  @objc override dynamic public init()
   @objc deinit
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public enum GroupMemberScopeType : Swift.Int {
     case admin
     case moderator
@@ -942,7 +932,7 @@ extension CometChat {
   @objc override dynamic public init()
   @objc deinit
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public enum ActionEntityType : Swift.Int {
     case user
     case group
@@ -993,13 +983,11 @@ extension CometChat {
     @objc public func setRegion(region: Swift.String) -> CometChatPro.CallSettings.CallSettingsBuilder
     @objc public func setMode(mode: CometChatPro.CometChat.CallMode) -> CometChatPro.CallSettings.CallSettingsBuilder
     @objc public func build() -> CometChatPro.CallSettings
-    @objc override dynamic public init()
     @objc deinit
   }
-  @objc override dynamic public init()
   @objc deinit
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public enum SubscriptionType : Swift.Int {
     case allUsers
     case onlyFriends
@@ -1012,7 +1000,7 @@ extension CometChat {
     }
   }
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public enum MessageCategory : Swift.Int {
     case message
     case action
@@ -1025,7 +1013,7 @@ extension CometChat {
     }
   }
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public enum ModeCategory : Swift.Int {
     case Default
     case LimitedTransient
@@ -1037,7 +1025,7 @@ extension CometChat {
     }
   }
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public static func sendTextMessage(message: CometChatPro.TextMessage, onSuccess: @escaping (CometChatPro.TextMessage) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
   @objc public static func sendMediaMessage(message: CometChatPro.MediaMessage, onSuccess: @escaping (CometChatPro.MediaMessage) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
   @objc public static func sendCustomMessage(message: CometChatPro.CustomMessage, onSuccess: @escaping (CometChatPro.CustomMessage) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
@@ -1071,7 +1059,7 @@ extension CometChat {
   @objc public func stringValue() -> Swift.String
   @objc deinit
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public enum MessageType : Swift.Int {
     case text
     case image
@@ -1087,7 +1075,7 @@ extension CometChat {
     }
   }
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public enum CallMode : Swift.Int {
     case MODE_SPOTLIGHT
     case MODE_SINGLE
@@ -1099,20 +1087,30 @@ extension CometChat {
     }
   }
 }
-extension CometChat {
-  public static func callExtension(slug: Swift.String, type: CometChatPro.HTTPMethod, endPoint: Swift.String, body: [Swift.String : Any]?, onSuccess: @escaping ([Swift.String : Any]?) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
+extension CometChatPro.CometChat {
+  public static func callExtension(slug: Swift.String, type: CometChatPro.HTTPMethod, endPoint: Swift.String, body: [Swift.String : Any]?, onSuccess: @escaping (_ extensionResponseData: [Swift.String : Any]?) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
 }
-extension CometChat {
-  @objc public static func getUser(UID: Swift.String, onSuccess: @escaping (CometChatPro.User?) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
+extension CometChatPro.CometChat {
+  @objc public static func getUser(UID: Swift.String, onSuccess: @escaping (_ user: CometChatPro.User?) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public static func startTyping(indicator: CometChatPro.TypingIndicator)
   @objc public static func endTyping(indicator: CometChatPro.TypingIndicator)
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public enum ReceiverType : Swift.Int {
     case user
     case group
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc public enum applicationState : Swift.Int {
+    case didEnterBackground
+    case didBecomeActive
+    case willResignActive
     public init?(rawValue: Swift.Int)
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
@@ -1151,19 +1149,18 @@ extension CometChat {
   @objc public init(receiverUid: Swift.String, receiverType: CometChatPro.CometChat.ReceiverType, customData: [Swift.String : Any], type: Swift.String?)
   public static func customMessage(fromJSON message: [Swift.String : Any]) -> (CometChatPro.BaseMessage?, CometChatPro.CometChatException?)
   @objc public func stringValue() -> Swift.String
-  @objc override public init(receiverUid: Swift.String, messageType: CometChatPro.CometChat.MessageType, receiverType: CometChatPro.CometChat.ReceiverType)
   @objc deinit
 }
-extension CometChat {
-  @objc public static func kickGroupMember(UID: Swift.String, GUID: Swift.String, onSuccess: @escaping (Swift.String) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
-  @objc public static func banGroupMember(UID: Swift.String, GUID: Swift.String, onSuccess: @escaping (Swift.String) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
-  @objc public static func unbanGroupMember(UID: Swift.String, GUID: Swift.String, onSuccess: @escaping (Swift.String) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
-  @objc public static func updateGroupMemberScope(UID: Swift.String, GUID: Swift.String, scope: CometChatPro.CometChat.MemberScope, onSuccess: @escaping (Swift.String) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
+extension CometChatPro.CometChat {
+  @objc public static func kickGroupMember(UID: Swift.String, GUID: Swift.String, onSuccess: @escaping (_ kickedSuccess: Swift.String) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
+  @objc public static func banGroupMember(UID: Swift.String, GUID: Swift.String, onSuccess: @escaping (_ bannedSuccess: Swift.String) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
+  @objc public static func unbanGroupMember(UID: Swift.String, GUID: Swift.String, onSuccess: @escaping (_ unbannedSuccess: Swift.String) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
+  @objc public static func updateGroupMemberScope(UID: Swift.String, GUID: Swift.String, scope: CometChatPro.CometChat.MemberScope, onSuccess: @escaping (_ scopeChangeSuccess: Swift.String) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
 }
 @objc final public class MessagesRequest : ObjectiveC.NSObject {
   @objc public init(builder: CometChatPro.MessagesRequest.MessageRequestBuilder)
-  @objc final public func fetchPrevious(onSuccess: @escaping ([CometChatPro.BaseMessage]?) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
-  @objc final public func fetchNext(onSuccess: @escaping ([CometChatPro.BaseMessage]?) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
+  @objc final public func fetchPrevious(onSuccess: @escaping (_ messages: [CometChatPro.BaseMessage]?) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
+  @objc final public func fetchNext(onSuccess: @escaping (_ messages: [CometChatPro.BaseMessage]?) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
   @_inheritsConvenienceInitializers @objc public class MessageRequestBuilder : ObjectiveC.NSObject {
     @objc override dynamic public init()
     @objc public func set(limit: Swift.Int) -> CometChatPro.MessagesRequest.MessageRequestBuilder
@@ -1188,10 +1185,9 @@ extension CometChat {
     @objc public func build() -> CometChatPro.MessagesRequest
     @objc deinit
   }
-  @objc override dynamic public init()
   @objc deinit
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public enum Blocked : Swift.Int {
     case byMe
     case me
@@ -1205,14 +1201,14 @@ extension CometChat {
 }
 public struct CCExtension {
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public static func createUser(user: CometChatPro.User, apiKey: Swift.String, onSuccess: @escaping (CometChatPro.User) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
   @objc public static func createUser(user: CometChatPro.User, authKey: Swift.String, onSuccess: @escaping (CometChatPro.User) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
   @objc public static func updateUser(user: CometChatPro.User, apiKey: Swift.String, onSuccess: @escaping (CometChatPro.User) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
   @objc public static func updateUser(user: CometChatPro.User, authKey: Swift.String, onSuccess: @escaping (CometChatPro.User) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
-  @objc public static func updateCurrentUserDetails(user: CometChatPro.User, onSuccess: @escaping (CometChatPro.User) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
+  @objc public static func updateCurrentUserDetails(user: CometChatPro.User, onSuccess: @escaping (_ user: CometChatPro.User) -> (), onError: @escaping (_ error: CometChatPro.CometChatException?) -> ())
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public enum ConnectionStatus : Swift.Int {
     case connecting
     case connected
@@ -1228,10 +1224,10 @@ extension CometChat {
     }
   }
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public static func setSource(resource: Swift.String, platform: Swift.String, language: Swift.String)
 }
-extension CometChat {
+extension CometChatPro.CometChat {
   @objc public enum groupType : Swift.Int {
     case `public`
     case `private`
@@ -1244,18 +1240,16 @@ extension CometChat {
   }
 }
 @objc public class BannedGroupMembersRequest : ObjectiveC.NSObject {
-  public typealias Response = ([CometChatPro.GroupMember]?, CometChatPro.CometChatException?) -> Swift.Void
+  public typealias Response = (_ members: [CometChatPro.GroupMember]?, _ error: CometChatPro.CometChatException?) -> Swift.Void
   @objc public init(builder: CometChatPro.BannedGroupMembersRequest.BannedGroupMembersRequestBuilder)
-  @objc public func fetchNext(onSuccess: @escaping ([CometChatPro.GroupMember]) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
+  @objc public func fetchNext(onSuccess: @escaping (_ users: [CometChatPro.GroupMember]) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
   @objc public class BannedGroupMembersRequestBuilder : ObjectiveC.NSObject {
     @objc public init(guid: Swift.String)
     @objc public func set(limit: Swift.Int) -> CometChatPro.BannedGroupMembersRequest.BannedGroupMembersRequestBuilder
     @objc public func set(searchKeyword: Swift.String) -> CometChatPro.BannedGroupMembersRequest.BannedGroupMembersRequestBuilder
     @objc public func build() -> CometChatPro.BannedGroupMembersRequest
-    @objc override dynamic public init()
     @objc deinit
   }
-  @objc override dynamic public init()
   @objc deinit
 }
 extension CometChatPro.MessageReceipt.ReceiptType : Swift.Equatable {}
@@ -1318,6 +1312,9 @@ extension CometChatPro.CometChat.CallMode : Swift.RawRepresentable {}
 extension CometChatPro.CometChat.ReceiverType : Swift.Equatable {}
 extension CometChatPro.CometChat.ReceiverType : Swift.Hashable {}
 extension CometChatPro.CometChat.ReceiverType : Swift.RawRepresentable {}
+extension CometChatPro.CometChat.applicationState : Swift.Equatable {}
+extension CometChatPro.CometChat.applicationState : Swift.Hashable {}
+extension CometChatPro.CometChat.applicationState : Swift.RawRepresentable {}
 extension CometChatPro.CometChat.XMPPMsgType : Swift.Equatable {}
 extension CometChatPro.CometChat.XMPPMsgType : Swift.Hashable {}
 extension CometChatPro.CometChat.XMPPMsgType : Swift.RawRepresentable {}
