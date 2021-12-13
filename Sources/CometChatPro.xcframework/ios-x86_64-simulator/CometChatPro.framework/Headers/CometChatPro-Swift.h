@@ -297,6 +297,7 @@ SWIFT_CLASS("_TtCC12CometChatPro11AppSettings18AppSettingsBuilder")
 - (AppSettingsBuilder * _Nonnull)setRegionWithRegion:(NSString * _Nonnull)region SWIFT_WARN_UNUSED_RESULT;
 - (AppSettingsBuilder * _Nonnull)subcribePresenceForRolesWithRoles:(NSArray<NSString *> * _Nonnull)roles SWIFT_WARN_UNUSED_RESULT;
 - (AppSettingsBuilder * _Nonnull)setEnableAutoJoinForGroupsWithEnableAutoJoinForGroups:(BOOL)enableAutoJoinForGroups SWIFT_WARN_UNUSED_RESULT;
+- (AppSettingsBuilder * _Nonnull)autoEstablishSocketConnection:(BOOL)enableConnection SWIFT_WARN_UNUSED_RESULT;
 - (AppSettings * _Nonnull)build SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -450,6 +451,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isInitialised;)
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 - (nonnull instancetype)initWithAppId:(NSString * _Nonnull)appId onSuccess:(void (^ _Nonnull)(BOOL))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nonnull))onError OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,unavailable,message="This method is deprecated now. Please use new method `init(appId:String, appSettings : AppSettings,onSuccess:@escaping(_ isSuccess:Bool)-> Void, onError:@escaping (_ error:CometChatException) -> Void )`");
 - (nonnull instancetype)initWithAppId:(NSString * _Nonnull)appId appSettings:(AppSettings * _Nonnull)appSettings onSuccess:(void (^ _Nonnull)(BOOL))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nonnull))onError OBJC_DESIGNATED_INITIALIZER;
++ (void)connect;
++ (void)disconnect;
 @end
 
 
@@ -892,7 +895,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, weak) id <CometChatLoginDelega
 @interface CometChat (SWIFT_EXTENSION(CometChatPro))
 + (void)configureServices:(enum applicationState)forState;
 + (BOOL)backgroundTaskEnabled SWIFT_WARN_UNUSED_RESULT;
-+ (void)startServices;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isCallOngoing;)
 + (BOOL)isCallOngoing SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Call * _Nullable currentCall;)
