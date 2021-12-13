@@ -446,12 +446,13 @@ extension CometChatPro.CometChat {
   @objc public init(appId: Swift.String, onSuccess: @escaping (_ isSuccess: Swift.Bool) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException) -> Swift.Void)
   @discardableResult
   @objc public init(appId: Swift.String, appSettings: CometChatPro.AppSettings, onSuccess: @escaping (_ isSuccess: Swift.Bool) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException) -> Swift.Void)
+  @objc public static func connect()
+  @objc public static func disconnect()
   @objc deinit
 }
 extension CometChatPro.CometChat {
   @objc public static func configureServices(_ forState: CometChatPro.CometChat.applicationState)
   @objc public static func backgroundTaskEnabled() -> Swift.Bool
-  @objc public static func startServices()
   @objc public static var isCallOngoing: Swift.Bool {
     @objc get
   }
@@ -828,6 +829,7 @@ extension CometChatPro.CometChat {
     @objc public func setRegion(region: Swift.String) -> CometChatPro.AppSettings.AppSettingsBuilder
     @objc public func subcribePresenceForRoles(roles: [Swift.String]) -> CometChatPro.AppSettings.AppSettingsBuilder
     @objc public func setEnableAutoJoinForGroups(enableAutoJoinForGroups: Swift.Bool) -> CometChatPro.AppSettings.AppSettingsBuilder
+    @objc public func autoEstablishSocketConnection(_ enableConnection: Swift.Bool) -> CometChatPro.AppSettings.AppSettingsBuilder
     @objc public func build() -> CometChatPro.AppSettings
     @objc deinit
   }
