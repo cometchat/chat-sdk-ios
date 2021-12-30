@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.1 effective-4.2 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-compiler-version: Apple Swift version 5.5.2 effective-4.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -module-name CometChatPro
 import AVKit
 @_exported import CometChatPro
@@ -152,6 +152,7 @@ extension CometChatPro.CometChat {
 }
 extension CometChatPro.CometChat {
   @objc public static func getConversation(conversationWith: Swift.String, conversationType: CometChatPro.CometChat.ConversationType, onSuccess: @escaping (_ user: CometChatPro.Conversation?) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
+  @objc public static func tagConversation(conversationWith: Swift.String, conversationType: CometChatPro.CometChat.ConversationType, tags: [Swift.String], onSuccess: @escaping (_ conversation: CometChatPro.Conversation?) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
   @objc public static func deleteConversation(conversationWith: Swift.String, conversationType: CometChatPro.CometChat.ConversationType, onSuccess: @escaping (_ message: Swift.String) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
 }
 @objc public protocol CometChatExtension {
@@ -263,6 +264,10 @@ extension CometChatPro.CometChat {
     @objc get
     @objc set
   }
+  @objc public var tags: [Swift.String] {
+    @objc get
+    @objc set
+  }
   @objc public init(receiverUid: Swift.String, text: Swift.String, receiverType: CometChatPro.CometChat.ReceiverType)
   public static func textMessage(fromJSON message: [Swift.String : Any]?) -> (CometChatPro.BaseMessage?, CometChatPro.CometChatException?)
   @objc public func stringValue() -> Swift.String
@@ -347,6 +352,10 @@ extension CometChatPro.CometChat {
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers public class MediaMessage : CometChatPro.BaseMessage {
+  @objc public var tags: [Swift.String] {
+    @objc get
+    @objc set
+  }
   @objc public var caption: Swift.String? {
     @objc get
     @objc set
@@ -785,6 +794,10 @@ extension CometChatPro.CometChat {
     @objc get
     @objc set
   }
+  @objc public var deactivatedAt: Swift.Bool {
+    @objc get
+    @objc set
+  }
   @objc public var tags: [Swift.String] {
     @objc get
     @objc set
@@ -815,6 +828,8 @@ extension CometChatPro.CometChat {
     @objc public func set(limit: Swift.Int) -> CometChatPro.ConversationRequest.ConversationRequestBuilder
     @objc public func setConversationType(conversationType: CometChatPro.CometChat.ConversationType) -> CometChatPro.ConversationRequest.ConversationRequestBuilder
     @objc public func withUserAndGroupTags(_ withUserAndGroupTags: Swift.Bool) -> CometChatPro.ConversationRequest.ConversationRequestBuilder
+    @objc public func setTags(_ tags: [Swift.String]) -> CometChatPro.ConversationRequest.ConversationRequestBuilder
+    @objc public func withTags(_ withTags: Swift.Bool) -> CometChatPro.ConversationRequest.ConversationRequestBuilder
     @objc public func build() -> CometChatPro.ConversationRequest
     @objc deinit
   }
@@ -1057,6 +1072,10 @@ extension CometChatPro.CometChat {
     @objc get
     @objc set
   }
+  @objc public var tags: [Swift.String]? {
+    @objc get
+    @objc set
+  }
   @objc override dynamic public init()
   @objc public func stringValue() -> Swift.String
   @objc deinit
@@ -1130,6 +1149,10 @@ extension CometChatPro.CometChat {
   }
 }
 @objc @_hasMissingDesignatedInitializers public class CustomMessage : CometChatPro.BaseMessage {
+  @objc public var tags: [Swift.String] {
+    @objc get
+    @objc set
+  }
   @available(*, unavailable, message: "This messageType property of CustomMessage class is obsolete from CometChatPro SDK v1.8.3. Please use new `type` property.")
   @objc override public var messageType: CometChatPro.CometChat.MessageType {
     @objc get
@@ -1184,6 +1207,8 @@ extension CometChatPro.CometChat {
     @objc public func set(types: [Swift.String]) -> CometChatPro.MessagesRequest.MessageRequestBuilder
     @objc public func setParentMessageId(parentMessageId: Swift.Int) -> CometChatPro.MessagesRequest.MessageRequestBuilder
     @objc public func hideReplies(hide: Swift.Bool) -> CometChatPro.MessagesRequest.MessageRequestBuilder
+    @objc public func setTags(_ tags: [Swift.String]) -> CometChatPro.MessagesRequest.MessageRequestBuilder
+    @objc public func withTags(_ withTags: Swift.Bool) -> CometChatPro.MessagesRequest.MessageRequestBuilder
     @objc public func build() -> CometChatPro.MessagesRequest
     @objc deinit
   }
