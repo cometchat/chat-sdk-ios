@@ -14,7 +14,7 @@
 <a href="https://cocoapods.org/pods/CometChatPro"><img src="https://img.shields.io/badge/platform-iOS-orange.svg" /></a>
 <a href=""><img src="https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg" /></a>
 <a href=""> <img src="https://img.shields.io/badge/Contributors-4-yellowgreen" /></a>
-<a href=" "> <img src="https://img.shields.io/badge/Version-2.4.1-red" /></a>
+<a href=" "> <img src="https://img.shields.io/badge/Version-2.4.2-red" /></a>
 <a href=""> <img src="https://img.shields.io/github/stars/cometchat-pro/ios-chat-sdk?style=social" /></a>
 
 </p>
@@ -67,7 +67,7 @@ platform :ios, '11.0'
 use_frameworks!
 
 target 'YourApp' do
-     pod 'CometChatPro', '2.4.1'
+     pod 'CometChatPro', '2.4.2'
 end
 ________________________________________________________________
 
@@ -83,8 +83,8 @@ platform :ios, '11.0'
 use_frameworks!
 
 target 'YourApp' do
-     pod 'CometChatPro', '2.4.1'
-     pod 'CometChatCalls', '2.1.0'
+     pod 'CometChatPro', '2.4.2'
+     pod 'CometChatCalls', '2.1.1'
 end
 ________________________________________________________________
 
