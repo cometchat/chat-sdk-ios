@@ -309,6 +309,7 @@ SWIFT_CLASS("_TtC12CometChatPro10Attachment")
 @property (nonatomic, readonly) double fileSize;
 @property (nonatomic, readonly, copy) NSString * _Nonnull fileMimeType;
 @property (nonatomic, readonly, copy) NSString * _Nonnull fileUrl;
+- (nonnull instancetype)initWithFileName:(NSString * _Nonnull)fileName fileExtension:(NSString * _Nonnull)fileExtension fileMimeType:(NSString * _Nonnull)fileMimeType fileUrl:(NSString * _Nonnull)fileUrl OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
@@ -1134,7 +1135,7 @@ SWIFT_CLASS("_TtC12CometChatPro11CurrentUser")
 
 SWIFT_CLASS("_TtC12CometChatPro13CustomMessage")
 @interface CustomMessage : BaseMessage
-@property (nonatomic, copy) NSArray<NSString *> * _Nonnull tags;
+@property (nonatomic, copy) NSArray<NSString *> * _Nullable tags;
 @property (nonatomic) enum MessageType messageType SWIFT_UNAVAILABLE_MSG("This messageType property of CustomMessage class is obsolete from CometChatPro SDK v1.8.3. Please use new `type` property.");
 @property (nonatomic, copy) NSString * _Nullable type;
 @property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable customData;
@@ -1229,11 +1230,11 @@ SWIFT_CLASS("_TtCC12CometChatPro13GroupsRequest20GroupsRequestBuilder")
 
 SWIFT_CLASS("_TtC12CometChatPro12MediaMessage")
 @interface MediaMessage : BaseMessage
-@property (nonatomic, copy) NSArray<NSString *> * _Nonnull tags;
+@property (nonatomic, copy) NSArray<NSString *> * _Nullable tags;
 @property (nonatomic, copy) NSString * _Nullable caption;
 @property (nonatomic, strong) Attachment * _Nullable attachment;
-@property (nonatomic, copy) NSString * _Nonnull filePath;
-- (nonnull instancetype)initWithReceiverUid:(NSString * _Nonnull)receiverUid fileurl:(NSString * _Nonnull)fileurl messageType:(enum MessageType)messageType receiverType:(enum ReceiverType)receiverType OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, copy) NSString * _Nullable filePath;
+- (nonnull instancetype)initWithReceiverUid:(NSString * _Nonnull)receiverUid fileurl:(NSString * _Nullable)fileurl messageType:(enum MessageType)messageType receiverType:(enum ReceiverType)receiverType OBJC_DESIGNATED_INITIALIZER;
 - (NSString * _Nonnull)stringValue SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithReceiverUid:(NSString * _Nonnull)receiverUid messageType:(enum MessageType)messageType receiverType:(enum ReceiverType)receiverType SWIFT_UNAVAILABLE;
 @end
@@ -1302,7 +1303,7 @@ SWIFT_CLASS("_TtCC12CometChatPro15MessagesRequest21MessageRequestBuilder")
 SWIFT_CLASS("_TtC12CometChatPro11TextMessage")
 @interface TextMessage : BaseMessage
 @property (nonatomic, copy) NSString * _Nonnull text;
-@property (nonatomic, copy) NSArray<NSString *> * _Nonnull tags;
+@property (nonatomic, copy) NSArray<NSString *> * _Nullable tags;
 - (nonnull instancetype)initWithReceiverUid:(NSString * _Nonnull)receiverUid text:(NSString * _Nonnull)text receiverType:(enum ReceiverType)receiverType OBJC_DESIGNATED_INITIALIZER;
 - (NSString * _Nonnull)stringValue SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithReceiverUid:(NSString * _Nonnull)receiverUid messageType:(enum MessageType)messageType receiverType:(enum ReceiverType)receiverType SWIFT_UNAVAILABLE;

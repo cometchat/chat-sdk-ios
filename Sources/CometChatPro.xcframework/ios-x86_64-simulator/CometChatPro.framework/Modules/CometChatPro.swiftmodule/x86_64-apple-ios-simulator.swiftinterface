@@ -48,6 +48,8 @@ import _Concurrency
   @objc public var fileUrl: Swift.String {
     @objc get
   }
+  @objc public init(fileName: Swift.String, fileExtension: Swift.String, fileMimeType: Swift.String, fileUrl: Swift.String)
+  public static func attachmentsToJSON(_ attachment: CometChatPro.Attachment) -> [Swift.String : Any]
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class AppEntity : ObjectiveC.NSObject {
@@ -264,7 +266,7 @@ extension CometChatPro.CometChat {
     @objc get
     @objc set
   }
-  @objc public var tags: [Swift.String] {
+  @objc public var tags: [Swift.String]? {
     @objc get
     @objc set
   }
@@ -352,7 +354,7 @@ extension CometChatPro.CometChat {
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers public class MediaMessage : CometChatPro.BaseMessage {
-  @objc public var tags: [Swift.String] {
+  @objc public var tags: [Swift.String]? {
     @objc get
     @objc set
   }
@@ -364,11 +366,11 @@ extension CometChatPro.CometChat {
     @objc get
     @objc set
   }
-  @objc public var filePath: Swift.String {
+  @objc public var filePath: Swift.String? {
     @objc get
     @objc set
   }
-  @objc public init(receiverUid: Swift.String, fileurl: Swift.String, messageType: CometChatPro.CometChat.MessageType, receiverType: CometChatPro.CometChat.ReceiverType)
+  @objc public init(receiverUid: Swift.String, fileurl: Swift.String?, messageType: CometChatPro.CometChat.MessageType, receiverType: CometChatPro.CometChat.ReceiverType)
   public static func mediaMessage(fromJSON message: [Swift.String : Any]?) -> (CometChatPro.BaseMessage?, CometChatPro.CometChatException?)
   @objc public func stringValue() -> Swift.String
   @objc deinit
@@ -1149,7 +1151,7 @@ extension CometChatPro.CometChat {
   }
 }
 @objc @_hasMissingDesignatedInitializers public class CustomMessage : CometChatPro.BaseMessage {
-  @objc public var tags: [Swift.String] {
+  @objc public var tags: [Swift.String]? {
     @objc get
     @objc set
   }
