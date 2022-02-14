@@ -1117,7 +1117,7 @@ SWIFT_CLASS("_TtC12CometChatPro4User")
 @property (nonatomic) double lastActiveAt;
 @property (nonatomic) BOOL hasBlockedMe;
 @property (nonatomic) BOOL blockedByMe;
-@property (nonatomic) BOOL deactivatedAt;
+@property (nonatomic) double deactivatedAt;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull tags;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");

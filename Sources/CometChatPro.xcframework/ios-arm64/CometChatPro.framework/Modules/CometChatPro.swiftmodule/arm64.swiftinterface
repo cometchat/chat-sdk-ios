@@ -796,7 +796,7 @@ extension CometChatPro.CometChat {
     @objc get
     @objc set
   }
-  @objc public var deactivatedAt: Swift.Bool {
+  @objc public var deactivatedAt: Swift.Double {
     @objc get
     @objc set
   }
