@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 effective-4.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-compiler-version: Apple Swift version 5.6 effective-4.2 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -module-name CometChatPro
 import AVKit
 @_exported import CometChatPro
@@ -482,7 +482,9 @@ extension CometChatPro.CometChat {
   @objc public static func getUnreadMessageCountForAllUsers(hideMessagesFromBlockedUsers: Swift.Bool = false, onSuccess: @escaping ([Swift.String : Any]) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
   @objc public static func getUnreadMessageCountForAllGroups(hideMessagesFromBlockedUsers: Swift.Bool = false, onSuccess: @escaping ([Swift.String : Any]) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
   @objc public static func edit(message: CometChatPro.BaseMessage, onSuccess: @escaping (CometChatPro.BaseMessage) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException) -> Swift.Void)
+  @objc public static func editMessage(_ message: CometChatPro.BaseMessage, onSuccess: @escaping (CometChatPro.BaseMessage) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException) -> Swift.Void)
   @objc public static func delete(messageId: Swift.Int, onSuccess: @escaping (CometChatPro.BaseMessage) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException) -> Swift.Void)
+  @objc public static func deleteMessage(_ messageId: Swift.Int, onSuccess: @escaping (CometChatPro.BaseMessage) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException) -> Swift.Void)
   @objc public static func addMembersToGroup(guid: Swift.String, groupMembers: [CometChatPro.GroupMember], bannedUIDs: [Swift.String]? = nil, onSuccess: @escaping (_ members: [Swift.String : Any]) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
   @objc public static func registerTokenForPushNotification(token: Swift.String, onSuccess: @escaping (_ message: Swift.String) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
   @objc public static func registerTokenForPushNotification(token: Swift.String, settings: [Swift.String : Any], onSuccess: @escaping (_ message: Swift.String) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
