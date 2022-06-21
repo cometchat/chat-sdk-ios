@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6 effective-4.2 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -module-name CometChatPro
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CometChatPro
 import AVKit
 @_exported import CometChatPro
 import Foundation
@@ -750,8 +750,9 @@ extension CometChatPro.CometChat {
   @objc public static func rejectCall(sessionID: Swift.String, status: CometChatPro.CometChat.callStatus, onSuccess: @escaping (CometChatPro.Call?) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
   @objc public static func endCall(sessionID: Swift.String, onSuccess: @escaping (CometChatPro.Call?) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
   @objc public static func startCall(sessionID: Swift.String, inView: UIKit.UIView, onUserJoined: @escaping (_ onUserJoined: CometChatPro.User?) -> Swift.Void, onUserLeft: @escaping (_ onUserLeft: CometChatPro.User?) -> Swift.Void, onUserListUpdated: @escaping (_ onUserListUpdated: [CometChatPro.User]?) -> Swift.Void, onAudioModesUpdated: @escaping (_ onaudioModesUpdated: [CometChatPro.AudioDevice]?) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void, onCallEnded: @escaping (_ onCallEnded: CometChatPro.Call?) -> Swift.Void)
-  @objc public static func startCall(callSettings: CometChatPro.CallSettings, onUserJoined: @escaping (CometChatPro.User?) -> Swift.Void, onUserLeft: @escaping (_ onUserLeft: CometChatPro.User?) -> Swift.Void, onUserListUpdated: @escaping ([CometChatPro.User]?) -> Swift.Void, onAudioModesUpdated: @escaping (_ onAudioModesUpdated: [CometChatPro.AudioDevice]?) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void, onCallEnded: @escaping (CometChatPro.Call?) -> Swift.Void)
+  @objc public static func startCall(callSettings: CometChatPro.CallSettings, onUserJoined: @escaping (CometChatPro.User?) -> Swift.Void, onUserLeft: @escaping (_ onUserLeft: CometChatPro.User?) -> Swift.Void, onUserListUpdated: @escaping ([CometChatPro.User]?) -> Swift.Void, onAudioModesUpdated: @escaping (_ onAudioModesUpdated: [CometChatPro.AudioDevice]?) -> Swift.Void, onUserMuted: @escaping (_ onUserMuted: [Swift.String : CometChatPro.User]?) -> Swift.Void, onCallSwitchedToVideo: @escaping (_ onCallSwitchedToVideo: [Swift.String : Any]?) -> Swift.Void, onRecordingStarted: @escaping (_ onRecordingStarted: CometChatPro.User?) -> Swift.Void, onRecordingStopped: @escaping (_ onRecordingStopped: CometChatPro.User?) -> Swift.Void, onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void, onCallEnded: @escaping (CometChatPro.Call?) -> Swift.Void)
   @objc public static func getActiveCall() -> CometChatPro.Call?
+  @objc public static func getInstance() -> CometChatPro.CallManager?
   public static func getAudioOutputModes(onSuccess: @escaping (_ modeList: [CometChatPro.CometChat.AudioMode]) -> Swift.Void)
   @objc public static func getCallParticipantCount(sessionId: Swift.String, type: CometChatPro.CometChat.CallFlowMode, onSuccess: @escaping (Swift.Int) -> (), onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
 }
@@ -963,10 +964,13 @@ extension CometChatPro.CometChat {
   }
 }
 @objc @_inheritsConvenienceInitializers public class CallManager : ObjectiveC.NSObject {
-  public func switchCamera()
-  public func muteAudio(mute: Swift.Bool)
-  public func pauseVideo(video: Swift.Bool)
-  public func setAudioMode(mode: CometChatPro.CometChat.AudioMode)
+  @objc public static func switchCamera()
+  @objc public func muteAudio(mute: Swift.Bool)
+  @objc public static func pauseVideo(video: Swift.Bool)
+  @objc public static func setAudioMode(mode: CometChatPro.CometChat.AudioMode)
+  @objc public static func switchToVideoCall()
+  @objc public static func startRecording()
+  @objc public static func stopRecording()
   @objc override dynamic public init()
   @objc deinit
 }
@@ -1020,6 +1024,10 @@ extension CometChatPro.CometChat {
     @objc public func setDefaultAudioMode(mode: CometChatPro.CometChat.AudioMode) -> CometChatPro.CallSettings.CallSettingsBuilder
     @objc public func setRegion(region: Swift.String) -> CometChatPro.CallSettings.CallSettingsBuilder
     @objc public func setMode(mode: CometChatPro.CometChat.CallMode) -> CometChatPro.CallSettings.CallSettingsBuilder
+    @objc public func setAvatarMode(mode: CometChatPro.CometChat.AvatarMode) -> CometChatPro.CallSettings.CallSettingsBuilder
+    @objc public func showSwitchToVideoCallButton(_ flag: Swift.Bool) -> CometChatPro.CallSettings.CallSettingsBuilder
+    @objc public func showRecordingButton(_ flag: Swift.Bool) -> CometChatPro.CallSettings.CallSettingsBuilder
+    @objc public func startRecordingOnCallStart(_ flag: Swift.Bool) -> CometChatPro.CallSettings.CallSettingsBuilder
     @objc public func build() -> CometChatPro.CallSettings
     @objc deinit
   }
@@ -1122,6 +1130,18 @@ extension CometChatPro.CometChat {
     case MODE_SPOTLIGHT
     case MODE_SINGLE
     case MODE_DEFAULT
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
+extension CometChatPro.CometChat {
+  @objc public enum AvatarMode : Swift.Int {
+    case circle
+    case square
+    case fullscreen
     public init?(rawValue: Swift.Int)
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
@@ -1360,6 +1380,9 @@ extension CometChatPro.CometChat.MessageType : Swift.RawRepresentable {}
 extension CometChatPro.CometChat.CallMode : Swift.Equatable {}
 extension CometChatPro.CometChat.CallMode : Swift.Hashable {}
 extension CometChatPro.CometChat.CallMode : Swift.RawRepresentable {}
+extension CometChatPro.CometChat.AvatarMode : Swift.Equatable {}
+extension CometChatPro.CometChat.AvatarMode : Swift.Hashable {}
+extension CometChatPro.CometChat.AvatarMode : Swift.RawRepresentable {}
 extension CometChatPro.CometChat.ReceiverType : Swift.Equatable {}
 extension CometChatPro.CometChat.ReceiverType : Swift.Hashable {}
 extension CometChatPro.CometChat.ReceiverType : Swift.RawRepresentable {}

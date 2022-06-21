@@ -57,7 +57,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void)RTCEventGetAudioModesOnSuccess:(void (^)(NSArray *))onAudioModeSuccess;
 
+-(void)CallingEventOnSwitchedToVideoCall:(NSDictionary *)CallSwitchRequestInfo;
+-(void)RTCEventOnSwitchedToVideoCall:(void (^)(NSDictionary *))onSwitchToVideoCall;
 
+-(void)callingEventOnRecordingToggled:(NSDictionary *)info;
+-(void)RTCEventOnRecordingToggled:(void (^)(NSDictionary *))info;
+
+-(void)callingEventOnUserMuted:(NSDictionary *)info;
+-(void)RTCEventOnUserMuted:(void (^)(NSDictionary *))info;
 @end
 
 NS_ASSUME_NONNULL_END
