@@ -10,14 +10,11 @@ let package = Package(
         .iOS(.v11)
     ],
     products: [
-        .library(name: "CometChatPro", targets: ["CometChatPro","Starscream"])
+        .library(name: "CometChatPro", targets: ["CometChatPro"])
     ],
     targets: [
         .binaryTarget(
             name: "CometChatPro",
-            path: "./Sources/CometChatPro.xcframework"),
-        .binaryTarget(
-            name: "Starscream",
-            path: "./Sources/Starscream.xcframework")
+            path: "./Sources/CometChatPro.xcframework")
     ]
 )
