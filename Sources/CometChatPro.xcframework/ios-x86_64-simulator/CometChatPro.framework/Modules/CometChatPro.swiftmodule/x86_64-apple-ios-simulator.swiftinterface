@@ -9,6 +9,7 @@ import Starscream
 import Swift
 import SystemConfiguration
 import UIKit
+import UniformTypeIdentifiers
 import _Concurrency
 @objc public class MessageReceipt : ObjectiveC.NSObject {
   @objc public enum ReceiptType : Swift.Int {
@@ -380,13 +381,38 @@ extension CometChatPro.CometChat {
     @objc get
     @objc set
   }
+  @objc public var attachments: [CometChatPro.Attachment]? {
+    @objc get
+    @objc set
+  }
   @objc public var filePath: Swift.String? {
     @objc get
     @objc set
   }
+  @objc public var filePaths: [Swift.String]? {
+    @objc get
+    @objc set
+  }
+  @objc public var files: [CometChatPro.File]? {
+    @objc get
+    @objc set
+  }
   @objc public init(receiverUid: Swift.String, fileurl: Swift.String?, messageType: CometChatPro.CometChat.MessageType, receiverType: CometChatPro.CometChat.ReceiverType)
+  @objc public init(receiverUid: Swift.String, files: [CometChatPro.File], messageType: CometChatPro.CometChat.MessageType, receiverType: CometChatPro.CometChat.ReceiverType)
   public static func mediaMessage(fromJSON message: [Swift.String : Any]?) -> (CometChatPro.BaseMessage?, CometChatPro.CometChatException?)
   @objc public func stringValue() -> Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class File : ObjectiveC.NSObject {
+  @objc public var name: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var data: Foundation.Data? {
+    @objc get
+    @objc set
+  }
+  @objc public init(name: Swift.String, data: Foundation.Data)
   @objc deinit
 }
 extension CometChatPro.CometChat {

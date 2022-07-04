@@ -78,7 +78,7 @@
 		</data>
 		<key>Headers/CometChatPro-Swift.h</key>
 		<data>
-		5f0d54rtMuFU8zDZrOWgcZxmaJ0=
+		sD9yNLO1j7LooZTNc4YZk4uVuH0=
 		</data>
 		<key>Headers/CometChatPro.h</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+1l8HOKml+o9dP/60DhmymU7q5M=
+		cwcj0AsY3U+uP/cctS5P+9TBvFU=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -126,11 +126,11 @@
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		7vs6vRPslkJO0isxjT0KSgPwP5U=
+		cXH9vnBvbbJxbmbxVX0hr07nlhI=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		KbnAQFrFvNI/BUl1ub+usv3zejk=
+		Z3uiQVYUIL7JeKgUcDdsXhqzKpY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -269,7 +269,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			llziYHeWsoCLjrVLIl805QK1A7JNLY6sMIhYl7e4GbI=
+			SViE4l9xP7f4omR9btZnlmh5jdCTfYDtlPQAO8mFssQ=
 			</data>
 		</dict>
 		<key>Headers/CometChatPro.h</key>
@@ -346,14 +346,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hW8TybJAKJR8IHs8c51gFRRQ7smVuTIJkcP6tVUU9bg=
+			QfMTQ3btaftmuW97tc2CeOK3tBKruGZRzYGsdrlMbX4=
 			</data>
 		</dict>
 		<key>Modules/CometChatPro.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nS5oqCgcuzkXo+9Ic8dw/tYiNEG8IYRWGOcqVqeiC+0=
+			XZSNf/sNMLCm0qi97ItvXQLKYl7qBG2yEJlgD/0R7sQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
