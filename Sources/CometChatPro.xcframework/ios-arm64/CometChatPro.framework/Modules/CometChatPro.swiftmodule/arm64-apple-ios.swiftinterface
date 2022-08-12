@@ -73,6 +73,20 @@ extension CometChatPro.CometChat {
     }
   }
 }
+extension CometChatPro.CometChat {
+  @objc public static func addMessageListener(_ observerId: Swift.String, _ observer: CometChatPro.CometChatMessageDelegate)
+  @objc public static func removeMessageListener(_ observerId: Swift.String)
+  @objc public static func addCallListener(_ observerId: Swift.String, _ observer: CometChatPro.CometChatCallDelegate)
+  @objc public static func removeCallListener(_ observerId: Swift.String)
+  @objc public static func addConnectionListener(_ observerId: Swift.String, _ observer: CometChatPro.CometChatConnectionDelegate)
+  @objc public static func removeConnectionListener(_ observerId: Swift.String)
+  @objc public static func addUserListener(_ observerId: Swift.String, _ observer: CometChatPro.CometChatUserDelegate)
+  @objc public static func removeUserListener(_ observerId: Swift.String)
+  @objc public static func addGroupListener(_ observerId: Swift.String, _ observer: CometChatPro.CometChatGroupDelegate)
+  @objc public static func removeGroupListener(_ observerId: Swift.String)
+  @objc public static func addLoginListener(_ observerId: Swift.String, _ observer: CometChatPro.CometChatLoginDelegate)
+  @objc public static func removeLoginListener(_ observerId: Swift.String)
+}
 @objc final public class BlockedUserRequest : ObjectiveC.NSObject {
   @objc public init(builder: CometChatPro.BlockedUserRequest.BlockedUserRequestBuilder)
   @objc final public func fetchPrevious(onSuccess: @escaping (_ users: [CometChatPro.User]?) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
@@ -781,6 +795,8 @@ extension CometChatPro.CometChat {
   @objc public static func getInstance() -> CometChatPro.CallManager?
   public static func getAudioOutputModes(onSuccess: @escaping (_ modeList: [CometChatPro.CometChat.AudioMode]) -> Swift.Void)
   @objc public static func getCallParticipantCount(sessionId: Swift.String, type: CometChatPro.CometChat.CallFlowMode, onSuccess: @escaping (Swift.Int) -> (), onError: @escaping (CometChatPro.CometChatException?) -> Swift.Void)
+  @objc public static func enterPIPMode()
+  @objc public static func exitPIPMode()
 }
 extension CometChatPro.CometChat {
   @objc public static func updateGroup(group: CometChatPro.Group, onSuccess: @escaping (CometChatPro.Group) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
