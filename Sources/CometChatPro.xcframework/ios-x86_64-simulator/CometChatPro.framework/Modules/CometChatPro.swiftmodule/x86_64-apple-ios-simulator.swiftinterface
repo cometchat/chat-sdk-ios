@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CometChatPro
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVKit
 @_exported import CometChatPro
 import CometChatStarscream
@@ -11,6 +12,7 @@ import SystemConfiguration
 import UIKit
 import UniformTypeIdentifiers
 import _Concurrency
+import _StringProcessing
 @objc public class MessageReceipt : ObjectiveC.NSObject {
   @objc public enum ReceiptType : Swift.Int {
     case delivered
