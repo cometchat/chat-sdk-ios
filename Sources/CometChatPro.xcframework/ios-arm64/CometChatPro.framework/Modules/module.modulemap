@@ -6,6 +6,6 @@ framework module CometChatPro {
 }
 
 module CometChatPro.Swift {
-  header "CometChatPro-Swift.h"
-  requires objc
+    header "CometChatPro-Swift.h"
+    requires objc
 }
