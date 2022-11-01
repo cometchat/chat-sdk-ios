@@ -1070,6 +1070,7 @@ extension CometChatPro.CometChat {
     @objc public func showSwitchToVideoCallButton(_ flag: Swift.Bool) -> CometChatPro.CallSettings.CallSettingsBuilder
     @objc public func showRecordingButton(_ flag: Swift.Bool) -> CometChatPro.CallSettings.CallSettingsBuilder
     @objc public func startRecordingOnCallStart(_ flag: Swift.Bool) -> CometChatPro.CallSettings.CallSettingsBuilder
+    @objc public func setmainVideoContainerSetting(_ videoSettings: CometChatPro.MainVideoContainerSetting) -> CometChatPro.CallSettings.CallSettingsBuilder
     @objc public func build() -> CometChatPro.CallSettings
     @objc deinit
   }
@@ -1317,6 +1318,16 @@ extension CometChatPro.CometChat {
   @objc public static func updateUser(user: CometChatPro.User, apiKey: Swift.String, onSuccess: @escaping (CometChatPro.User) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
   @objc public static func updateUser(user: CometChatPro.User, authKey: Swift.String, onSuccess: @escaping (CometChatPro.User) -> (), onError: @escaping (CometChatPro.CometChatException?) -> ())
   @objc public static func updateCurrentUserDetails(user: CometChatPro.User, onSuccess: @escaping (_ user: CometChatPro.User) -> (), onError: @escaping (_ error: CometChatPro.CometChatException?) -> ())
+}
+@objc @_inheritsConvenienceInitializers final public class MainVideoContainerSetting : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  final public func getDictionaryForVideoSetting() -> Foundation.NSMutableDictionary
+  final public func setVideoStreamProp(_ fitVideo: Swift.String)
+  final public func setNameLabelProps(_ visibility: Swift.Bool, _ position: Swift.String? = nil, _ backGroundColor: Swift.String? = nil)
+  final public func setFullScreenButtonProps(_ visibility: Swift.Bool, _ position: Swift.String? = nil)
+  final public func setZoomButtonProps(_ visibility: Swift.Bool, _ position: Swift.String? = nil)
+  final public func setUserListButtonProps(_ visibility: Swift.Bool, _ position: Swift.String? = nil)
+  @objc deinit
 }
 extension CometChatPro.CometChat {
   @objc public enum ConnectionStatus : Swift.Int {

@@ -46,6 +46,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSMutableDictionary *rtcInitiator;
 @property (nonatomic,copy) NSString *setAvatarMode;
 @property (weak, nonatomic) UIView *view;
+@property (nonatomic) NSMutableDictionary *setmainVideoContainerSetting;
 @end
 
 
@@ -78,6 +79,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSMutableDictionary *rtcReveiver;
 @property (nonatomic) NSMutableDictionary *rtcInitiator;
 @property (nonatomic,copy) NSString *setAvatarMode;
+@property (nonatomic) NSMutableDictionary *setmainVideoContainerSetting;
 //ab try kariye maalik
 @property (nonatomic,weak)NSObject<RTCEventDelegate>* delegate;
 //@property (nonatomic, weak) id <RTCEventDelegate> delegate;
@@ -96,6 +98,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)setAudioModeToEarPiece;
 -(void)setAudioMode:(NSMutableString*)mode;
 -(void)getAudioModes:(void(^)(NSArray * list))callback;
+-(void)getAudioOutputModes:(void(^)(NSArray * list))callback;
 -(void)enterPIPMode;
 -(void)exitPIPMode;
 -(void)switchToVideoCall;
