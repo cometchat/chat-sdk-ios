@@ -330,6 +330,29 @@ extension CometChatPro.CometChat {
   @objc public func stringValue() -> Swift.String
   @objc deinit
 }
+extension CometChatPro.CallSettings {
+  @objc public enum Position : Swift.Int {
+    case TOP_LEFT
+    case TOP_RIGHT
+    case BOTTOM_LEFT
+    case BOTTOM_RIGHT
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc public enum AspectRatio : Swift.Int {
+    case DEFAULT
+    case CONTAIN
+    case COVER
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
 extension CometChatPro.CometChat {
   @objc public enum CallFlowMode : Swift.Int {
     case DEFAULT
@@ -1322,11 +1345,11 @@ extension CometChatPro.CometChat {
 @objc @_inheritsConvenienceInitializers final public class MainVideoContainerSetting : ObjectiveC.NSObject {
   @objc override dynamic public init()
   final public func getDictionaryForVideoSetting() -> Foundation.NSMutableDictionary
-  final public func setVideoStreamProp(_ fitVideo: Swift.String)
-  final public func setNameLabelProps(_ visibility: Swift.Bool, _ position: Swift.String? = nil, _ backGroundColor: Swift.String? = nil)
-  final public func setFullScreenButtonProps(_ visibility: Swift.Bool, _ position: Swift.String? = nil)
-  final public func setZoomButtonProps(_ visibility: Swift.Bool, _ position: Swift.String? = nil)
-  final public func setUserListButtonProps(_ visibility: Swift.Bool, _ position: Swift.String? = nil)
+  final public func setMainVideoAspectRatio(_ aspectRatio: CometChatPro.CallSettings.AspectRatio)
+  final public func setNameLabelParams(_ visibility: Swift.Bool, _ position: CometChatPro.CallSettings.Position?, _ backGroundColor: Swift.String?)
+  final public func setFullScreenButtonParams(_ visibility: Swift.Bool, _ position: CometChatPro.CallSettings.Position?)
+  final public func setZoomButtonParams(_ visibility: Swift.Bool, _ position: CometChatPro.CallSettings.Position?)
+  final public func setUserListButtonParams(_ visibility: Swift.Bool, _ position: CometChatPro.CallSettings.Position?)
   @objc deinit
 }
 extension CometChatPro.CometChat {
@@ -1391,6 +1414,12 @@ extension CometChatPro.CometChat.ConversationType : Swift.RawRepresentable {}
 extension CometChatPro.CometChat.MemberScope : Swift.Equatable {}
 extension CometChatPro.CometChat.MemberScope : Swift.Hashable {}
 extension CometChatPro.CometChat.MemberScope : Swift.RawRepresentable {}
+extension CometChatPro.CallSettings.Position : Swift.Equatable {}
+extension CometChatPro.CallSettings.Position : Swift.Hashable {}
+extension CometChatPro.CallSettings.Position : Swift.RawRepresentable {}
+extension CometChatPro.CallSettings.AspectRatio : Swift.Equatable {}
+extension CometChatPro.CallSettings.AspectRatio : Swift.Hashable {}
+extension CometChatPro.CallSettings.AspectRatio : Swift.RawRepresentable {}
 extension CometChatPro.CometChat.CallFlowMode : Swift.Equatable {}
 extension CometChatPro.CometChat.CallFlowMode : Swift.Hashable {}
 extension CometChatPro.CometChat.CallFlowMode : Swift.RawRepresentable {}
