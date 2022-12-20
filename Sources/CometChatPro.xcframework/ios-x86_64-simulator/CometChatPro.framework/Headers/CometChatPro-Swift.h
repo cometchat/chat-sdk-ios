@@ -452,12 +452,14 @@ SWIFT_CLASS("_TtCC12CometChatPro12CallSettings19CallSettingsBuilder")
 - (CallSettingsBuilder * _Nonnull)startWithVideoMutedWithVideoMuted:(BOOL)videoMuted SWIFT_WARN_UNUSED_RESULT;
 - (CallSettingsBuilder * _Nonnull)setDefaultAudioModeWithMode:(enum AudioMode)mode SWIFT_WARN_UNUSED_RESULT;
 - (CallSettingsBuilder * _Nonnull)setRegionWithRegion:(NSString * _Nonnull)region SWIFT_WARN_UNUSED_RESULT;
+- (CallSettingsBuilder * _Nonnull)enableVideoTileClick:(BOOL)flag SWIFT_WARN_UNUSED_RESULT;
+- (CallSettingsBuilder * _Nonnull)enableVideoTileDrag:(BOOL)flag SWIFT_WARN_UNUSED_RESULT;
 - (CallSettingsBuilder * _Nonnull)setModeWithMode:(enum CallMode)mode SWIFT_WARN_UNUSED_RESULT;
 - (CallSettingsBuilder * _Nonnull)setAvatarModeWithMode:(enum AvatarMode)mode SWIFT_WARN_UNUSED_RESULT;
 - (CallSettingsBuilder * _Nonnull)showSwitchToVideoCallButton:(BOOL)flag SWIFT_WARN_UNUSED_RESULT;
 - (CallSettingsBuilder * _Nonnull)showRecordingButton:(BOOL)flag SWIFT_WARN_UNUSED_RESULT;
 - (CallSettingsBuilder * _Nonnull)startRecordingOnCallStart:(BOOL)flag SWIFT_WARN_UNUSED_RESULT;
-- (CallSettingsBuilder * _Nonnull)setmainVideoContainerSetting:(MainVideoContainerSetting * _Nonnull)videoSettings SWIFT_WARN_UNUSED_RESULT;
+- (CallSettingsBuilder * _Nonnull)setMainVideoContainerSetting:(MainVideoContainerSetting * _Nonnull)videoSettings SWIFT_WARN_UNUSED_RESULT;
 - (CallSettings * _Nonnull)build SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

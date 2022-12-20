@@ -30,6 +30,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) BOOL isInitiator;
 @property (nonatomic) BOOL muteAudioButtonDisable;
 @property (nonatomic) BOOL endCallButtonDisable;
+@property (nonatomic) BOOL enableVideoTileClick;
+@property (nonatomic) BOOL enableDraggableVideoTile;
 @property (nonatomic) BOOL pauseVideoButtonDisable;
 @property (nonatomic) BOOL switchCameraButtonDisable;
 @property (nonatomic) BOOL audioModeButtonDisable;
@@ -64,6 +66,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) BOOL isInitiator;
 @property (nonatomic) BOOL muteAudioButtonDisable;
 @property (nonatomic) BOOL endCallButtonDisable;
+@property (nonatomic) BOOL enableVideoTileClick;
+@property (nonatomic) BOOL enableDraggableVideoTile;
 @property (nonatomic) BOOL pauseVideoButtonDisable;
 @property (nonatomic) BOOL switchCameraButtonDisable;
 @property (nonatomic) BOOL audioModeButtonDisable;

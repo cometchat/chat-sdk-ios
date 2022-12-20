@@ -1088,12 +1088,14 @@ extension CometChatPro.CometChat {
     @objc public func startWithVideoMuted(videoMuted: Swift.Bool) -> CometChatPro.CallSettings.CallSettingsBuilder
     @objc public func setDefaultAudioMode(mode: CometChatPro.CometChat.AudioMode) -> CometChatPro.CallSettings.CallSettingsBuilder
     @objc public func setRegion(region: Swift.String) -> CometChatPro.CallSettings.CallSettingsBuilder
+    @objc public func enableVideoTileClick(_ flag: Swift.Bool) -> CometChatPro.CallSettings.CallSettingsBuilder
+    @objc public func enableVideoTileDrag(_ flag: Swift.Bool) -> CometChatPro.CallSettings.CallSettingsBuilder
     @objc public func setMode(mode: CometChatPro.CometChat.CallMode) -> CometChatPro.CallSettings.CallSettingsBuilder
     @objc public func setAvatarMode(mode: CometChatPro.CometChat.AvatarMode) -> CometChatPro.CallSettings.CallSettingsBuilder
     @objc public func showSwitchToVideoCallButton(_ flag: Swift.Bool) -> CometChatPro.CallSettings.CallSettingsBuilder
     @objc public func showRecordingButton(_ flag: Swift.Bool) -> CometChatPro.CallSettings.CallSettingsBuilder
     @objc public func startRecordingOnCallStart(_ flag: Swift.Bool) -> CometChatPro.CallSettings.CallSettingsBuilder
-    @objc public func setmainVideoContainerSetting(_ videoSettings: CometChatPro.MainVideoContainerSetting) -> CometChatPro.CallSettings.CallSettingsBuilder
+    @objc public func setMainVideoContainerSetting(_ videoSettings: CometChatPro.MainVideoContainerSetting) -> CometChatPro.CallSettings.CallSettingsBuilder
     @objc public func build() -> CometChatPro.CallSettings
     @objc deinit
   }
