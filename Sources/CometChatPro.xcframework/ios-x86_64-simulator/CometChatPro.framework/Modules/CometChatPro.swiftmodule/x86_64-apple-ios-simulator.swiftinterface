@@ -931,6 +931,8 @@ extension CometChatPro.CometChat {
     @objc public func setRegion(region: Swift.String) -> CometChatPro.AppSettings.AppSettingsBuilder
     @objc public func subcribePresenceForRoles(roles: [Swift.String]) -> CometChatPro.AppSettings.AppSettingsBuilder
     @objc public func setEnableAutoJoinForGroups(enableAutoJoinForGroups: Swift.Bool) -> CometChatPro.AppSettings.AppSettingsBuilder
+    @objc public func overrideAdminHost(_ adminHost: Swift.String) -> CometChatPro.AppSettings.AppSettingsBuilder
+    @objc public func overrideClientHost(_ clientHost: Swift.String) -> CometChatPro.AppSettings.AppSettingsBuilder
     @objc public func autoEstablishSocketConnection(_ enableConnection: Swift.Bool) -> CometChatPro.AppSettings.AppSettingsBuilder
     @objc public func build() -> CometChatPro.AppSettings
     @objc deinit

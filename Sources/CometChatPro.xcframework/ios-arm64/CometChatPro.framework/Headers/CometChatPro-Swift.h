@@ -303,6 +303,8 @@ SWIFT_CLASS("_TtCC12CometChatPro11AppSettings18AppSettingsBuilder")
 - (AppSettingsBuilder * _Nonnull)setRegionWithRegion:(NSString * _Nonnull)region SWIFT_WARN_UNUSED_RESULT;
 - (AppSettingsBuilder * _Nonnull)subcribePresenceForRolesWithRoles:(NSArray<NSString *> * _Nonnull)roles SWIFT_WARN_UNUSED_RESULT;
 - (AppSettingsBuilder * _Nonnull)setEnableAutoJoinForGroupsWithEnableAutoJoinForGroups:(BOOL)enableAutoJoinForGroups SWIFT_WARN_UNUSED_RESULT;
+- (AppSettingsBuilder * _Nonnull)overrideAdminHost:(NSString * _Nonnull)adminHost SWIFT_WARN_UNUSED_RESULT;
+- (AppSettingsBuilder * _Nonnull)overrideClientHost:(NSString * _Nonnull)clientHost SWIFT_WARN_UNUSED_RESULT;
 - (AppSettingsBuilder * _Nonnull)autoEstablishSocketConnection:(BOOL)enableConnection SWIFT_WARN_UNUSED_RESULT;
 - (AppSettings * _Nonnull)build SWIFT_WARN_UNUSED_RESULT;
 @end
@@ -535,7 +537,6 @@ typedef SWIFT_ENUM(NSInteger, Blocked, open) {
 @interface CometChat (SWIFT_EXTENSION(CometChatPro))
 + (void)getUserWithUID:(NSString * _Nonnull)UID onSuccess:(void (^ _Nonnull)(User * _Nullable))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 @end
-
 
 
 @interface CometChat (SWIFT_EXTENSION(CometChatPro))
@@ -780,6 +781,7 @@ typedef SWIFT_ENUM(NSInteger, MessageCategory, open) {
 + (void)isFeatureEnabledWithFeature:(NSString * _Nonnull)feature onSuccess:(void (^ _Nonnull)(BOOL))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nullable))onError;
 @end
 
+
 @class TransientMessage;
 
 @interface CometChat (SWIFT_EXTENSION(CometChatPro))
@@ -826,6 +828,7 @@ typedef SWIFT_ENUM(NSInteger, actionType, open) {
 @end
 
 
+
 @interface CometChat (SWIFT_EXTENSION(CometChatPro))
 @end
 
@@ -844,7 +847,6 @@ typedef SWIFT_ENUM(NSInteger, XMPPMsgType, open) {
   XMPPMsgTypeChat = 0,
   XMPPMsgTypeGroupChat = 1,
 };
-
 
 
 @interface CometChat (SWIFT_EXTENSION(CometChatPro))
