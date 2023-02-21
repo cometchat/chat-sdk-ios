@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,copy) NSString *mode;
 @property (nonatomic,copy) NSString *region;
 @property (nonatomic,copy) NSString *domain;
+@property (nonatomic,copy) NSString *sdk;
 @property (nonatomic,copy) NSString *appID;
 @property (nonatomic,copy) NSString *defaultAudioMode;
 @property (nonatomic) BOOL defaultLayout;
@@ -59,6 +60,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,readonly) BOOL defaultLayout;
 @property (nonatomic,copy) NSString *region;
 @property (nonatomic,copy) NSString *domain;
+@property (nonatomic,copy) NSString *sdk;
 @property (nonatomic,copy) NSString *appID;
 @property (nonatomic,copy) NSString *defaultAudioMode;
 @property (weak, nonatomic) UIView *view;
