@@ -78,7 +78,7 @@
 		</data>
 		<key>Headers/CometChatPro-Swift.h</key>
 		<data>
-		hj9WDrj0xjnP4xUWZVVroWd7vY4=
+		LD+ItTPlfQxzSixLyNH69kgKxAs=
 		</data>
 		<key>Headers/CometChatPro.h</key>
 		<data>
@@ -118,15 +118,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HelecelnkgV2jE40m7XYCokxcgA=
+		ph/wEM34/TZiF85J8bLmNdIPWaY=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		gSmQF+Xu2lRkVRlzl0R5BO4khMo=
+		/xzjyHjjbFg2fbVDytRvxSiEECU=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Qf4C/Tkhm8H+T8+mnFUPqqYkR4g=
+		Fpax9y60b6T+FIzqHRH+mAw5aM8=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -134,19 +134,19 @@
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Qf4C/Tkhm8H+T8+mnFUPqqYkR4g=
+		Fpax9y60b6T+FIzqHRH+mAw5aM8=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VRIxDr/J990hO1Gh/SGHPhONbuc=
+		GtcX6h+DBkFz8d+8O7c4226FnDY=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		gSmQF+Xu2lRkVRlzl0R5BO4khMo=
+		/xzjyHjjbFg2fbVDytRvxSiEECU=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		XDYvMKta9mhAtN2XyhW95X/eC9Q=
+		0UyPdZabg0VGCLdIKqbGZC45hzA=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -154,11 +154,11 @@
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		XDYvMKta9mhAtN2XyhW95X/eC9Q=
+		0UyPdZabg0VGCLdIKqbGZC45hzA=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		LYlTGJEsrVZHjCHB+G/8kS1/b0Q=
+		+GOxjE2o3GO6tTCim2xZvx2dz3I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -297,7 +297,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0mpnVgmFu61OQoozu47TS5f/3Q3m8vUJqOS4n6EHuJ8=
+			XDAugl9lv5ihp2fplBQyRUj+i8fG+bsXcreCGSyM7tE=
 			</data>
 		</dict>
 		<key>Headers/CometChatPro.h</key>
@@ -367,14 +367,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SooLkxe/yYxC7lh0aDsUQi56/+XzBFzOff7Ur2oSDYM=
+			8SPoWZ5wsuWwiinDTA5BmxrBrQU/xWX8R+qszHAtUHw=
 			</data>
 		</dict>
 		<key>Modules/CometChatPro.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ohMVccClKqQ3hwHlDaMXY7DKxhdrO41mc+0bnL5rx4o=
+			VjOhap+Uhs8uPVU5SaP8tda9UUoT2BIX6k0ZTQcQ5DU=
 			</data>
 		</dict>
 		<key>Modules/CometChatPro.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -388,28 +388,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ohMVccClKqQ3hwHlDaMXY7DKxhdrO41mc+0bnL5rx4o=
+			VjOhap+Uhs8uPVU5SaP8tda9UUoT2BIX6k0ZTQcQ5DU=
 			</data>
 		</dict>
 		<key>Modules/CometChatPro.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			27ZTfyYmMmVOU0hkQdakTxuDVvVYYGP3JpCOu6QdaZE=
+			xx1NjwcOUQ1tPUmmrjrR5vVgDkQoZv48fmfwDz0fHhY=
 			</data>
 		</dict>
 		<key>Modules/CometChatPro.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SooLkxe/yYxC7lh0aDsUQi56/+XzBFzOff7Ur2oSDYM=
+			8SPoWZ5wsuWwiinDTA5BmxrBrQU/xWX8R+qszHAtUHw=
 			</data>
 		</dict>
 		<key>Modules/CometChatPro.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eQN7hmOhxwzukaxl9Qz+ZLv2QGO3ine5aoJgRW8cRys=
+			ZkRmgJH2Ip1/NuT2Nrl7y57T6LX+CfOEiqBOjruTuBU=
 			</data>
 		</dict>
 		<key>Modules/CometChatPro.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -423,14 +423,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eQN7hmOhxwzukaxl9Qz+ZLv2QGO3ine5aoJgRW8cRys=
+			ZkRmgJH2Ip1/NuT2Nrl7y57T6LX+CfOEiqBOjruTuBU=
 			</data>
 		</dict>
 		<key>Modules/CometChatPro.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HeBXYsevDOs4xlyPBMz9pmQAB14hf6Z3pTOQVGceR54=
+			kvfg2afJYWSTVQ6+lNbahXSHsYMkSDlKKChvq1Dljuo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

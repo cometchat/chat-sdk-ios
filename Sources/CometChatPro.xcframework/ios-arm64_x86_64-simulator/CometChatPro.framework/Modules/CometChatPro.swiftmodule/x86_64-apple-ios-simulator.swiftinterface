@@ -537,6 +537,7 @@ extension CometChatPro.CometChat {
   @discardableResult
   @objc public init(appId: Swift.String, appSettings: CometChatPro.AppSettings, onSuccess: @escaping (_ isSuccess: Swift.Bool) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException) -> Swift.Void)
   @objc public static func getUserAuthToken() -> Swift.String?
+  @objc public static func setPlatformParams(platform: Swift.String, sdkVersion: Swift.String)
   @objc public static func connect()
   @objc public static func disconnect()
   @objc deinit

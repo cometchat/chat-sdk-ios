@@ -532,6 +532,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isInitialised;)
 - (nonnull instancetype)initWithAppId:(NSString * _Nonnull)appId onSuccess:(void (^ _Nonnull)(BOOL))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nonnull))onError OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,unavailable,message="This method is deprecated now. Please use new method `init(appId:String, appSettings : AppSettings,onSuccess:@escaping(_ isSuccess:Bool)-> Void, onError:@escaping (_ error:CometChatException) -> Void )`");
 - (nonnull instancetype)initWithAppId:(NSString * _Nonnull)appId appSettings:(AppSettings * _Nonnull)appSettings onSuccess:(void (^ _Nonnull)(BOOL))onSuccess onError:(void (^ _Nonnull)(CometChatException * _Nonnull))onError OBJC_DESIGNATED_INITIALIZER;
 + (NSString * _Nullable)getUserAuthToken SWIFT_WARN_UNUSED_RESULT;
++ (void)setPlatformParamsWithPlatform:(NSString * _Nonnull)platform sdkVersion:(NSString * _Nonnull)sdkVersion;
 + (void)connect;
 + (void)disconnect;
 @end

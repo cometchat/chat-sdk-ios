@@ -11545,6 +11545,42 @@
           },
           {
             "kind": "Function",
+            "name": "setPlatformParams",
+            "printedName": "setPlatformParams(platform:sdkVersion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@CometChatPro@objc(cs)CometChat(cm)setPlatformParamsWithPlatform:sdkVersion:",
+            "mangledName": "$s12CometChatPro0aB0C17setPlatformParams8platform10sdkVersionySS_SStFZ",
+            "moduleName": "CometChatPro",
+            "static": true,
+            "objc_name": "setPlatformParamsWithPlatform:sdkVersion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "connect",
             "printedName": "connect()",
             "children": [
@@ -43272,35 +43308,35 @@
     {
       "filePath": "\/Volumes\/ExtremeSSD\/Documents\/SDK\/V3\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Core\/Networking\/ApiConnection.swift",
       "kind": "StringLiteral",
-      "offset": 648,
+      "offset": 647,
       "length": 3,
       "value": "\"@\""
     },
     {
       "filePath": "\/Volumes\/ExtremeSSD\/Documents\/SDK\/V3\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Core\/Networking\/ApiConnection.swift",
       "kind": "BooleanLiteral",
-      "offset": 76247,
+      "offset": 76182,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/ExtremeSSD\/Documents\/SDK\/V3\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Core\/Networking\/ApiConnection.swift",
       "kind": "BooleanLiteral",
-      "offset": 77455,
+      "offset": 77390,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/ExtremeSSD\/Documents\/SDK\/V3\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Core\/Networking\/ApiConnection.swift",
       "kind": "BooleanLiteral",
-      "offset": 78680,
+      "offset": 78615,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/ExtremeSSD\/Documents\/SDK\/V3\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Core\/Networking\/ApiConnection.swift",
       "kind": "BooleanLiteral",
-      "offset": 79583,
+      "offset": 79518,
       "length": 5,
       "value": "false"
     },
@@ -49761,63 +49797,63 @@
     {
       "filePath": "\/Volumes\/ExtremeSSD\/Documents\/SDK\/V3\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Core\/CometChat\/CometChat.swift",
       "kind": "BooleanLiteral",
-      "offset": 63410,
+      "offset": 63738,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/ExtremeSSD\/Documents\/SDK\/V3\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Core\/CometChat\/CometChat.swift",
       "kind": "BooleanLiteral",
-      "offset": 64237,
+      "offset": 64565,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/ExtremeSSD\/Documents\/SDK\/V3\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Core\/CometChat\/CometChat.swift",
       "kind": "BooleanLiteral",
-      "offset": 65081,
+      "offset": 65409,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/ExtremeSSD\/Documents\/SDK\/V3\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Core\/CometChat\/CometChat.swift",
       "kind": "BooleanLiteral",
-      "offset": 65928,
+      "offset": 66256,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/ExtremeSSD\/Documents\/SDK\/V3\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Core\/CometChat\/CometChat.swift",
       "kind": "BooleanLiteral",
-      "offset": 88614,
+      "offset": 88947,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/ExtremeSSD\/Documents\/SDK\/V3\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Core\/CometChat\/CometChat.swift",
       "kind": "BooleanLiteral",
-      "offset": 89446,
+      "offset": 89779,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/ExtremeSSD\/Documents\/SDK\/V3\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Core\/CometChat\/CometChat.swift",
       "kind": "BooleanLiteral",
-      "offset": 90257,
+      "offset": 90590,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/ExtremeSSD\/Documents\/SDK\/V3\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Core\/CometChat\/CometChat.swift",
       "kind": "BooleanLiteral",
-      "offset": 90755,
+      "offset": 91088,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/ExtremeSSD\/Documents\/SDK\/V3\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Core\/CometChat\/CometChat.swift",
       "kind": "BooleanLiteral",
-      "offset": 91256,
+      "offset": 91589,
       "length": 5,
       "value": "false"
     },
@@ -52416,7 +52452,7 @@
       "kind": "StringLiteral",
       "offset": 1194,
       "length": 9,
-      "value": "\"3.0.912\""
+      "value": "\"3.0.913\""
     },
     {
       "filePath": "\/Volumes\/ExtremeSSD\/Documents\/SDK\/V3\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
