@@ -118,11 +118,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ph/wEM34/TZiF85J8bLmNdIPWaY=
+		yGPyXv02b/akeHuW6u8EIkzJOu4=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		/xzjyHjjbFg2fbVDytRvxSiEECU=
+		WHrdZPPlMGqUzjt5chiqPX+1YRM=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -138,11 +138,11 @@
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		GtcX6h+DBkFz8d+8O7c4226FnDY=
+		5lhC8yhJgXfM00DDgKNhjXqR/VA=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		/xzjyHjjbFg2fbVDytRvxSiEECU=
+		WHrdZPPlMGqUzjt5chiqPX+1YRM=
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>Modules/CometChatPro.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+GOxjE2o3GO6tTCim2xZvx2dz3I=
+		tl9nzs0LrtykVvEFFbQl4T06MBg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -367,7 +367,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8SPoWZ5wsuWwiinDTA5BmxrBrQU/xWX8R+qszHAtUHw=
+			GUHHQbN6VJg+zscXwmfTgbqGCAfWm2s76AY7pMWwZ/Q=
 			</data>
 		</dict>
 		<key>Modules/CometChatPro.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -395,14 +395,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xx1NjwcOUQ1tPUmmrjrR5vVgDkQoZv48fmfwDz0fHhY=
+			k75RsKMM1r7Ok1vzNgoxoZEhPrJj9k8pC27Xey7wtaA=
 			</data>
 		</dict>
 		<key>Modules/CometChatPro.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8SPoWZ5wsuWwiinDTA5BmxrBrQU/xWX8R+qszHAtUHw=
+			GUHHQbN6VJg+zscXwmfTgbqGCAfWm2s76AY7pMWwZ/Q=
 			</data>
 		</dict>
 		<key>Modules/CometChatPro.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -430,7 +430,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kvfg2afJYWSTVQ6+lNbahXSHsYMkSDlKKChvq1Dljuo=
+			CKBuWT54Oibq2QQimTLrt0F6Xw6mOkBpQOUi12Yh9AE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
