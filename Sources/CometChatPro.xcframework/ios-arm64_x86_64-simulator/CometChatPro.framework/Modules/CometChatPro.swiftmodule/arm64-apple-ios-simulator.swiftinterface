@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CometChatPro
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVKit
@@ -76,17 +76,17 @@ extension CometChatPro.CometChat {
   }
 }
 extension CometChatPro.CometChat {
-  @objc public static func addMessageListener(_ observerId: Swift.String, _ observer: CometChatPro.CometChatMessageDelegate)
+  @objc public static func addMessageListener(_ observerId: Swift.String, _ observer: any CometChatPro.CometChatMessageDelegate)
   @objc public static func removeMessageListener(_ observerId: Swift.String)
-  @objc public static func addCallListener(_ observerId: Swift.String, _ observer: CometChatPro.CometChatCallDelegate)
+  @objc public static func addCallListener(_ observerId: Swift.String, _ observer: any CometChatPro.CometChatCallDelegate)
   @objc public static func removeCallListener(_ observerId: Swift.String)
-  @objc public static func addConnectionListener(_ observerId: Swift.String, _ observer: CometChatPro.CometChatConnectionDelegate)
+  @objc public static func addConnectionListener(_ observerId: Swift.String, _ observer: any CometChatPro.CometChatConnectionDelegate)
   @objc public static func removeConnectionListener(_ observerId: Swift.String)
-  @objc public static func addUserListener(_ observerId: Swift.String, _ observer: CometChatPro.CometChatUserDelegate)
+  @objc public static func addUserListener(_ observerId: Swift.String, _ observer: any CometChatPro.CometChatUserDelegate)
   @objc public static func removeUserListener(_ observerId: Swift.String)
-  @objc public static func addGroupListener(_ observerId: Swift.String, _ observer: CometChatPro.CometChatGroupDelegate)
+  @objc public static func addGroupListener(_ observerId: Swift.String, _ observer: any CometChatPro.CometChatGroupDelegate)
   @objc public static func removeGroupListener(_ observerId: Swift.String)
-  @objc public static func addLoginListener(_ observerId: Swift.String, _ observer: CometChatPro.CometChatLoginDelegate)
+  @objc public static func addLoginListener(_ observerId: Swift.String, _ observer: any CometChatPro.CometChatLoginDelegate)
   @objc public static func removeLoginListener(_ observerId: Swift.String)
 }
 @objc final public class BlockedUserRequest : ObjectiveC.NSObject {
@@ -571,12 +571,12 @@ extension CometChatPro.CometChat {
   @objc public static func registerTokenForPushNotification(token: Swift.String, settings: [Swift.String : Any], onSuccess: @escaping (_ message: Swift.String) -> Swift.Void, onError: @escaping (_ error: CometChatPro.CometChatException?) -> Swift.Void)
 }
 extension CometChatPro.CometChat {
-  @objc weak public static var messagedelegate: CometChatPro.CometChatMessageDelegate?
-  @objc weak public static var calldelegate: CometChatPro.CometChatCallDelegate?
-  @objc weak public static var userdelegate: CometChatPro.CometChatUserDelegate?
-  @objc weak public static var groupdelegate: CometChatPro.CometChatGroupDelegate?
-  @objc weak public static var connectiondelegate: CometChatPro.CometChatConnectionDelegate?
-  @objc weak public static var logindelegate: CometChatPro.CometChatLoginDelegate?
+  @objc weak public static var messagedelegate: (any CometChatPro.CometChatMessageDelegate)?
+  @objc weak public static var calldelegate: (any CometChatPro.CometChatCallDelegate)?
+  @objc weak public static var userdelegate: (any CometChatPro.CometChatUserDelegate)?
+  @objc weak public static var groupdelegate: (any CometChatPro.CometChatGroupDelegate)?
+  @objc weak public static var connectiondelegate: (any CometChatPro.CometChatConnectionDelegate)?
+  @objc weak public static var logindelegate: (any CometChatPro.CometChatLoginDelegate)?
 }
 @objc public class GroupMembersRequest : ObjectiveC.NSObject {
   public typealias Response = (_ memebrs: [CometChatPro.GroupMember]?, _ error: CometChatPro.CometChatException?) -> Swift.Void
