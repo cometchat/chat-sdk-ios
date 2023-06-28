@@ -328,6 +328,7 @@ extension CometChatPro.CometChat {
     get
     set
   }
+  @objc dynamic public init()
   public static func actionMessage(fromJSON message: [Swift.String : Any]?) -> (CometChatPro.BaseMessage?, CometChatPro.CometChatException?)
   @objc public func stringValue() -> Swift.String
   @objc deinit

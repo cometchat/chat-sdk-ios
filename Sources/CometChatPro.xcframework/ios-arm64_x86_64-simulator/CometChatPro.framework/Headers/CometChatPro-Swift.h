@@ -347,6 +347,7 @@ SWIFT_CLASS("_TtC12CometChatPro13ActionMessage")
 @property (nonatomic) enum GroupMemberScopeType oldScope;
 /// newScope defines the new scope of the user in the group.
 @property (nonatomic) enum GroupMemberScopeType newScope;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithReceiverUid:(NSString * _Nonnull)receiverUid messageType:(enum MessageType)messageType receiverType:(enum ReceiverType)receiverType SWIFT_UNAVAILABLE;
 /// This method will provide you a string representation of ActionMessageObject.
 - (NSString * _Nonnull)stringValue SWIFT_WARN_UNUSED_RESULT;
@@ -1901,6 +1902,7 @@ SWIFT_CLASS("_TtC12CometChatPro13ActionMessage")
 @property (nonatomic) enum GroupMemberScopeType oldScope;
 /// newScope defines the new scope of the user in the group.
 @property (nonatomic) enum GroupMemberScopeType newScope;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithReceiverUid:(NSString * _Nonnull)receiverUid messageType:(enum MessageType)messageType receiverType:(enum ReceiverType)receiverType SWIFT_UNAVAILABLE;
 /// This method will provide you a string representation of ActionMessageObject.
 - (NSString * _Nonnull)stringValue SWIFT_WARN_UNUSED_RESULT;
