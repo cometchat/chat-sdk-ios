@@ -71839,2428 +71839,2428 @@
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
       "offset": 1194,
-      "length": 9,
-      "value": "\"3.0.916\""
+      "length": 15,
+      "value": "\"3.0.917-beta1\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1232,
+      "offset": 1238,
       "length": 12,
       "value": "\"cc_ios_sdk\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1271,
+      "offset": 1277,
       "length": 5,
       "value": "\"ios\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1474,
+      "offset": 1480,
       "length": 5,
       "value": "\"uid\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1508,
+      "offset": 1514,
       "length": 7,
       "value": "\"appId\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1545,
+      "offset": 1551,
       "length": 8,
       "value": "\"apiKey\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1586,
+      "offset": 1592,
       "length": 11,
       "value": "\"authToken\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1629,
+      "offset": 1635,
       "length": 10,
       "value": "\"password\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1668,
+      "offset": 1674,
       "length": 10,
       "value": "\"per_page\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1707,
+      "offset": 1713,
       "length": 8,
       "value": "\"cursor\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1743,
+      "offset": 1749,
       "length": 6,
       "value": "\"page\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1784,
+      "offset": 1790,
       "length": 13,
       "value": "\"blockedUids\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1830,
+      "offset": 1836,
       "length": 8,
       "value": "\"status\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1874,
+      "offset": 1880,
       "length": 11,
       "value": "\"searchKey\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1917,
+      "offset": 1923,
       "length": 10,
       "value": "\"searchIn\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1957,
+      "offset": 1963,
       "length": 8,
       "value": "\"sortBy\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1998,
+      "offset": 2004,
       "length": 11,
       "value": "\"sortOrder\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2074,
+      "offset": 2080,
       "length": 7,
       "value": "\"roles\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2108,
+      "offset": 2114,
       "length": 6,
       "value": "\"tags\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2148,
+      "offset": 2154,
       "length": 13,
       "value": "\"attachments\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2190,
+      "offset": 2196,
       "length": 8,
       "value": "\"scopes\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2231,
+      "offset": 2237,
       "length": 11,
       "value": "\"hasJoined\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2282,
+      "offset": 2288,
       "length": 18,
       "value": "\"hideBlockedUsers\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2334,
+      "offset": 2340,
       "length": 13,
       "value": "\"friendsOnly\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2378,
+      "offset": 2384,
       "length": 10,
       "value": "\"withTags\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2415,
+      "offset": 2421,
       "length": 6,
       "value": "\"uids\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2450,
+      "offset": 2456,
       "length": 8,
       "value": "\"unread\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2493,
+      "offset": 2499,
       "length": 13,
       "value": "\"undelivered\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2557,
+      "offset": 2563,
       "length": 30,
       "value": "\"hideMessagesFromBlockedUsers\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2629,
+      "offset": 2635,
       "length": 13,
       "value": "\"hideDeleted\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2681,
+      "offset": 2687,
       "length": 11,
       "value": "\"direction\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2725,
+      "offset": 2731,
       "length": 12,
       "value": "\"usersToBan\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2769,
+      "offset": 2775,
       "length": 11,
       "value": "\"updatedAt\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2814,
+      "offset": 2820,
       "length": 13,
       "value": "\"updatesOnly\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2858,
+      "offset": 2864,
       "length": 10,
       "value": "\"platform\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2900,
+      "offset": 2906,
       "length": 11,
       "value": "\"userAgent\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2942,
+      "offset": 2948,
       "length": 10,
       "value": "\"deviceId\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2982,
+      "offset": 2988,
       "length": 9,
       "value": "\"appInfo\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3021,
+      "offset": 3027,
       "length": 9,
       "value": "\"version\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3062,
+      "offset": 3068,
       "length": 11,
       "value": "\"osVersion\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3106,
+      "offset": 3112,
       "length": 12,
       "value": "\"apiVersion\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3149,
+      "offset": 3155,
       "length": 10,
       "value": "\"category\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3192,
+      "offset": 3198,
       "length": 12,
       "value": "\"categories\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3231,
+      "offset": 3237,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3265,
+      "offset": 3271,
       "length": 7,
       "value": "\"types\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3311,
+      "offset": 3317,
       "length": 18,
       "value": "\"conversationType\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3368,
+      "offset": 3374,
       "length": 18,
       "value": "\"conversationWith\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3425,
+      "offset": 3431,
       "length": 18,
       "value": "\"pushNotification\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3480,
+      "offset": 3486,
       "length": 16,
       "value": "\"fcmDeviceToken\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3527,
+      "offset": 3533,
       "length": 10,
       "value": "\"settings\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3569,
+      "offset": 3575,
       "length": 11,
       "value": "\"sessionId\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3614,
+      "offset": 3620,
       "length": 13,
       "value": "\"hideReplies\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3653,
+      "offset": 3659,
       "length": 5,
       "value": "\"sdk\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3687,
+      "offset": 3693,
       "length": 8,
       "value": "\"origin\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3721,
+      "offset": 3727,
       "length": 5,
       "value": "\"sid\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3752,
+      "offset": 3758,
       "length": 5,
       "value": "\"uts\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3787,
+      "offset": 3793,
       "length": 9,
       "value": "\"polling\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3823,
+      "offset": 3829,
       "length": 6,
       "value": "\"wsId\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3866,
+      "offset": 3872,
       "length": 16,
       "value": "\"missedMessages\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3910,
+      "offset": 3916,
       "length": 7,
       "value": "\"owner\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3946,
+      "offset": 3952,
       "length": 8,
       "value": "\"domain\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3981,
+      "offset": 3987,
       "length": 6,
       "value": "\"room\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4021,
+      "offset": 4027,
       "length": 13,
       "value": "\"passthrough\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4077,
+      "offset": 4083,
       "length": 22,
       "value": "\"withUserAndGroupTags\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4130,
+      "offset": 4136,
       "length": 10,
       "value": "\"userTags\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4172,
+      "offset": 4178,
       "length": 11,
       "value": "\"groupTags\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4212,
+      "offset": 4218,
       "length": 8,
       "value": "\"params\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4284,
+      "offset": 4290,
       "length": 14,
       "value": "\"settingsHash\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4334,
+      "offset": 4340,
       "length": 15,
       "value": "\"authorization\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4394,
+      "offset": 4400,
       "length": 24,
       "value": "\"settingsHashReceivedAt\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4477,
+      "offset": 4483,
       "length": 10,
       "value": "\"language\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4518,
+      "offset": 4524,
       "length": 10,
       "value": "\"resource\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4574,
+      "offset": 4580,
       "length": 16,
       "value": "\"chatApiVersion\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4665,
+      "offset": 4671,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4706,
+      "offset": 4712,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4748,
+      "offset": 4754,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4796,
+      "offset": 4802,
       "length": 9,
       "value": "\"details\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4843,
+      "offset": 4849,
       "length": 6,
       "value": "\"code\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4890,
+      "offset": 4896,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4937,
+      "offset": 4943,
       "length": 11,
       "value": "\"authToken\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4986,
+      "offset": 4992,
       "length": 19,
       "value": "\"webSocketChannels\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5046,
+      "offset": 5052,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5097,
+      "offset": 5103,
       "length": 10,
       "value": "\"presence\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5146,
+      "offset": 5152,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5189,
+      "offset": 5195,
       "length": 3,
       "value": "401"
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5228,
+      "offset": 5234,
       "length": 14,
       "value": "\"participants\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5335,
+      "offset": 5341,
       "length": 20,
       "value": "\"ERROR_IO_EXCEPTION\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5406,
+      "offset": 5412,
       "length": 22,
       "value": "\"ERROR_JSON_EXCEPTION\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5481,
+      "offset": 5487,
       "length": 24,
       "value": "\"ERROR_PASSWORD_MISSING\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5556,
+      "offset": 5562,
       "length": 22,
       "value": "\"ERROR_LIMIT_EXCEEDED\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5628,
+      "offset": 5634,
       "length": 21,
       "value": "\"ERROR_INVALID_LIMIT\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5704,
+      "offset": 5710,
       "length": 26,
       "value": "\"ERROR_USER_NOT_LOGGED_IN\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5779,
+      "offset": 5785,
       "length": 20,
       "value": "\"ERROR_INVALID_GUID\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5847,
+      "offset": 5853,
       "length": 19,
       "value": "\"ERROR_INVALID_UID\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5907,
+      "offset": 5913,
       "length": 12,
       "value": "\"ERROR_XMPP\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5974,
+      "offset": 5980,
       "length": 26,
       "value": "\"ERROR_CALL_NOT_INITIATED\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6041,
+      "offset": 6047,
       "length": 12,
       "value": "\"ERROR_CALL\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6111,
+      "offset": 6117,
       "length": 29,
       "value": "\"ERROR_CALL_SESSION_MISMATCH\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6201,
+      "offset": 6207,
       "length": 33,
       "value": "\"ERROR_CALL_SESSION_ID_NOT_FOUND\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6293,
+      "offset": 6299,
       "length": 30,
       "value": "\"ERROR_UID_GUID_NOT_SPECIFIED\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6380,
+      "offset": 6386,
       "length": 28,
       "value": "\"ERROR_INTERNET_UNAVAILABLE\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6464,
+      "offset": 6470,
       "length": 27,
       "value": "\"ERROR_REQUEST_IN_PROGRESS\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6543,
+      "offset": 6549,
       "length": 23,
       "value": "\"ERROR_FILTERS_MISSING\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6616,
+      "offset": 6622,
       "length": 21,
       "value": "\"ERROR_NO_DATA_FOUND\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6693,
+      "offset": 6699,
       "length": 27,
       "value": "\"ERROR_TYPING_STATUS_LIMIT\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6769,
+      "offset": 6775,
       "length": 21,
       "value": "\"ERROR_TYPING_STATUS\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6837,
+      "offset": 6843,
       "length": 19,
       "value": "\"ERROR_FILE_ACCESS\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6922,
+      "offset": 6928,
       "length": 31,
       "value": "\"ERROR_GRP_MEMBERS_BAN_MEMBERS\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7004,
+      "offset": 7010,
       "length": 22,
       "value": "\"ERROR_FILE_URL_EMPTY\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7078,
+      "offset": 7084,
       "length": 23,
       "value": "\"ERROR_FILE_NAME_EMPTY\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7153,
+      "offset": 7159,
       "length": 23,
       "value": "\"ERROR_FILE_DATA_EMPTY\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7233,
+      "offset": 7239,
       "length": 28,
       "value": "\"ERROR_FILE_MIME_TYPE_EMPTY\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7318,
+      "offset": 7324,
       "length": 28,
       "value": "\"ERROR_FILE_EXTENSION_EMPTY\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7398,
+      "offset": 7404,
       "length": 23,
       "value": "\"ERROR_FILE_URLS_EMPTY\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7468,
+      "offset": 7474,
       "length": 18,
       "value": "\"ERROR_FILE_EMPTY\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7540,
+      "offset": 7546,
       "length": 25,
       "value": "\"ERROR_ATTACHMENTS_EMPTY\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7619,
+      "offset": 7625,
       "length": 25,
       "value": "\"ERROR_INVALID_MESSAGEID\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7698,
+      "offset": 7704,
       "length": 25,
       "value": "\"ERROR_INVALID_TIMESTAMP\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7780,
+      "offset": 7786,
       "length": 28,
       "value": "\"ERROR_INVALID_MESSAGE_TYPE\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7859,
+      "offset": 7865,
       "length": 22,
       "value": "\"ERROR_SETUPDATEAFTER\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 7933,
+      "offset": 7939,
       "length": 17,
       "value": "\"INIT_NOT_CALLED\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8005,
+      "offset": 8011,
       "length": 20,
       "value": "\"MESSAGE_TEXT_EMPTY\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8078,
+      "offset": 8084,
       "length": 19,
       "value": "\"CUSTOM_DATA_EMPTY\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8147,
+      "offset": 8153,
       "length": 22,
       "value": "\"ERROR_REGION_MISSING\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8227,
+      "offset": 8233,
       "length": 30,
       "value": "\"ERROR_CONVERSATION_NOT_FOUND\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8317,
+      "offset": 8323,
       "length": 45,
       "value": "\"Password is mandatory for a protected group\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8421,
+      "offset": 8427,
       "length": 32,
       "value": "\"Limit Exceeded Max limit of %d\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8511,
+      "offset": 8517,
       "length": 28,
       "value": "\"Please provide valid limit\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8602,
+      "offset": 8608,
       "length": 55,
       "value": "\"Please log in to CometChat before calling this method\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8714,
+      "offset": 8720,
       "length": 29,
       "value": "\"Please provide a valid GUID\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8799,
+      "offset": 8805,
       "length": 28,
       "value": "\"Please provide a valid UID\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8879,
+      "offset": 8885,
       "length": 22,
       "value": "\"Something went wrong\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 8964,
+      "offset": 8970,
       "length": 52,
       "value": "\"Call cannot be cancelled without initiating a call\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9065,
+      "offset": 9071,
       "length": 40,
       "value": "\"Something went wrong while connecting.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9171,
+      "offset": 9177,
       "length": 52,
       "value": "\"Call Session Mismatch. Please check the session ID\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9292,
+      "offset": 9298,
       "length": 82,
       "value": "\"Call Session ID passed is empty and cannot be found. Please check the session ID\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9434,
+      "offset": 9440,
       "length": 169,
       "value": "\"CometChat.init() not called. Please call the method preferably in the onCreate() method of the Application class before calling any other methods related to CometChat.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9670,
+      "offset": 9676,
       "length": 112,
       "value": "\"Both UID and GUID cannot be null. Please specify the UID or the GUID for which the messages are to be fetched.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9847,
+      "offset": 9853,
       "length": 49,
       "value": "\"No Internet Connection. Please try again later.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 9960,
+      "offset": 9966,
       "length": 30,
       "value": "\"Request Already in Progress.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10048,
+      "offset": 10054,
       "length": 21,
       "value": "\"No more data found.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10129,
+      "offset": 10135,
       "length": 85,
       "value": "\"'Timestamp' or 'MessageId' or 'UpdatedAt' required to use the 'fetchNext()' method.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10273,
+      "offset": 10279,
       "length": 80,
       "value": "\"The updatesOnly() method cannot be used without the `setUpdatedAfter()` method\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10416,
+      "offset": 10422,
       "length": 107,
       "value": "\"Sending typing status is limited to 5sec per notification to same guid or uid for the same typing status.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10581,
+      "offset": 10587,
       "length": 67,
       "value": "\"Typing status end cannot be send before sending the start typing.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10704,
+      "offset": 10710,
       "length": 65,
       "value": "\"File Path is not accessible. Please give the correct file path.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10843,
+      "offset": 10849,
       "length": 58,
       "value": "\"The list provided are empty please provide a valid list.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 10960,
+      "offset": 10966,
       "length": 33,
       "value": "\"The provided JSON is not valid.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11052,
+      "offset": 11058,
       "length": 43,
       "value": "\"Media message URL is set as nil or blank.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11155,
+      "offset": 11161,
       "length": 49,
       "value": "\"Media message file name is set as nil or blank.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11264,
+      "offset": 11270,
       "length": 49,
       "value": "\"Media message file data is set as nil or blank.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11378,
+      "offset": 11384,
       "length": 54,
       "value": "\"Media message file mime type is set as nil or blank.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11497,
+      "offset": 11503,
       "length": 54,
       "value": "\"Media message file extension is set as nil or blank.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11611,
+      "offset": 11617,
       "length": 49,
       "value": "\"Media message file urls is set as nil or blank.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11715,
+      "offset": 11721,
       "length": 29,
       "value": "\"Media message file is empty\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11805,
+      "offset": 11811,
       "length": 51,
       "value": "\"Media message attachemnts is set as nil or blank.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 11918,
+      "offset": 11924,
       "length": 72,
       "value": "\"The message ID provided is invalid. Please provide a valid Message ID.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12053,
+      "offset": 12059,
       "length": 70,
       "value": "\"The timestamp provided is invalid. Please provide a valid timestamp.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12196,
+      "offset": 12202,
       "length": 82,
       "value": "\"Only TextMessage or CustomMessage can be edited. Please provide a valid message.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12343,
+      "offset": 12349,
       "length": 67,
       "value": "\"Message Type entered is invalid. Please enter a valid messageType\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12473,
+      "offset": 12479,
       "length": 31,
       "value": "\"Message text cannot be empty.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12573,
+      "offset": 12579,
       "length": 30,
       "value": "\"Custom Data cannot be empty.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12661,
+      "offset": 12667,
       "length": 112,
       "value": "\"Region not specified. Please specify the region in the AppSettingsBuilder class using the `setRegion()` method\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12821,
+      "offset": 12827,
       "length": 33,
       "value": "\"ERROR_INVALID_FCM_TOKEN_MESSAGE\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 12910,
+      "offset": 12916,
       "length": 82,
       "value": "\"The FCM token provided cannot be null or empty. Please provide a valid FCM token\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13058,
+      "offset": 13064,
       "length": 72,
       "value": "\"Conversation not found for conversationWith %@ and conversationType %@\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13204,
+      "offset": 13210,
       "length": 59,
       "value": "\"Please initiate\/accept a call before calling this method.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13311,
+      "offset": 13317,
       "length": 20,
       "value": "\"ERROR_INVALID_TYPE\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13387,
+      "offset": 13393,
       "length": 73,
       "value": "\"The provided type cannot be null or empty. Please provide a valid type.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13513,
+      "offset": 13519,
       "length": 25,
       "value": "\"ERROR_INVALID_SESSIONID\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13599,
+      "offset": 13605,
       "length": 83,
       "value": "\"The provided sessionId cannot be null or empty. Please provide a valid sessionId.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13738,
+      "offset": 13744,
       "length": 28,
       "value": "\"ERROR_AUTHTOKEN_WITH_SPACE\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13830,
+      "offset": 13836,
       "length": 68,
       "value": "\"Auth token cannot contain spaces. Please provide a valid AuthToken\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 13955,
+      "offset": 13961,
       "length": 29,
       "value": "\"ERROR_INVALID_MEDIA_MESSAGE\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14050,
+      "offset": 14056,
       "length": 81,
       "value": "\"Invalid Media Message.Please provide a valid File object or Attachment details.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14185,
+      "offset": 14191,
       "length": 25,
       "value": "\"ERROR_INVALID_USER_NAME\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14271,
+      "offset": 14277,
       "length": 65,
       "value": "\"Invalid name provided for the user. Please provide a valid name\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14397,
+      "offset": 14403,
       "length": 33,
       "value": "\"ERROR_INVALID_CONVERSATION_WITH\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14500,
+      "offset": 14506,
       "length": 77,
       "value": "\"Invalid conversationWith. Please provide a valid value for conversationWith\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14639,
+      "offset": 14645,
       "length": 33,
       "value": "\"ERROR_INVALID_CONVERSATION_TYPE\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14742,
+      "offset": 14748,
       "length": 77,
       "value": "\"Invalid conversationType. Please provide a valid value for conversationWith\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14869,
+      "offset": 14875,
       "length": 21,
       "value": "\"EXTENSION_NOT_FOUND\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 14947,
+      "offset": 14953,
       "length": 44,
       "value": "\"The provided extension could not be found.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15044,
+      "offset": 15050,
       "length": 25,
       "value": "\"ERROR_INVALID_EXTENSION\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15130,
+      "offset": 15136,
       "length": 83,
       "value": "\"The provided extension cannot be null or empty. Please provide a valid extension.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15268,
+      "offset": 15274,
       "length": 27,
       "value": "\"ERROR_EXTENSION_NOT_FOUND\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15358,
+      "offset": 15364,
       "length": 44,
       "value": "\"The provided extension could not be found.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15453,
+      "offset": 15459,
       "length": 23,
       "value": "\"ERROR_INVALID_FEATURE\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15535,
+      "offset": 15541,
       "length": 79,
       "value": "\"The provided feature cannot be null or empty. Please provide a valid feature.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15667,
+      "offset": 15673,
       "length": 25,
       "value": "\"ERROR_FEATURE_NOT_FOUND\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15753,
+      "offset": 15759,
       "length": 42,
       "value": "\"The provided feature could not be found.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15848,
+      "offset": 15854,
       "length": 25,
       "value": "\"ERROR_INVALID_GROUPLIST\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 15935,
+      "offset": 15941,
       "length": 36,
       "value": "\"Grouplist cannot be null or empty.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16028,
+      "offset": 16034,
       "length": 21,
       "value": "\"INVALID_RECEIVER_ID\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16112,
+      "offset": 16118,
       "length": 33,
       "value": "\"Receiver id should be a string.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16198,
+      "offset": 16204,
       "length": 25,
       "value": "\"ERROR_INVALID_SENDER_ID\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16284,
+      "offset": 16290,
       "length": 31,
       "value": "\"Sender id should be a string.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16366,
+      "offset": 16372,
       "length": 23,
       "value": "\"ERROR_INVALID_MESSAGE\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16448,
+      "offset": 16454,
       "length": 34,
       "value": "\"Invalid message object received.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16541,
+      "offset": 16547,
       "length": 25,
       "value": "\"NO_WEBSOCKET_CONNECTION\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16633,
+      "offset": 16639,
       "length": 78,
       "value": "\"Connection to our Websockets server is broken. Please retry after some time.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16775,
+      "offset": 16781,
       "length": 36,
       "value": "\"ERROR_RECEIPTS_TEMPORARILY_BLOCKED\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16883,
+      "offset": 16889,
       "length": 60,
       "value": "\"Due to high load. Receipts have been blocked for your app.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 16989,
+      "offset": 16995,
       "length": 18,
       "value": "\"ERROR_TAGS_EMPTY\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17061,
+      "offset": 17067,
       "length": 22,
       "value": "\"Tags cannot be empty\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17159,
+      "offset": 17165,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17208,
+      "offset": 17214,
       "length": 6,
       "value": "\"muid\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17264,
+      "offset": 17270,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17320,
+      "offset": 17326,
       "length": 6,
       "value": "\"text\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17372,
+      "offset": 17378,
       "length": 10,
       "value": "\"metadata\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17433,
+      "offset": 17439,
       "length": 14,
       "value": "\"receiverType\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17492,
+      "offset": 17498,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17533,
+      "offset": 17539,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17582,
+      "offset": 17588,
       "length": 10,
       "value": "\"receiver\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17630,
+      "offset": 17636,
       "length": 11,
       "value": "\"senderUid\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17675,
+      "offset": 17681,
       "length": 8,
       "value": "\"sender\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17718,
+      "offset": 17724,
       "length": 8,
       "value": "\"sentAt\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17765,
+      "offset": 17771,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17810,
+      "offset": 17816,
       "length": 6,
       "value": "\"file\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17858,
+      "offset": 17864,
       "length": 8,
       "value": "\"status\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17910,
+      "offset": 17916,
       "length": 10,
       "value": "\"category\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 17966,
+      "offset": 17972,
       "length": 12,
       "value": "\"customData\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18021,
+      "offset": 18027,
       "length": 9,
       "value": "\"subType\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18070,
+      "offset": 18076,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18152,
+      "offset": 18158,
       "length": 6,
       "value": "\"guid\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18203,
+      "offset": 18209,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18254,
+      "offset": 18260,
       "length": 6,
       "value": "\"icon\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18312,
+      "offset": 18318,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18376,
+      "offset": 18382,
       "length": 11,
       "value": "\"createdBy\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18432,
+      "offset": 18438,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18487,
+      "offset": 18493,
       "length": 10,
       "value": "\"password\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18540,
+      "offset": 18546,
       "length": 10,
       "value": "\"metadata\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18595,
+      "offset": 18601,
       "length": 11,
       "value": "\"createdAt\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18651,
+      "offset": 18657,
       "length": 11,
       "value": "\"updatedAt\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18707,
+      "offset": 18713,
       "length": 11,
       "value": "\"hasJoined\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18767,
+      "offset": 18773,
       "length": 15,
       "value": "\"groupIdentity\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18835,
+      "offset": 18841,
       "length": 7,
       "value": "\"scope\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18887,
+      "offset": 18893,
       "length": 6,
       "value": "\"tags\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 18974,
+      "offset": 18980,
       "length": 5,
       "value": "\"uid\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19023,
+      "offset": 19029,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19075,
+      "offset": 19081,
       "length": 8,
       "value": "\"avatar\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19127,
+      "offset": 19133,
       "length": 6,
       "value": "\"link\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19177,
+      "offset": 19183,
       "length": 6,
       "value": "\"role\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19231,
+      "offset": 19237,
       "length": 10,
       "value": "\"metadata\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19288,
+      "offset": 19294,
       "length": 9,
       "value": "\"credits\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19343,
+      "offset": 19349,
       "length": 8,
       "value": "\"status\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19405,
+      "offset": 19411,
       "length": 15,
       "value": "\"statusMessage\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19474,
+      "offset": 19480,
       "length": 14,
       "value": "\"lastActiveAt\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19532,
+      "offset": 19538,
       "length": 6,
       "value": "\"tags\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19590,
+      "offset": 19596,
       "length": 15,
       "value": "\"deactivatedAt\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19690,
+      "offset": 19696,
       "length": 11,
       "value": "\"CHAT_HOST\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19743,
+      "offset": 19749,
       "length": 11,
       "value": "\"CHAT_PORT\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19799,
+      "offset": 19805,
       "length": 14,
       "value": "\"CHAT_USE_SSL\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19864,
+      "offset": 19870,
       "length": 15,
       "value": "\"GROUP_SERVICE\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19929,
+      "offset": 19935,
       "length": 14,
       "value": "\"CALL_SERVICE\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 19982,
+      "offset": 19988,
       "length": 13,
       "value": "\"cc_settings\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20074,
+      "offset": 20080,
       "length": 111,
       "value": "\"<iq from='%@' id='CC^PRESENCE' type='get'><query xmlns='jabber:iq:presencereq' action='presence'<\/query><\/iq>\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20230,
+      "offset": 20236,
       "length": 10,
       "value": "\"presence\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20287,
+      "offset": 20293,
       "length": 6,
       "value": "\"from\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20335,
+      "offset": 20341,
       "length": 13,
       "value": "\"some random\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20431,
+      "offset": 20437,
       "length": 12,
       "value": "\"pagination\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20475,
+      "offset": 20481,
       "length": 6,
       "value": "\"meta\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20513,
+      "offset": 20519,
       "length": 6,
       "value": "\"page\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20559,
+      "offset": 20565,
       "length": 7,
       "value": "\"affix\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20606,
+      "offset": 20612,
       "length": 13,
       "value": "\"cursorValue\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20659,
+      "offset": 20665,
       "length": 13,
       "value": "\"cursorField\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20708,
+      "offset": 20714,
       "length": 10,
       "value": "\"per_page\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20768,
+      "offset": 20774,
       "length": 8,
       "value": "\"sentAt\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20819,
+      "offset": 20825,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20874,
+      "offset": 20880,
       "length": 14,
       "value": "\"current_page\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 20938,
+      "offset": 20944,
       "length": 13,
       "value": "\"total_pages\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21030,
+      "offset": 21036,
       "length": 4,
       "value": "\"by\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21071,
+      "offset": 21077,
       "length": 4,
       "value": "\"on\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21113,
+      "offset": 21119,
       "length": 5,
       "value": "\"for\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21164,
+      "offset": 21170,
       "length": 12,
       "value": "\"entityType\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21217,
+      "offset": 21223,
       "length": 8,
       "value": "\"entity\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21271,
+      "offset": 21277,
       "length": 6,
       "value": "\"user\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21324,
+      "offset": 21330,
       "length": 7,
       "value": "\"group\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21380,
+      "offset": 21386,
       "length": 14,
       "value": "\"memberJoined\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21441,
+      "offset": 21447,
       "length": 12,
       "value": "\"memberLeft\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21502,
+      "offset": 21508,
       "length": 14,
       "value": "\"memberKicked\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21568,
+      "offset": 21574,
       "length": 17,
       "value": "\"memberOutcasted\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21638,
+      "offset": 21644,
       "length": 18,
       "value": "\"memberReinstated\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21706,
+      "offset": 21712,
       "length": 15,
       "value": "\"memberInvited\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21824,
+      "offset": 21830,
       "length": 11,
       "value": "\"%@ joined\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21891,
+      "offset": 21897,
       "length": 9,
       "value": "\"%@ left\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 21959,
+      "offset": 21965,
       "length": 14,
       "value": "\"%@ kicked %@\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22032,
+      "offset": 22038,
       "length": 14,
       "value": "\"%@ banned %@\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22107,
+      "offset": 22113,
       "length": 16,
       "value": "\"%@ unbanned %@\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22190,
+      "offset": 22196,
       "length": 15,
       "value": "\"%@ made %@ %@\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22265,
+      "offset": 22271,
       "length": 20,
       "value": "\"Message is edited.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22346,
+      "offset": 22352,
       "length": 21,
       "value": "\"Message is deleted.\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22426,
+      "offset": 22432,
       "length": 13,
       "value": "\"%@ added %@\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22517,
+      "offset": 22523,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22567,
+      "offset": 22573,
       "length": 11,
       "value": "\"sessionid\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22622,
+      "offset": 22628,
       "length": 10,
       "value": "\"receiver\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22674,
+      "offset": 22680,
       "length": 8,
       "value": "\"sender\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22731,
+      "offset": 22737,
       "length": 14,
       "value": "\"receiverType\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22787,
+      "offset": 22793,
       "length": 8,
       "value": "\"status\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22835,
+      "offset": 22841,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22889,
+      "offset": 22895,
       "length": 13,
       "value": "\"initiatedAt\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 22946,
+      "offset": 22952,
       "length": 10,
       "value": "\"metadata\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23000,
+      "offset": 23006,
       "length": 10,
       "value": "\"entities\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23057,
+      "offset": 23063,
       "length": 12,
       "value": "\"entityType\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23111,
+      "offset": 23117,
       "length": 8,
       "value": "\"entity\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23166,
+      "offset": 23172,
       "length": 6,
       "value": "\"user\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23220,
+      "offset": 23226,
       "length": 7,
       "value": "\"group\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23272,
+      "offset": 23278,
       "length": 10,
       "value": "\"joinedAt\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23360,
+      "offset": 23366,
       "length": 11,
       "value": "\"delivered\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23540,
+      "offset": 23546,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23582,
+      "offset": 23588,
       "length": 13,
       "value": "\"deliveredAt\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23624,
+      "offset": 23630,
       "length": 6,
       "value": "\"time\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23657,
+      "offset": 23663,
       "length": 4,
       "value": "\"to\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23690,
+      "offset": 23696,
       "length": 6,
       "value": "\"from\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23725,
+      "offset": 23731,
       "length": 6,
       "value": "\"read\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23763,
+      "offset": 23769,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23799,
+      "offset": 23805,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23834,
+      "offset": 23840,
       "length": 8,
       "value": "\"readAt\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23879,
+      "offset": 23885,
       "length": 7,
       "value": "\"xmlns\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23918,
+      "offset": 23924,
       "length": 12,
       "value": "\"receiverId\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 23959,
+      "offset": 23965,
       "length": 6,
       "value": "\"user\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24041,
+      "offset": 24047,
       "length": 7,
       "value": "\"appId\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24082,
+      "offset": 24088,
       "length": 10,
       "value": "\"receiver\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24130,
+      "offset": 24136,
       "length": 14,
       "value": "\"receiverType\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24174,
+      "offset": 24180,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24212,
+      "offset": 24218,
       "length": 8,
       "value": "\"action\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24250,
+      "offset": 24256,
       "length": 6,
       "value": "\"user\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24286,
+      "offset": 24292,
       "length": 6,
       "value": "\"body\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24326,
+      "offset": 24332,
       "length": 10,
       "value": "\"deviceId\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24371,
+      "offset": 24377,
       "length": 11,
       "value": "\"timestamp\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24417,
+      "offset": 24423,
       "length": 11,
       "value": "\"messageId\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24458,
+      "offset": 24464,
       "length": 6,
       "value": "\"auth\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24510,
+      "offset": 24516,
       "length": 22,
       "value": "\"presenceSubscription\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24564,
+      "offset": 24570,
       "length": 8,
       "value": "\"sender\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24606,
+      "offset": 24612,
       "length": 10,
       "value": "\"metadata\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24655,
+      "offset": 24661,
       "length": 15,
       "value": "\"messageSender\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24709,
+      "offset": 24715,
       "length": 19,
       "value": "\"transient_message\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24759,
+      "offset": 24765,
       "length": 7,
       "value": "\"group\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24796,
+      "offset": 24802,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24896,
+      "offset": 24902,
       "length": 18,
       "value": "\"typing_indicator\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24944,
+      "offset": 24950,
       "length": 9,
       "value": "\"started\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 24981,
+      "offset": 24987,
       "length": 7,
       "value": "\"ended\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 25028,
+      "offset": 25034,
       "length": 10,
       "value": "\"presence\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 25067,
+      "offset": 25073,
       "length": 11,
       "value": "\"available\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 25108,
+      "offset": 25114,
       "length": 9,
       "value": "\"offline\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 25157,
+      "offset": 25163,
       "length": 10,
       "value": "\"receipts\""
     },
     {
       "filePath": "\/Users\/admin\/Desktop\/Development\/SDKssssss\/cometchat-pro-ios-sdk\/CometChatSDK\/CometChatPro\/Constants\/CometChatConstants.swift",
       "kind": "StringLiteral",
-      "offset": 25203,
+      "offset": 25209,
       "length": 6,
       "value": "\"auth\""
     },
