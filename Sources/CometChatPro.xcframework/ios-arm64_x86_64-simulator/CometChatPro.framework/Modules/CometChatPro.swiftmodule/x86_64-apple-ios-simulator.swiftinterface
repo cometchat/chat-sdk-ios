@@ -495,7 +495,7 @@ extension CometChatPro.CometChat {
   @objc func onOutgoingCallAccepted(acceptedCall: CometChatPro.Call?, error: CometChatPro.CometChatException?)
   @objc func onOutgoingCallRejected(rejectedCall: CometChatPro.Call?, error: CometChatPro.CometChatException?)
   @objc func onIncomingCallCancelled(canceledCall: CometChatPro.Call?, error: CometChatPro.CometChatException?)
-  @objc func onCallEndedMessageReceived(endedCall: CometChatPro.Call?, error: CometChatPro.CometChatException?)
+  @objc optional func onCallEndedMessageReceived(endedCall: CometChatPro.Call?, error: CometChatPro.CometChatException?)
 }
 @objc public protocol CometChatLoginDelegate {
   @objc func onLoginSuccess(user: CometChatPro.User)

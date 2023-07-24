@@ -1079,6 +1079,7 @@ SWIFT_PROTOCOL("_TtP12CometChatPro21CometChatCallDelegate_")
 - (void)onOutgoingCallAcceptedWithAcceptedCall:(Call * _Nullable)acceptedCall error:(CometChatException * _Nullable)error;
 - (void)onOutgoingCallRejectedWithRejectedCall:(Call * _Nullable)rejectedCall error:(CometChatException * _Nullable)error;
 - (void)onIncomingCallCancelledWithCanceledCall:(Call * _Nullable)canceledCall error:(CometChatException * _Nullable)error;
+@optional
 - (void)onCallEndedMessageReceivedWithEndedCall:(Call * _Nullable)endedCall error:(CometChatException * _Nullable)error;
 @end
 
