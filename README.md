@@ -11,10 +11,10 @@
 
 # CometChat iOS Chat SDK
 
-<a href="https://cocoapods.org/pods/CometChatPro"><img src="https://img.shields.io/badge/platform-iOS-orange.svg" /></a>
+<a href="https://cocoapods.org/pods/CometChatSDK"><img src="https://img.shields.io/badge/platform-iOS-orange.svg" /></a>
 <a href=""><img src="https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg" /></a>
 <a href=""> <img src="https://img.shields.io/badge/Contributors-4-yellowgreen" /></a>
-<a href=" "> <img src="https://img.shields.io/badge/Version-3.0.917-red" /></a>
+<a href=" "> <img src="https://img.shields.io/badge/Version-4.0.0--beta2-red" /></a>
 <a href=""> <img src="https://img.shields.io/github/stars/cometchat-pro/ios-chat-sdk?style=social" /></a>
 
 </p>
@@ -67,7 +67,7 @@ platform :ios, '11.0'
 use_frameworks!
 
 target 'YourApp' do
-     pod 'CometChatPro', '3.0.917'
+     pod 'CometChatSDK', '4.0.0-beta2'
 end
 ________________________________________________________________
 
@@ -84,8 +84,8 @@ platform :ios, '11.0'
 use_frameworks!
 
 target 'YourApp' do
-     pod 'CometChatPro', '3.0.917'
-     pod 'CometChatCalls', '3.0.2'
+     pod 'CometChatSDK', '4.0.0-beta2'
+     pod 'CometChatCallsSDK', '4.0.0-beta2'
 end
 ________________________________________________________________
 
@@ -113,7 +113,7 @@ ___
 The `init()` method initializes the settings required for CometChat. We suggest calling the `init()` method on app startup, preferably in the `didFinishLaunchingWithOptions()` method of the Application class.
 
 ```swift
-import CometChatPro
+import CometChatSDK
 
 class AppDelegate: UIResponder, UIApplicationDelegate{
 
@@ -126,10 +126,10 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
   let mySettings = AppSettings.AppSettingsBuilder().subscribePresenceForAllUsers().setRegion(region: region).build()
   CometChat(appId: appId ,appSettings: mySettings,onSuccess: { (isSuccess) in
   
-                print("CometChat Pro SDK intialise successfully.")
+                print("CometChat SDK intialise successfully.")
 
         }) { (error) in
-            print("CometChat Pro SDK failed intialise with error: \(error.errorDescription)")
+            print("CometChat SDK failed intialise with error: \(error.errorDescription)")
         }
         return true
     }
