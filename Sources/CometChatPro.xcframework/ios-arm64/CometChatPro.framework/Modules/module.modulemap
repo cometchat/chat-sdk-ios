@@ -1,7 +1,7 @@
 framework module CometChatPro {
   umbrella header "CometChatPro.h"
-
   export *
+
   module * { export * }
 }
 
