@@ -15,8 +15,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "CometChatSDK",
-            url: "https://library.cometchat.io/ios/v4.0/xcode15/CometChatSDK_4_0_4.xcframework.zip",
-            checksum: "91ce3bd3c7cc70fed2a4dd3abb91235171fe67c6975c059b2d4c049831fe62cc"
+            url: "https://library.cometchat.io/ios/v4.0/xcode15/CometChatSDK_4_1_01.xcframework.zip",
+            checksum: "0bddc6af22755884f363b0c5543e26d51109bf9a9887c401fb7893e7d9c870a2"
         ),
         .binaryTarget(
             name: "CometChatStarscream",
