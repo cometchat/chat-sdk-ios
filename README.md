@@ -1,24 +1,6 @@
-<div style="width:100%">
-    <div style="width:50%; display:inline-block">
-        <p align="center">
-        <img align="center" width="180" height="180" alt="" src="https://github.com/cometchat-pro/ios-swift-chat-app/blob/master/Screenshots/logo.png">    
-        </p>    
-    </div>    
-</div>
-</div>
 
-</br>
 
 # CometChat iOS Chat SDK
-
-<a href="https://cocoapods.org/pods/CometChatSDK"><img src="https://img.shields.io/badge/platform-iOS-orange.svg" /></a>
-<a href=""><img src="https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg" /></a>
-<a href=""> <img src="https://img.shields.io/badge/Contributors-4-yellowgreen" /></a>
-<a href=" "> <img src="https://img.shields.io/badge/Version-4.0.43-red" /></a>
-<a href=""> <img src="https://img.shields.io/github/stars/cometchat-pro/ios-chat-sdk?style=social" /></a>
-
-</p>
-</br></br>
 
 CometChat enables you to add voice, video & text chat for your website & app.
 ___
@@ -29,7 +11,7 @@ Before you begin, ensure you have met the following requirements:
 
 ✅ &nbsp; You have installed the latest version of Xcode. (Above Xcode 12 Recommended)
 
-✅ &nbsp; iOS Chat SDK works for the iOS devices from iOS 11 and above.
+✅ &nbsp; iOS Chat SDK works for iOS devices from iOS 11 and above.
 
 ___
 
@@ -97,7 +79,7 @@ And then install the `CometChatPro` framework through CocoaPods.
 pod install
 ```
 
-If you're facing any issues while installing pods then use below command. 
+If you're facing any issues while installing pods then use the below command. 
 
 
 ```bash
@@ -140,9 +122,9 @@ Make sure you replace the APP_ID with your CometChat `appId` and `region` with y
 
 ___
 
-### ii.Create User :bust_in_silhouette:
+### ii. Create User :bust_in_silhouette:
 
-Once initialisation is successful, you will need to create a user. To create users on the fly, you can use the `createUser()` method. This method takes an `User` object and the `Auth Key` as input parameters and returns the created User object if the request is successful.
+Once initialization is successful, you will need to create a user. To create the users on the fly, you can use the `createUser()` method. This method takes a `User` object and the `Auth Key` as input parameters and returns the created User object if the request is successful.
 
 ```swift
 
@@ -157,7 +139,7 @@ CometChat.createUser(user: newUser, apiKey: authKey, onSuccess: { (User) in
 ```
 ___
 
-### iii.Log in your User :bust_in_silhouette:
+### iii. Log in your User :bust_in_silhouette:
 
 The `login()` method returns the User object containing all the information of the logged-in user.
 
@@ -175,59 +157,27 @@ CometChat.login(UID: uid, apiKey: authKey, onSuccess: { (user) in
 
 }
 ```
+
 **Note :** </br>
 * Make sure you replace the `authKey` with your CometChat Auth Key in the above code.
 
-* We have setup 5 users for testing having UIDs: `SUPERHERO1`, `SUPERHERO2`, `SUPERHERO3`,`SUPERHERO4` and `SUPERHERO5`.
----
-
-# Checkout our iOS UI Kit
-
-Visit our [iOS Chat UI Kit](https://github.com/cometchat-pro/ios-chat-ui-kit) repo to integrate it inside your app.
-
+* We have set up 5 users for testing having UIDs: `SUPERHERO1`, `SUPERHERO2`, `SUPERHERO3`, `SUPERHERO4`, and `SUPERHERO5`.
 
 ---
 
 # Checkout our sample apps
 
 ## Swift: 
-Visit our [Swift sample app](https://github.com/cometchat-pro-samples/ios-swift-chat-app) repo to run the swift sample app.
-
-## Objective C: 
-Visit our [Objective-C sample app](https://github.com/cometchat-pro-samples/ios-objective-c-chat-app) repo to run the objective-c sample app.
+Visit our [Swift sample app](https://github.com/cometchat/cometchat-sample-app-ios) repo to run the Swift sample app.
 
 ---
-
 
 # Troubleshooting
 
-- To read the full dcoumentation on CometChat integration visit our [Documentation](https://prodocs.cometchat.com/docs/ios-quick-start).
+- To read the full documentation on CometChat integration visit our [Documentation](https://prodocs.cometchat.com/docs/ios-quick-start).
 
-- Facing any issues while integrating or installing the UI Kit please <a href="https://app.cometchat.io/"> connect with us via real time support present in CometChat Dashboard.</a>.
-
----
-
-
-# Contributors
-
-Thanks to the following people who have contributed to this project:
-
-[@pushpsenairekar2911 👨‍💻](https://github.com/pushpsenairekar2911) <br>
-[@ghanshyammansata 👨‍💻](https://github.com/ghanshyammansata) <br>
-[@jeetkapadia 👨‍💻](https://github.com/jeetkapadia) <br>
-[@NishantTiwarins 👨‍💻](https://github.com/NishantTiwarins) <br>
-[@Suryansh1191 👨‍💻](https://github.com/Suryansh1191) <br>
+- Facing any issues while integrating or installing the UI Kit please <a href="https://app.cometchat.io/"> connect with us via real-time support present in CometChat Dashboard.</a>.
 
 ---
-
-# Contact :mailbox:
-
-Contact us via real time support present in [CometChat Dashboard.](https://app.cometchat.io/)
-
----
-
-# License
-
-This project uses the following [license](https://github.com/cometchat-pro/ios-swift-chat-ui-kit/blob/master/License.md).
 
 
