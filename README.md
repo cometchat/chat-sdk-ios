@@ -1,3 +1,6 @@
+<p align="center">
+  <img alt="CometChat" src="https://assets.cometchat.io/website/images/logos/banner.png">
+</p>
 
 
 # CometChat iOS Chat SDK
@@ -172,12 +175,8 @@ Visit our [Swift sample app](https://github.com/cometchat/cometchat-sample-app-i
 
 ---
 
-# Troubleshooting
 
-- To read the full documentation on CometChat integration visit our [Documentation](https://prodocs.cometchat.com/docs/ios-quick-start).
-
-- Facing any issues while integrating or installing the UI Kit please <a href="https://app.cometchat.io/"> connect with us via real-time support present in CometChat Dashboard.</a>.
-
----
+## Help and Support
+For issues running the project or integrating with our UI Kits, consult our [documentation](https://www.cometchat.com/docs/react-uikit/integration) or create a [support ticket](https://help.cometchat.com/hc/en-us) or seek real-time support via the [CometChat Dashboard](https://app.cometchat.com/).
 
 
