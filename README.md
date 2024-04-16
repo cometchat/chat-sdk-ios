@@ -52,7 +52,7 @@ platform :ios, '11.0'
 use_frameworks!
 
 target 'YourApp' do
-     pod 'CometChatSDK', '4.0.43'
+     pod 'CometChatSDK', '4.0.44'
 end
 ________________________________________________________________
 
@@ -69,7 +69,7 @@ platform :ios, '11.0'
 use_frameworks!
 
 target 'YourApp' do
-     pod 'CometChatSDK', '4.0.43'
+     pod 'CometChatSDK', '4.0.44'
      pod 'CometChatCallsSDK', '4.0.2'
 end
 ________________________________________________________________
