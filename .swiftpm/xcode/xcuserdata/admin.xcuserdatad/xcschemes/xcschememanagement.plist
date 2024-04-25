@@ -32,6 +32,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>chat-sdk-ios</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>ios-chat-sdk</key>
 		<dict>
 			<key>primary</key>
