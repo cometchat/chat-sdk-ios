@@ -30,7 +30,7 @@ To install iOS Chat SDK, you  need to first register on CometChat Dashboard. [Cl
 * Head over to the Quick Start or API & Auth Keys section and note the `App ID`, `Auth Key`,  and  `Region`.
 ---
 
-### ii. Add the CometChatPro Dependency
+### ii. Add the CometChatSDK Dependency
 
 
 We recommend using CocoaPods, as they are the most advanced way of managing iOS project dependencies. Open a terminal window, move to your project directory, and then create a Podfile by running the following command
@@ -52,31 +52,14 @@ platform :ios, '11.0'
 use_frameworks!
 
 target 'YourApp' do
-     pod 'CometChatSDK', '4.0.45'
+     pod 'CometChatSDK', '4.0.46'
+     pod 'CometChatCallsSDK', '4.0.5'
 end
 ________________________________________________________________
 
 
 ```
-v3.0.1+ onwards, Voice & Video Calling functionality has been moved to a separate framework. Please add the following pod to your app Podfile in case you plan on using the Voice and Video Calling feature.   
-
-```bash
-________________________________________________________________
-
-For Xcode 12 and above:
-
-platform :ios, '11.0'
-use_frameworks!
-
-target 'YourApp' do
-     pod 'CometChatSDK', '4.0.45'
-     pod 'CometChatCallsSDK', '4.0.2'
-end
-________________________________________________________________
-
-
-```
-And then install the `CometChatPro` framework through CocoaPods.
+And then install the `CometChatSDK` framework through CocoaPods.
 
 ```bash
 pod install
