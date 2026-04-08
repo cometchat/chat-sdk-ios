@@ -7,7 +7,7 @@ The CometChat SDK is a robust toolkit that developers can utilize to swiftly inc
 
 ## Prerequisites
 - XCode (Above Xcode 12 Recommended)
-- iOS 11 and above 
+- iOS 12 and above 
 
 ## Getting Started
 To set up iOS SDK and utilize CometChat for your chat and calls functionality, you'll need to follow these steps:

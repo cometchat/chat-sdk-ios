@@ -6,8 +6,7 @@ import PackageDescription
 let package = Package(
     name: "CometChatSDK",
     platforms: [
-        // Only add support for iOS 11 and up.
-        .iOS(.v11)
+        .iOS(.v12)
     ],
     products: [
         .library(name: "CometChatSDK", targets: ["CometChatSDK","CometChatStarscream"])
@@ -15,8 +14,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "CometChatSDK",
-            url: "https://dl.cloudsmith.io/public/cometchat/cometchat/raw/versions/4.1.2/CometChatSDK_4_1_2.xcframework.zip",
-            checksum: "a01c7a9e8f562de395972880114f7d1dbb992f36bc7f2cc04cbea005efba028b"
+            url: "https://dl.cloudsmith.io/public/cometchat/cometchat/raw/versions/4.1.3/CometChatSDK_4_1_3.xcframework.zip",
+            checksum: "6bb18d33cc133c85d478f1b792c283b9ac1d59adcdfb7a477a0f8cd8664c707c"
         ),
         .binaryTarget(
             name: "CometChatStarscream",
